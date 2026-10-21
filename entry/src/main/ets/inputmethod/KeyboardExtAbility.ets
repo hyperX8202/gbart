@@ -8,7 +8,7 @@ import { hilog } from '@kit.PerformanceAnalysisKit';
 import { KeyboardController } from './KeyboardController';
 import engine from 'libkeyboard_engine.so';
 import { dictionaryForLanguage, emojiDictionaryForLanguage } from './Layouts';
-import { KeyboardSettings, KeyboardStatus, SettingsStore, ThemeMode } from './Settings';
+import { applyUiLanguage, KeyboardSettings, KeyboardStatus, SettingsStore, ThemeMode } from './Settings';
 import { DARK_THEME, KeyboardTheme, LIGHT_THEME } from './Theme';
 import { EmojiCategory, loadEmojiCategories } from './Emoji';
 
@@ -130,6 +130,7 @@ export default class KeyboardExtAbility extends InputMethodExtensionAbility {
     const settings = store.load();
     controller.applySettings(settings);
     this.reportStatus(store);
+    applyUiLanguage(this.context, settings.uiLanguage);
     if (settings.resetLearningAt > store.handledResetAt()) {
       // "Gelerntes löschen" in the settings app.
       store.setHandledResetAt(settings.resetLearningAt);

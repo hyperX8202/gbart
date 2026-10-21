@@ -16,8 +16,8 @@ const DOUBLE_TAP_MS = 300;
 const EMOJI_COLUMNS = 8;
 /** A touch that leaves its key by this share of the key width becomes a swipe (gesture typing). */
 const GESTURE_START_KEY_WIDTHS = 0.6;
-/** Trail points kept on screen (Gboard's trail fades behind the finger). */
-const TRAIL_POINTS = 64;
+/** Trail points kept on screen: about the whole swipe, like Gboard. */
+const TRAIL_POINTS = 360;
 
 /** Time of the last tap on shift, for double-tap caps lock (shared by all shift keys). */
 let lastShiftTap: number = 0;

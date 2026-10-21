@@ -2,6 +2,7 @@ import { preferences } from '@kit.ArkData';
 import { common } from '@kit.AbilityKit';
 import { fileIo as fs } from '@kit.CoreFileKit';
 import { i18n } from '@kit.LocalizationKit';
+import { deviceInfo } from '@kit.BasicServicesKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
 import { LANGUAGES, LanguageDef } from './LanguageData';
 
@@ -66,6 +67,12 @@ export class KeyboardSettings {
   // Daten
   /** Set by "Gelerntes löschen" in the app; the keyboard clears its history when this is newer. */
   resetLearningAt: number = 0;
+  /**
+   * UI language override for app and keyboard ('' = follow the system). Not shown in the UI; set
+   * with `aa start -b com.ab.keyboard -a EntryAbility --ps uiLanguage en` (e.g. for store
+   * screenshots) and reset with `--ps uiLanguage system`.
+   */
+  uiLanguage: string = '';
   /** Kept on the keyboard side only (not in the shared settings file). */
   recentEmojis: string[] = [];
 
@@ -92,6 +99,7 @@ export class KeyboardSettings {
     c.gestureTrail = this.gestureTrail;
     c.languages = this.languages.slice();
     c.resetLearningAt = this.resetLearningAt;
+    c.uiLanguage = this.uiLanguage;
     c.recentEmojis = this.recentEmojis.slice();
     return c;
   }
@@ -225,7 +233,7 @@ export class SettingsStore {
       'autoCorrectStrength': s.autoCorrectStrength, 'autoCapitalize': s.autoCapitalize,
       'doubleSpacePeriod': s.doubleSpacePeriod, 'backspaceRevertsAutocorrect': s.backspaceRevertsAutocorrect,
       'spaceCursorControl': s.spaceCursorControl, 'gestureTyping': s.gestureTyping, 'gestureTrail': s.gestureTrail,
-      'languages': s.languages, 'resetLearningAt': s.resetLearningAt
+      'languages': s.languages, 'resetLearningAt': s.resetLearningAt, 'uiLanguage': s.uiLanguage
     };
     writeJson(this.settingsPath, value);
   }
@@ -297,6 +305,7 @@ export class SettingsStore {
     s.gestureTyping = asBoolean(j['gestureTyping'], s.gestureTyping);
     s.gestureTrail = asBoolean(j['gestureTrail'], s.gestureTrail);
     s.resetLearningAt = asNumber(j['resetLearningAt'], 0);
+    s.uiLanguage = asString(j['uiLanguage'], '');
     const known = asStrings(j['languages'], []).filter((id: string) => LANGUAGES.some((l: LanguageDef) => l.id === id));
     s.languages = known.length > 0 ? known : [systemLanguageId()];
     return s;
@@ -334,5 +343,21 @@ export class SettingsStore {
     } catch (e) {
       return [];
     }
+  }
+}
+
+/**
+ * Applies the UI language override (or the system language) to a process; app and keyboard run
+ * in separate processes and each applies it for itself.
+ */
+export function applyUiLanguage(context: common.Context, uiLanguage: string): void {
+  try {
+    if (deviceInfo.sdkApiVersion < 21) {
+      return;
+    }
+    const language = uiLanguage !== '' ? uiLanguage : i18n.System.getSystemLanguage();
+    context.getApplicationContext().setLanguage(language);
+  } catch (e) {
+    hilog.warn(DOMAIN, TAG, 'setLanguage failed: %{public}s', JSON.stringify(e));
   }
 }
