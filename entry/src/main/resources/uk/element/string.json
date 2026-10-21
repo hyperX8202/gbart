@@ -1,0 +1,320 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "gBart"
+    },
+    {
+      "name": "module_desc",
+      "value": "Клавіатура з підказками слів, автовиправленням і неперервним введенням"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "Налаштування клавіатури"
+    },
+    {
+      "name": "subtype_default",
+      "value": "Усі активні мови"
+    },
+    {
+      "name": "vibrate_reason",
+      "value": "Тактильний відгук під час набору"
+    },
+    {
+      "name": "setup_select",
+      "value": "Увімкнути клавіатуру"
+    },
+    {
+      "name": "setup_select_desc",
+      "value": "Відкриє Система › Способи введення: виберіть «gBart» в «Поточна клавіатура»"
+    },
+    {
+      "name": "setup_full",
+      "value": "Дозволити повну версію"
+    },
+    {
+      "name": "setup_full_desc",
+      "value": "Потрібно для вібрації: Система › Способи введення › gBart › Повна версія"
+    },
+    {
+      "name": "sec_languages",
+      "value": "Мови"
+    },
+    {
+      "name": "sec_preferences",
+      "value": "Налаштування"
+    },
+    {
+      "name": "sec_preferences_desc",
+      "value": "Ряд цифр, клавіша емодзі, вібрація, висота"
+    },
+    {
+      "name": "sec_theme",
+      "value": "Тема"
+    },
+    {
+      "name": "sec_correction",
+      "value": "Виправлення тексту"
+    },
+    {
+      "name": "sec_correction_desc",
+      "value": "Підказки, автовиправлення, великі літери"
+    },
+    {
+      "name": "sec_glide",
+      "value": "Неперервне введення"
+    },
+    {
+      "name": "sec_privacy",
+      "value": "Конфіденційність"
+    },
+    {
+      "name": "sec_privacy_desc",
+      "value": "Вивчені слова залишаються на цьому пристрої"
+    },
+    {
+      "name": "sec_try",
+      "value": "Спробувати"
+    },
+    {
+      "name": "sec_about",
+      "value": "Про застосунок"
+    },
+    {
+      "name": "sec_more",
+      "value": "Більше"
+    },
+    {
+      "name": "languages_active",
+      "value": "Активні мови"
+    },
+    {
+      "name": "languages_all",
+      "value": "Усі мови"
+    },
+    {
+      "name": "languages_hint",
+      "value": "Підказки й автовиправлення працюють для всіх активних мов одночасно. Розкладку можна змінити клавішею з глобусом або довгим натисканням пробілу."
+    },
+    {
+      "name": "languages_search",
+      "value": "Пошук мов"
+    },
+    {
+      "name": "languages_first",
+      "value": "Розкладка за замовчуванням"
+    },
+    {
+      "name": "number_row",
+      "value": "Ряд цифр"
+    },
+    {
+      "name": "number_row_desc",
+      "value": "Показувати ряд цифр над літерами"
+    },
+    {
+      "name": "emoji_key",
+      "value": "Клавіша емодзі"
+    },
+    {
+      "name": "language_key",
+      "value": "Клавіша зміни мови"
+    },
+    {
+      "name": "key_popup",
+      "value": "Збільшення під час натискання"
+    },
+    {
+      "name": "vibrate",
+      "value": "Тактильний відгук під час натискання"
+    },
+    {
+      "name": "vibration_strength",
+      "value": "Сила вібрації"
+    },
+    {
+      "name": "keyboard_height",
+      "value": "Висота клавіатури"
+    },
+    {
+      "name": "long_press",
+      "value": "Затримка довгого натискання"
+    },
+    {
+      "name": "theme_system",
+      "value": "Як у системі"
+    },
+    {
+      "name": "theme_light",
+      "value": "Світла"
+    },
+    {
+      "name": "theme_dark",
+      "value": "Темна"
+    },
+    {
+      "name": "show_suggestions",
+      "value": "Показувати панель підказок"
+    },
+    {
+      "name": "emoji_suggestions",
+      "value": "Підказки емодзі"
+    },
+    {
+      "name": "emoji_suggestions_desc",
+      "value": "Пропонувати відповідні емодзі під час набору"
+    },
+    {
+      "name": "autocorrect",
+      "value": "Автовиправлення"
+    },
+    {
+      "name": "autocorrect_desc",
+      "value": "Виправляти слова з помилками під час натискання пробілу"
+    },
+    {
+      "name": "autocorrect_strength",
+      "value": "Сила"
+    },
+    {
+      "name": "strength_modest",
+      "value": "Помірна"
+    },
+    {
+      "name": "strength_aggressive",
+      "value": "Сильна"
+    },
+    {
+      "name": "strength_very",
+      "value": "Дуже сильна"
+    },
+    {
+      "name": "backspace_undo",
+      "value": "Скасовувати автовиправлення клавішею Backspace"
+    },
+    {
+      "name": "auto_cap",
+      "value": "Автоматичні великі літери"
+    },
+    {
+      "name": "auto_cap_desc",
+      "value": "Починати кожне речення з великої літери"
+    },
+    {
+      "name": "double_space",
+      "value": "Крапка подвійним пробілом"
+    },
+    {
+      "name": "space_cursor",
+      "value": "Переміщати курсор пробілом"
+    },
+    {
+      "name": "space_cursor_desc",
+      "value": "Проведіть по пробілу, щоб перемістити курсор; проведіть ліворуч по Backspace, щоб видаляти слова"
+    },
+    {
+      "name": "glide_enable",
+      "value": "Увімкнути неперервне введення"
+    },
+    {
+      "name": "glide_enable_desc",
+      "value": "Вводьте слово, проводячи пальцем по літерах"
+    },
+    {
+      "name": "glide_trail",
+      "value": "Показувати слід жесту"
+    },
+    {
+      "name": "privacy_text",
+      "value": "Клавіатура запам’ятовує слова й послідовності слів, які ви вводите, щоб пропонувати їх пізніше. Усе залишається на цьому пристрої: клавіатура не має доступу до інтернету й нічого не надсилає. Поля паролів ніколи не запам’ятовуються."
+    },
+    {
+      "name": "reset_learning",
+      "value": "Видалити вивчені слова"
+    },
+    {
+      "name": "reset_confirm",
+      "value": "Видалити все, що клавіатура дізналася з вашого набору?"
+    },
+    {
+      "name": "reset_done",
+      "value": "Вивчені слова буде видалено під час наступного відкриття клавіатури."
+    },
+    {
+      "name": "cancel",
+      "value": "Скасувати"
+    },
+    {
+      "name": "delete",
+      "value": "Видалити"
+    },
+    {
+      "name": "try_placeholder",
+      "value": "Введіть текст …"
+    },
+    {
+      "name": "about_engine",
+      "value": "Підказки слів, автовиправлення та словники базуються на HeliBoard і AOSP LatinIME. Цей застосунок — вільне ПЗ за ліцензією GNU General Public License v3."
+    },
+    {
+      "name": "about_licenses",
+      "value": "Ліцензії відкритого ПЗ"
+    },
+    {
+      "name": "emoji_recent_empty",
+      "value": "Ви ще не використовували емодзі"
+    },
+    {
+      "name": "emoji_cat_recent",
+      "value": "Нещодавні"
+    },
+    {
+      "name": "emoji_cat_smileys",
+      "value": "Смайли та емоції"
+    },
+    {
+      "name": "emoji_cat_people",
+      "value": "Люди"
+    },
+    {
+      "name": "emoji_cat_animals",
+      "value": "Тварини та природа"
+    },
+    {
+      "name": "emoji_cat_food",
+      "value": "Їжа та напої"
+    },
+    {
+      "name": "emoji_cat_travel",
+      "value": "Подорожі та місця"
+    },
+    {
+      "name": "emoji_cat_activities",
+      "value": "Заняття"
+    },
+    {
+      "name": "emoji_cat_objects",
+      "value": "Предмети"
+    },
+    {
+      "name": "emoji_cat_symbols",
+      "value": "Символи"
+    },
+    {
+      "name": "emoji_cat_flags",
+      "value": "Прапори"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "gBart"
+    },
+    {
+      "name": "ime_label",
+      "value": "gBart"
+    },
+    {
+      "name": "ime_desc",
+      "value": "Клавіатура з підказками слів, автовиправленням і неперервним введенням"
+    }
+  ]
+}

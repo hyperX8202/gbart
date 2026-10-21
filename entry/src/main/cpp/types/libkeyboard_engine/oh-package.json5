@@ -1,0 +1,6 @@
+{
+  "name": "libkeyboard_engine.so",
+  "types": "./index.d.ts",
+  "version": "0.1.0",
+  "description": "NAPI bindings for the LatinIME suggestion engine"
+}

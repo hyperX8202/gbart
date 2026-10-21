@@ -1,0 +1,11 @@
+{
+  "subtypes": [
+    {
+      "id": "default",
+      "label": "$string:subtype_default",
+      "icon": "$media:icon",
+      "locale": "",
+      "mode": "lower"
+    }
+  ]
+}

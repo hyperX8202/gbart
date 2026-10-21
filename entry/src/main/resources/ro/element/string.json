@@ -1,0 +1,320 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "gBart"
+    },
+    {
+      "name": "module_desc",
+      "value": "Tastatură cu sugestii de cuvinte, corectare automată și tastare prin glisare"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "Setări tastatură"
+    },
+    {
+      "name": "subtype_default",
+      "value": "Toate limbile active"
+    },
+    {
+      "name": "vibrate_reason",
+      "value": "Feedback haptic la tastare"
+    },
+    {
+      "name": "setup_select",
+      "value": "Activați tastatura"
+    },
+    {
+      "name": "setup_select_desc",
+      "value": "Deschide Sistem › Metode de introducere: alegeți „gBart” la „Tastatura curentă”"
+    },
+    {
+      "name": "setup_full",
+      "value": "Permiteți versiunea completă"
+    },
+    {
+      "name": "setup_full_desc",
+      "value": "Necesar pentru vibrații: Sistem › Metode de introducere › gBart › Versiune completă"
+    },
+    {
+      "name": "sec_languages",
+      "value": "Limbi"
+    },
+    {
+      "name": "sec_preferences",
+      "value": "Preferințe"
+    },
+    {
+      "name": "sec_preferences_desc",
+      "value": "Rând de cifre, tastă emoji, vibrații, înălțime"
+    },
+    {
+      "name": "sec_theme",
+      "value": "Temă"
+    },
+    {
+      "name": "sec_correction",
+      "value": "Corectarea textului"
+    },
+    {
+      "name": "sec_correction_desc",
+      "value": "Sugestii, corectare automată, majuscule"
+    },
+    {
+      "name": "sec_glide",
+      "value": "Tastare prin glisare"
+    },
+    {
+      "name": "sec_privacy",
+      "value": "Confidențialitate"
+    },
+    {
+      "name": "sec_privacy_desc",
+      "value": "Cuvintele învățate rămân pe acest dispozitiv"
+    },
+    {
+      "name": "sec_try",
+      "value": "Încercați"
+    },
+    {
+      "name": "sec_about",
+      "value": "Despre"
+    },
+    {
+      "name": "sec_more",
+      "value": "Mai multe"
+    },
+    {
+      "name": "languages_active",
+      "value": "Limbi active"
+    },
+    {
+      "name": "languages_all",
+      "value": "Toate limbile"
+    },
+    {
+      "name": "languages_hint",
+      "value": "Sugestiile și corectarea automată funcționează pentru toate limbile active în același timp. Schimbați aspectul cu tasta glob sau apăsând lung bara de spațiu."
+    },
+    {
+      "name": "languages_search",
+      "value": "Căutați limbi"
+    },
+    {
+      "name": "languages_first",
+      "value": "Aspect implicit"
+    },
+    {
+      "name": "number_row",
+      "value": "Rând de cifre"
+    },
+    {
+      "name": "number_row_desc",
+      "value": "Afișați un rând de cifre deasupra literelor"
+    },
+    {
+      "name": "emoji_key",
+      "value": "Tastă emoji"
+    },
+    {
+      "name": "language_key",
+      "value": "Tastă de schimbare a limbii"
+    },
+    {
+      "name": "key_popup",
+      "value": "Fereastră la apăsarea tastei"
+    },
+    {
+      "name": "vibrate",
+      "value": "Feedback haptic la apăsarea tastei"
+    },
+    {
+      "name": "vibration_strength",
+      "value": "Intensitatea vibrațiilor"
+    },
+    {
+      "name": "keyboard_height",
+      "value": "Înălțimea tastaturii"
+    },
+    {
+      "name": "long_press",
+      "value": "Întârzierea apăsării lungi"
+    },
+    {
+      "name": "theme_system",
+      "value": "Implicit sistem"
+    },
+    {
+      "name": "theme_light",
+      "value": "Luminos"
+    },
+    {
+      "name": "theme_dark",
+      "value": "Întunecat"
+    },
+    {
+      "name": "show_suggestions",
+      "value": "Afișați bara de sugestii"
+    },
+    {
+      "name": "emoji_suggestions",
+      "value": "Sugestii emoji"
+    },
+    {
+      "name": "emoji_suggestions_desc",
+      "value": "Sugerați emoji potrivite în timp ce scrieți"
+    },
+    {
+      "name": "autocorrect",
+      "value": "Corectare automată"
+    },
+    {
+      "name": "autocorrect_desc",
+      "value": "Corectați cuvintele greșite la apăsarea tastei Spațiu"
+    },
+    {
+      "name": "autocorrect_strength",
+      "value": "Intensitate"
+    },
+    {
+      "name": "strength_modest",
+      "value": "Moderată"
+    },
+    {
+      "name": "strength_aggressive",
+      "value": "Agresivă"
+    },
+    {
+      "name": "strength_very",
+      "value": "Foarte agresivă"
+    },
+    {
+      "name": "backspace_undo",
+      "value": "Anulați corectarea automată cu Backspace"
+    },
+    {
+      "name": "auto_cap",
+      "value": "Majuscule automate"
+    },
+    {
+      "name": "auto_cap_desc",
+      "value": "Începeți fiecare propoziție cu majusculă"
+    },
+    {
+      "name": "double_space",
+      "value": "Punct la spațiu dublu"
+    },
+    {
+      "name": "space_cursor",
+      "value": "Mutați cursorul cu bara de spațiu"
+    },
+    {
+      "name": "space_cursor_desc",
+      "value": "Glisați pe bara de spațiu pentru a muta cursorul; glisați spre stânga pe Backspace pentru a șterge cuvinte"
+    },
+    {
+      "name": "glide_enable",
+      "value": "Activați tastarea prin glisare"
+    },
+    {
+      "name": "glide_enable_desc",
+      "value": "Scrieți un cuvânt glisând peste literele lui"
+    },
+    {
+      "name": "glide_trail",
+      "value": "Afișați urma gestului"
+    },
+    {
+      "name": "privacy_text",
+      "value": "Tastatura învață cuvintele și secvențele de cuvinte pe care le scrieți, pentru a le sugera mai târziu. Totul rămâne pe acest dispozitiv: tastatura nu are acces la internet și nu trimite nimic. Câmpurile de parolă nu sunt învățate niciodată."
+    },
+    {
+      "name": "reset_learning",
+      "value": "Ștergeți cuvintele învățate"
+    },
+    {
+      "name": "reset_confirm",
+      "value": "Ștergeți tot ce a învățat tastatura din scrisul dvs.?"
+    },
+    {
+      "name": "reset_done",
+      "value": "Cuvintele învățate vor fi șterse la următoarea deschidere a tastaturii."
+    },
+    {
+      "name": "cancel",
+      "value": "Anulați"
+    },
+    {
+      "name": "delete",
+      "value": "Ștergeți"
+    },
+    {
+      "name": "try_placeholder",
+      "value": "Scrieți aici …"
+    },
+    {
+      "name": "about_engine",
+      "value": "Sugestiile de cuvinte, corectarea automată și dicționarele se bazează pe HeliBoard și AOSP LatinIME. Această aplicație este software liber sub licența GNU General Public License v3."
+    },
+    {
+      "name": "about_licenses",
+      "value": "Licențe open source"
+    },
+    {
+      "name": "emoji_recent_empty",
+      "value": "Niciun emoji folosit încă"
+    },
+    {
+      "name": "emoji_cat_recent",
+      "value": "Folosite recent"
+    },
+    {
+      "name": "emoji_cat_smileys",
+      "value": "Fețe zâmbitoare și emoții"
+    },
+    {
+      "name": "emoji_cat_people",
+      "value": "Oameni"
+    },
+    {
+      "name": "emoji_cat_animals",
+      "value": "Animale și natură"
+    },
+    {
+      "name": "emoji_cat_food",
+      "value": "Mâncare și băutură"
+    },
+    {
+      "name": "emoji_cat_travel",
+      "value": "Călătorii și locuri"
+    },
+    {
+      "name": "emoji_cat_activities",
+      "value": "Activități"
+    },
+    {
+      "name": "emoji_cat_objects",
+      "value": "Obiecte"
+    },
+    {
+      "name": "emoji_cat_symbols",
+      "value": "Simboluri"
+    },
+    {
+      "name": "emoji_cat_flags",
+      "value": "Steaguri"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "gBart"
+    },
+    {
+      "name": "ime_label",
+      "value": "gBart"
+    },
+    {
+      "name": "ime_desc",
+      "value": "Tastatură cu sugestii de cuvinte, corectare automată și tastare prin glisare"
+    }
+  ]
+}

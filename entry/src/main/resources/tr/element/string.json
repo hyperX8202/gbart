@@ -1,0 +1,320 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "gBart"
+    },
+    {
+      "name": "module_desc",
+      "value": "Kelime önerileri, otomatik düzeltme ve kaydırarak yazma özellikli klavye"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "Klavye ayarları"
+    },
+    {
+      "name": "subtype_default",
+      "value": "Tüm etkin diller"
+    },
+    {
+      "name": "vibrate_reason",
+      "value": "Yazarken dokunsal geri bildirim"
+    },
+    {
+      "name": "setup_select",
+      "value": "Klavyeyi etkinleştir"
+    },
+    {
+      "name": "setup_select_desc",
+      "value": "Sistem › Giriş yöntemleri açılır: “Geçerli klavye” altında “gBart” klavyesini seçin"
+    },
+    {
+      "name": "setup_full",
+      "value": "Tam sürüme izin ver"
+    },
+    {
+      "name": "setup_full_desc",
+      "value": "Titreşim için gerekli: Sistem › Giriş yöntemleri › gBart › Tam sürüm"
+    },
+    {
+      "name": "sec_languages",
+      "value": "Diller"
+    },
+    {
+      "name": "sec_preferences",
+      "value": "Tercihler"
+    },
+    {
+      "name": "sec_preferences_desc",
+      "value": "Rakam satırı, emoji tuşu, titreşim, yükseklik"
+    },
+    {
+      "name": "sec_theme",
+      "value": "Tema"
+    },
+    {
+      "name": "sec_correction",
+      "value": "Metin düzeltme"
+    },
+    {
+      "name": "sec_correction_desc",
+      "value": "Öneriler, otomatik düzeltme, büyük harf"
+    },
+    {
+      "name": "sec_glide",
+      "value": "Kaydırarak yazma"
+    },
+    {
+      "name": "sec_privacy",
+      "value": "Gizlilik"
+    },
+    {
+      "name": "sec_privacy_desc",
+      "value": "Öğrenilen kelimeler bu cihazda kalır"
+    },
+    {
+      "name": "sec_try",
+      "value": "Dene"
+    },
+    {
+      "name": "sec_about",
+      "value": "Hakkında"
+    },
+    {
+      "name": "sec_more",
+      "value": "Diğer"
+    },
+    {
+      "name": "languages_active",
+      "value": "Etkin diller"
+    },
+    {
+      "name": "languages_all",
+      "value": "Tüm diller"
+    },
+    {
+      "name": "languages_hint",
+      "value": "Öneriler ve otomatik düzeltme tüm etkin diller için aynı anda çalışır. Düzeni dünya tuşuyla veya boşluk tuşuna uzun basarak değiştirin."
+    },
+    {
+      "name": "languages_search",
+      "value": "Dil ara"
+    },
+    {
+      "name": "languages_first",
+      "value": "Varsayılan düzen"
+    },
+    {
+      "name": "number_row",
+      "value": "Rakam satırı"
+    },
+    {
+      "name": "number_row_desc",
+      "value": "Harflerin üstünde bir rakam satırı göster"
+    },
+    {
+      "name": "emoji_key",
+      "value": "Emoji tuşu"
+    },
+    {
+      "name": "language_key",
+      "value": "Dil değiştirme tuşu"
+    },
+    {
+      "name": "key_popup",
+      "value": "Tuşa basınca açılır pencere"
+    },
+    {
+      "name": "vibrate",
+      "value": "Tuşa basınca dokunsal geri bildirim"
+    },
+    {
+      "name": "vibration_strength",
+      "value": "Titreşim gücü"
+    },
+    {
+      "name": "keyboard_height",
+      "value": "Klavye yüksekliği"
+    },
+    {
+      "name": "long_press",
+      "value": "Uzun basma gecikmesi"
+    },
+    {
+      "name": "theme_system",
+      "value": "Sistem varsayılanı"
+    },
+    {
+      "name": "theme_light",
+      "value": "Açık"
+    },
+    {
+      "name": "theme_dark",
+      "value": "Koyu"
+    },
+    {
+      "name": "show_suggestions",
+      "value": "Öneri çubuğunu göster"
+    },
+    {
+      "name": "emoji_suggestions",
+      "value": "Emoji önerileri"
+    },
+    {
+      "name": "emoji_suggestions_desc",
+      "value": "Yazarken uygun emojiler öner"
+    },
+    {
+      "name": "autocorrect",
+      "value": "Otomatik düzeltme"
+    },
+    {
+      "name": "autocorrect_desc",
+      "value": "Boşluğa basınca yanlış yazılan kelimeleri düzelt"
+    },
+    {
+      "name": "autocorrect_strength",
+      "value": "Güç"
+    },
+    {
+      "name": "strength_modest",
+      "value": "Ilımlı"
+    },
+    {
+      "name": "strength_aggressive",
+      "value": "Agresif"
+    },
+    {
+      "name": "strength_very",
+      "value": "Çok agresif"
+    },
+    {
+      "name": "backspace_undo",
+      "value": "Geri tuşuyla otomatik düzeltmeyi geri al"
+    },
+    {
+      "name": "auto_cap",
+      "value": "Otomatik büyük harf"
+    },
+    {
+      "name": "auto_cap_desc",
+      "value": "Her cümlenin ilk kelimesini büyük harfle başlat"
+    },
+    {
+      "name": "double_space",
+      "value": "Çift boşlukla nokta"
+    },
+    {
+      "name": "space_cursor",
+      "value": "İmleci boşluk tuşuyla taşı"
+    },
+    {
+      "name": "space_cursor_desc",
+      "value": "İmleci taşımak için boşluk tuşunda kaydırın; kelime silmek için geri tuşunda sola kaydırın"
+    },
+    {
+      "name": "glide_enable",
+      "value": "Kaydırarak yazmayı etkinleştir"
+    },
+    {
+      "name": "glide_enable_desc",
+      "value": "Bir kelimeyi harflerinin üzerinde kaydırarak yazın"
+    },
+    {
+      "name": "glide_trail",
+      "value": "Hareket izini göster"
+    },
+    {
+      "name": "privacy_text",
+      "value": "Klavye, daha sonra önerebilmek için yazdığınız kelimeleri ve kelime dizilerini öğrenir. Her şey bu cihazda kalır: klavyenin internet erişimi yoktur ve hiçbir şey göndermez. Şifre alanları asla öğrenilmez."
+    },
+    {
+      "name": "reset_learning",
+      "value": "Öğrenilen kelimeleri sil"
+    },
+    {
+      "name": "reset_confirm",
+      "value": "Klavyenin yazdıklarınızdan öğrendiği her şey silinsin mi?"
+    },
+    {
+      "name": "reset_done",
+      "value": "Öğrenilen kelimeler klavye bir sonraki açılışta silinir."
+    },
+    {
+      "name": "cancel",
+      "value": "İptal"
+    },
+    {
+      "name": "delete",
+      "value": "Sil"
+    },
+    {
+      "name": "try_placeholder",
+      "value": "Buraya yazın …"
+    },
+    {
+      "name": "about_engine",
+      "value": "Kelime önerileri, otomatik düzeltme ve sözlükler HeliBoard ve AOSP LatinIME’a dayanır. Bu uygulama GNU General Public License v3 kapsamında özgür yazılımdır."
+    },
+    {
+      "name": "about_licenses",
+      "value": "Açık kaynak lisansları"
+    },
+    {
+      "name": "emoji_recent_empty",
+      "value": "Henüz emoji kullanılmadı"
+    },
+    {
+      "name": "emoji_cat_recent",
+      "value": "Son kullanılanlar"
+    },
+    {
+      "name": "emoji_cat_smileys",
+      "value": "İfadeler ve duygular"
+    },
+    {
+      "name": "emoji_cat_people",
+      "value": "İnsanlar"
+    },
+    {
+      "name": "emoji_cat_animals",
+      "value": "Hayvanlar ve doğa"
+    },
+    {
+      "name": "emoji_cat_food",
+      "value": "Yiyecek ve içecek"
+    },
+    {
+      "name": "emoji_cat_travel",
+      "value": "Seyahat ve yerler"
+    },
+    {
+      "name": "emoji_cat_activities",
+      "value": "Etkinlikler"
+    },
+    {
+      "name": "emoji_cat_objects",
+      "value": "Nesneler"
+    },
+    {
+      "name": "emoji_cat_symbols",
+      "value": "Semboller"
+    },
+    {
+      "name": "emoji_cat_flags",
+      "value": "Bayraklar"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "gBart"
+    },
+    {
+      "name": "ime_label",
+      "value": "gBart"
+    },
+    {
+      "name": "ime_desc",
+      "value": "Kelime önerileri, otomatik düzeltme ve kaydırarak yazma özellikli klavye"
+    }
+  ]
+}

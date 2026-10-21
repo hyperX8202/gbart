@@ -1,0 +1,320 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "gBart"
+    },
+    {
+      "name": "module_desc",
+      "value": "Πληκτρολόγιο με προτάσεις λέξεων, αυτόματη διόρθωση και πληκτρολόγηση με ολίσθηση"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "Ρυθμίσεις πληκτρολογίου"
+    },
+    {
+      "name": "subtype_default",
+      "value": "Όλες οι ενεργές γλώσσες"
+    },
+    {
+      "name": "vibrate_reason",
+      "value": "Απτική απόκριση κατά την πληκτρολόγηση"
+    },
+    {
+      "name": "setup_select",
+      "value": "Ενεργοποίηση πληκτρολογίου"
+    },
+    {
+      "name": "setup_select_desc",
+      "value": "Ανοίγει το Σύστημα › Μέθοδοι εισαγωγής: επιλέξτε «gBart» στο «Τρέχον πληκτρολόγιο»"
+    },
+    {
+      "name": "setup_full",
+      "value": "Να επιτρέπεται η πλήρης έκδοση"
+    },
+    {
+      "name": "setup_full_desc",
+      "value": "Απαιτείται για τη δόνηση: Σύστημα › Μέθοδοι εισαγωγής › gBart › Πλήρης έκδοση"
+    },
+    {
+      "name": "sec_languages",
+      "value": "Γλώσσες"
+    },
+    {
+      "name": "sec_preferences",
+      "value": "Προτιμήσεις"
+    },
+    {
+      "name": "sec_preferences_desc",
+      "value": "Σειρά αριθμών, πλήκτρο emoji, δόνηση, ύψος"
+    },
+    {
+      "name": "sec_theme",
+      "value": "Θέμα"
+    },
+    {
+      "name": "sec_correction",
+      "value": "Διόρθωση κειμένου"
+    },
+    {
+      "name": "sec_correction_desc",
+      "value": "Προτάσεις, αυτόματη διόρθωση, κεφαλαία"
+    },
+    {
+      "name": "sec_glide",
+      "value": "Πληκτρολόγηση με ολίσθηση"
+    },
+    {
+      "name": "sec_privacy",
+      "value": "Απόρρητο"
+    },
+    {
+      "name": "sec_privacy_desc",
+      "value": "Οι λέξεις που μαθαίνονται μένουν σε αυτήν τη συσκευή"
+    },
+    {
+      "name": "sec_try",
+      "value": "Δοκιμή"
+    },
+    {
+      "name": "sec_about",
+      "value": "Πληροφορίες"
+    },
+    {
+      "name": "sec_more",
+      "value": "Περισσότερα"
+    },
+    {
+      "name": "languages_active",
+      "value": "Ενεργές γλώσσες"
+    },
+    {
+      "name": "languages_all",
+      "value": "Όλες οι γλώσσες"
+    },
+    {
+      "name": "languages_hint",
+      "value": "Οι προτάσεις και η αυτόματη διόρθωση λειτουργούν για όλες τις ενεργές γλώσσες ταυτόχρονα. Αλλάξτε διάταξη με το πλήκτρο της υδρογείου ή με παρατεταμένο πάτημα του διαστήματος."
+    },
+    {
+      "name": "languages_search",
+      "value": "Αναζήτηση γλωσσών"
+    },
+    {
+      "name": "languages_first",
+      "value": "Προεπιλεγμένη διάταξη"
+    },
+    {
+      "name": "number_row",
+      "value": "Σειρά αριθμών"
+    },
+    {
+      "name": "number_row_desc",
+      "value": "Εμφάνιση σειράς αριθμών πάνω από τα γράμματα"
+    },
+    {
+      "name": "emoji_key",
+      "value": "Πλήκτρο emoji"
+    },
+    {
+      "name": "language_key",
+      "value": "Πλήκτρο αλλαγής γλώσσας"
+    },
+    {
+      "name": "key_popup",
+      "value": "Αναδυόμενο παράθυρο στο πάτημα"
+    },
+    {
+      "name": "vibrate",
+      "value": "Απτική απόκριση στο πάτημα"
+    },
+    {
+      "name": "vibration_strength",
+      "value": "Ένταση δόνησης"
+    },
+    {
+      "name": "keyboard_height",
+      "value": "Ύψος πληκτρολογίου"
+    },
+    {
+      "name": "long_press",
+      "value": "Καθυστέρηση παρατεταμένου πατήματος"
+    },
+    {
+      "name": "theme_system",
+      "value": "Προεπιλογή συστήματος"
+    },
+    {
+      "name": "theme_light",
+      "value": "Ανοιχτό"
+    },
+    {
+      "name": "theme_dark",
+      "value": "Σκούρο"
+    },
+    {
+      "name": "show_suggestions",
+      "value": "Εμφάνιση γραμμής προτάσεων"
+    },
+    {
+      "name": "emoji_suggestions",
+      "value": "Προτάσεις emoji"
+    },
+    {
+      "name": "emoji_suggestions_desc",
+      "value": "Πρόταση κατάλληλων emoji κατά την πληκτρολόγηση"
+    },
+    {
+      "name": "autocorrect",
+      "value": "Αυτόματη διόρθωση"
+    },
+    {
+      "name": "autocorrect_desc",
+      "value": "Διόρθωση ορθογραφικών λαθών με το διάστημα"
+    },
+    {
+      "name": "autocorrect_strength",
+      "value": "Ένταση"
+    },
+    {
+      "name": "strength_modest",
+      "value": "Μέτρια"
+    },
+    {
+      "name": "strength_aggressive",
+      "value": "Επιθετική"
+    },
+    {
+      "name": "strength_very",
+      "value": "Πολύ επιθετική"
+    },
+    {
+      "name": "backspace_undo",
+      "value": "Αναίρεση αυτόματης διόρθωσης με το πλήκτρο διαγραφής"
+    },
+    {
+      "name": "auto_cap",
+      "value": "Αυτόματα κεφαλαία"
+    },
+    {
+      "name": "auto_cap_desc",
+      "value": "Κεφαλαίο στην πρώτη λέξη κάθε πρότασης"
+    },
+    {
+      "name": "double_space",
+      "value": "Τελεία με διπλό διάστημα"
+    },
+    {
+      "name": "space_cursor",
+      "value": "Μετακίνηση δρομέα με το διάστημα"
+    },
+    {
+      "name": "space_cursor_desc",
+      "value": "Σύρετε στο διάστημα για να μετακινήσετε τον δρομέα· σύρετε αριστερά στο πλήκτρο διαγραφής για να σβήσετε λέξεις"
+    },
+    {
+      "name": "glide_enable",
+      "value": "Ενεργοποίηση πληκτρολόγησης με ολίσθηση"
+    },
+    {
+      "name": "glide_enable_desc",
+      "value": "Γράψτε μια λέξη σύροντας πάνω από τα γράμματά της"
+    },
+    {
+      "name": "glide_trail",
+      "value": "Εμφάνιση ίχνους κίνησης"
+    },
+    {
+      "name": "privacy_text",
+      "value": "Το πληκτρολόγιο μαθαίνει λέξεις και ακολουθίες λέξεων που πληκτρολογείτε, ώστε να τις προτείνει αργότερα. Όλα μένουν σε αυτήν τη συσκευή: το πληκτρολόγιο δεν έχει πρόσβαση στο διαδίκτυο και δεν στέλνει τίποτα. Τα πεδία κωδικών δεν μαθαίνονται ποτέ."
+    },
+    {
+      "name": "reset_learning",
+      "value": "Διαγραφή λέξεων που έχουν μαθευτεί"
+    },
+    {
+      "name": "reset_confirm",
+      "value": "Να διαγραφούν όλα όσα έμαθε το πληκτρολόγιο από την πληκτρολόγησή σας;"
+    },
+    {
+      "name": "reset_done",
+      "value": "Οι λέξεις θα διαγραφούν την επόμενη φορά που θα ανοίξει το πληκτρολόγιο."
+    },
+    {
+      "name": "cancel",
+      "value": "Ακύρωση"
+    },
+    {
+      "name": "delete",
+      "value": "Διαγραφή"
+    },
+    {
+      "name": "try_placeholder",
+      "value": "Πληκτρολογήστε εδώ …"
+    },
+    {
+      "name": "about_engine",
+      "value": "Οι προτάσεις λέξεων, η αυτόματη διόρθωση και τα λεξικά βασίζονται στο HeliBoard και στο AOSP LatinIME. Η εφαρμογή είναι ελεύθερο λογισμικό με άδεια GNU General Public License v3."
+    },
+    {
+      "name": "about_licenses",
+      "value": "Άδειες ανοιχτού κώδικα"
+    },
+    {
+      "name": "emoji_recent_empty",
+      "value": "Δεν έχετε χρησιμοποιήσει ακόμη emoji"
+    },
+    {
+      "name": "emoji_cat_recent",
+      "value": "Πρόσφατα"
+    },
+    {
+      "name": "emoji_cat_smileys",
+      "value": "Φατσούλες και συναισθήματα"
+    },
+    {
+      "name": "emoji_cat_people",
+      "value": "Άνθρωποι"
+    },
+    {
+      "name": "emoji_cat_animals",
+      "value": "Ζώα και φύση"
+    },
+    {
+      "name": "emoji_cat_food",
+      "value": "Φαγητό και ποτό"
+    },
+    {
+      "name": "emoji_cat_travel",
+      "value": "Ταξίδια και μέρη"
+    },
+    {
+      "name": "emoji_cat_activities",
+      "value": "Δραστηριότητες"
+    },
+    {
+      "name": "emoji_cat_objects",
+      "value": "Αντικείμενα"
+    },
+    {
+      "name": "emoji_cat_symbols",
+      "value": "Σύμβολα"
+    },
+    {
+      "name": "emoji_cat_flags",
+      "value": "Σημαίες"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "gBart"
+    },
+    {
+      "name": "ime_label",
+      "value": "gBart"
+    },
+    {
+      "name": "ime_desc",
+      "value": "Πληκτρολόγιο με προτάσεις λέξεων, αυτόματη διόρθωση και πληκτρολόγηση με ολίσθηση"
+    }
+  ]
+}

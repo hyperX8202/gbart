@@ -1,0 +1,320 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "gBart"
+    },
+    {
+      "name": "module_desc",
+      "value": "Клавиатура с предложения за думи, автокорекция и плъзгащо въвеждане"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "Настройки на клавиатурата"
+    },
+    {
+      "name": "subtype_default",
+      "value": "Всички активни езици"
+    },
+    {
+      "name": "vibrate_reason",
+      "value": "Тактилна обратна връзка при писане"
+    },
+    {
+      "name": "setup_select",
+      "value": "Активиране на клавиатурата"
+    },
+    {
+      "name": "setup_select_desc",
+      "value": "Отваря Система › Методи за въвеждане: изберете „gBart“ в „Текуща клавиатура“"
+    },
+    {
+      "name": "setup_full",
+      "value": "Разрешаване на пълната версия"
+    },
+    {
+      "name": "setup_full_desc",
+      "value": "Нужно за вибрацията: Система › Методи за въвеждане › gBart › Пълна версия"
+    },
+    {
+      "name": "sec_languages",
+      "value": "Езици"
+    },
+    {
+      "name": "sec_preferences",
+      "value": "Предпочитания"
+    },
+    {
+      "name": "sec_preferences_desc",
+      "value": "Ред с цифри, клавиш за емоджи, вибрация, височина"
+    },
+    {
+      "name": "sec_theme",
+      "value": "Тема"
+    },
+    {
+      "name": "sec_correction",
+      "value": "Корекция на текста"
+    },
+    {
+      "name": "sec_correction_desc",
+      "value": "Предложения, автокорекция, главни букви"
+    },
+    {
+      "name": "sec_glide",
+      "value": "Плъзгащо въвеждане"
+    },
+    {
+      "name": "sec_privacy",
+      "value": "Поверителност"
+    },
+    {
+      "name": "sec_privacy_desc",
+      "value": "Научените думи остават на това устройство"
+    },
+    {
+      "name": "sec_try",
+      "value": "Изпробване"
+    },
+    {
+      "name": "sec_about",
+      "value": "Информация"
+    },
+    {
+      "name": "sec_more",
+      "value": "Още"
+    },
+    {
+      "name": "languages_active",
+      "value": "Активни езици"
+    },
+    {
+      "name": "languages_all",
+      "value": "Всички езици"
+    },
+    {
+      "name": "languages_hint",
+      "value": "Предложенията и автокорекцията работят едновременно за всички активни езици. Сменете подредбата с клавиша с глобус или с продължително натискане на интервала."
+    },
+    {
+      "name": "languages_search",
+      "value": "Търсене на езици"
+    },
+    {
+      "name": "languages_first",
+      "value": "Подредба по подразбиране"
+    },
+    {
+      "name": "number_row",
+      "value": "Ред с цифри"
+    },
+    {
+      "name": "number_row_desc",
+      "value": "Показване на ред с цифри над буквите"
+    },
+    {
+      "name": "emoji_key",
+      "value": "Клавиш за емоджи"
+    },
+    {
+      "name": "language_key",
+      "value": "Клавиш за смяна на езика"
+    },
+    {
+      "name": "key_popup",
+      "value": "Изскачащ прозорец при натискане"
+    },
+    {
+      "name": "vibrate",
+      "value": "Тактилна обратна връзка при натискане"
+    },
+    {
+      "name": "vibration_strength",
+      "value": "Сила на вибрацията"
+    },
+    {
+      "name": "keyboard_height",
+      "value": "Височина на клавиатурата"
+    },
+    {
+      "name": "long_press",
+      "value": "Забавяне при продължително натискане"
+    },
+    {
+      "name": "theme_system",
+      "value": "По подразбиране за системата"
+    },
+    {
+      "name": "theme_light",
+      "value": "Светла"
+    },
+    {
+      "name": "theme_dark",
+      "value": "Тъмна"
+    },
+    {
+      "name": "show_suggestions",
+      "value": "Показване на лентата с предложения"
+    },
+    {
+      "name": "emoji_suggestions",
+      "value": "Предложения за емоджи"
+    },
+    {
+      "name": "emoji_suggestions_desc",
+      "value": "Предлагане на подходящи емоджи при писане"
+    },
+    {
+      "name": "autocorrect",
+      "value": "Автокорекция"
+    },
+    {
+      "name": "autocorrect_desc",
+      "value": "Коригиране на сгрешени думи при натискане на интервал"
+    },
+    {
+      "name": "autocorrect_strength",
+      "value": "Сила"
+    },
+    {
+      "name": "strength_modest",
+      "value": "Умерена"
+    },
+    {
+      "name": "strength_aggressive",
+      "value": "Агресивна"
+    },
+    {
+      "name": "strength_very",
+      "value": "Много агресивна"
+    },
+    {
+      "name": "backspace_undo",
+      "value": "Отмяна на автокорекцията с Backspace"
+    },
+    {
+      "name": "auto_cap",
+      "value": "Автоматични главни букви"
+    },
+    {
+      "name": "auto_cap_desc",
+      "value": "Главна буква в началото на всяко изречение"
+    },
+    {
+      "name": "double_space",
+      "value": "Точка с двоен интервал"
+    },
+    {
+      "name": "space_cursor",
+      "value": "Преместване на курсора с интервала"
+    },
+    {
+      "name": "space_cursor_desc",
+      "value": "Плъзнете по интервала, за да преместите курсора; плъзнете наляво по Backspace, за да триете думи"
+    },
+    {
+      "name": "glide_enable",
+      "value": "Включване на плъзгащо въвеждане"
+    },
+    {
+      "name": "glide_enable_desc",
+      "value": "Въведете дума, като плъзнете пръст по буквите ѝ"
+    },
+    {
+      "name": "glide_trail",
+      "value": "Показване на следата от жеста"
+    },
+    {
+      "name": "privacy_text",
+      "value": "Клавиатурата научава думите и поредиците от думи, които въвеждате, за да ги предлага по-късно. Всичко остава на това устройство: клавиатурата няма достъп до интернет и не изпраща нищо. Полетата за пароли никога не се научават."
+    },
+    {
+      "name": "reset_learning",
+      "value": "Изтриване на научените думи"
+    },
+    {
+      "name": "reset_confirm",
+      "value": "Да се изтрие ли всичко, което клавиатурата е научила от писането ви?"
+    },
+    {
+      "name": "reset_done",
+      "value": "Научените думи ще бъдат изтрити при следващото отваряне на клавиатурата."
+    },
+    {
+      "name": "cancel",
+      "value": "Отказ"
+    },
+    {
+      "name": "delete",
+      "value": "Изтриване"
+    },
+    {
+      "name": "try_placeholder",
+      "value": "Пишете тук …"
+    },
+    {
+      "name": "about_engine",
+      "value": "Предложенията за думи, автокорекцията и речниците се основават на HeliBoard и AOSP LatinIME. Това приложение е свободен софтуер под лиценза GNU General Public License v3."
+    },
+    {
+      "name": "about_licenses",
+      "value": "Лицензи за отворен код"
+    },
+    {
+      "name": "emoji_recent_empty",
+      "value": "Все още не сте използвали емоджи"
+    },
+    {
+      "name": "emoji_cat_recent",
+      "value": "Използвани наскоро"
+    },
+    {
+      "name": "emoji_cat_smileys",
+      "value": "Усмивки и емоции"
+    },
+    {
+      "name": "emoji_cat_people",
+      "value": "Хора"
+    },
+    {
+      "name": "emoji_cat_animals",
+      "value": "Животни и природа"
+    },
+    {
+      "name": "emoji_cat_food",
+      "value": "Храна и напитки"
+    },
+    {
+      "name": "emoji_cat_travel",
+      "value": "Пътуване и места"
+    },
+    {
+      "name": "emoji_cat_activities",
+      "value": "Дейности"
+    },
+    {
+      "name": "emoji_cat_objects",
+      "value": "Предмети"
+    },
+    {
+      "name": "emoji_cat_symbols",
+      "value": "Символи"
+    },
+    {
+      "name": "emoji_cat_flags",
+      "value": "Знамена"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "gBart"
+    },
+    {
+      "name": "ime_label",
+      "value": "gBart"
+    },
+    {
+      "name": "ime_desc",
+      "value": "Клавиатура с предложения за думи, автокорекция и плъзгащо въвеждане"
+    }
+  ]
+}

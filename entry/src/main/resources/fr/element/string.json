@@ -1,0 +1,320 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "gBart"
+    },
+    {
+      "name": "module_desc",
+      "value": "Clavier avec suggestions de mots, correction automatique et saisie gestuelle"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "Paramètres du clavier"
+    },
+    {
+      "name": "subtype_default",
+      "value": "Toutes les langues actives"
+    },
+    {
+      "name": "vibrate_reason",
+      "value": "Retour haptique pendant la saisie"
+    },
+    {
+      "name": "setup_select",
+      "value": "Activer le clavier"
+    },
+    {
+      "name": "setup_select_desc",
+      "value": "Ouvre Système › Modes de saisie : choisissez « gBart » sous « Clavier actuel »"
+    },
+    {
+      "name": "setup_full",
+      "value": "Autoriser la version complète"
+    },
+    {
+      "name": "setup_full_desc",
+      "value": "Nécessaire pour la vibration : Système › Modes de saisie › gBart › Version complète"
+    },
+    {
+      "name": "sec_languages",
+      "value": "Langues"
+    },
+    {
+      "name": "sec_preferences",
+      "value": "Préférences"
+    },
+    {
+      "name": "sec_preferences_desc",
+      "value": "Rangée de chiffres, touche emoji, vibration, hauteur"
+    },
+    {
+      "name": "sec_theme",
+      "value": "Thème"
+    },
+    {
+      "name": "sec_correction",
+      "value": "Correction du texte"
+    },
+    {
+      "name": "sec_correction_desc",
+      "value": "Suggestions, correction automatique, majuscules"
+    },
+    {
+      "name": "sec_glide",
+      "value": "Saisie gestuelle"
+    },
+    {
+      "name": "sec_privacy",
+      "value": "Confidentialité"
+    },
+    {
+      "name": "sec_privacy_desc",
+      "value": "Les mots appris restent sur cet appareil"
+    },
+    {
+      "name": "sec_try",
+      "value": "Essayer"
+    },
+    {
+      "name": "sec_about",
+      "value": "À propos"
+    },
+    {
+      "name": "sec_more",
+      "value": "Autres"
+    },
+    {
+      "name": "languages_active",
+      "value": "Langues actives"
+    },
+    {
+      "name": "languages_all",
+      "value": "Toutes les langues"
+    },
+    {
+      "name": "languages_hint",
+      "value": "Les suggestions et la correction automatique fonctionnent pour toutes les langues actives en même temps. Changez de disposition avec la touche globe ou par un appui long sur la barre d’espace."
+    },
+    {
+      "name": "languages_search",
+      "value": "Rechercher une langue"
+    },
+    {
+      "name": "languages_first",
+      "value": "Disposition par défaut"
+    },
+    {
+      "name": "number_row",
+      "value": "Rangée de chiffres"
+    },
+    {
+      "name": "number_row_desc",
+      "value": "Afficher une rangée de chiffres au-dessus des lettres"
+    },
+    {
+      "name": "emoji_key",
+      "value": "Touche emoji"
+    },
+    {
+      "name": "language_key",
+      "value": "Touche de changement de langue"
+    },
+    {
+      "name": "key_popup",
+      "value": "Fenêtre contextuelle à l’appui"
+    },
+    {
+      "name": "vibrate",
+      "value": "Retour haptique à l’appui"
+    },
+    {
+      "name": "vibration_strength",
+      "value": "Intensité de la vibration"
+    },
+    {
+      "name": "keyboard_height",
+      "value": "Hauteur du clavier"
+    },
+    {
+      "name": "long_press",
+      "value": "Délai de l’appui long"
+    },
+    {
+      "name": "theme_system",
+      "value": "Valeur par défaut du système"
+    },
+    {
+      "name": "theme_light",
+      "value": "Clair"
+    },
+    {
+      "name": "theme_dark",
+      "value": "Sombre"
+    },
+    {
+      "name": "show_suggestions",
+      "value": "Afficher la barre de suggestions"
+    },
+    {
+      "name": "emoji_suggestions",
+      "value": "Suggestions d’emoji"
+    },
+    {
+      "name": "emoji_suggestions_desc",
+      "value": "Proposer des emoji adaptés pendant la saisie"
+    },
+    {
+      "name": "autocorrect",
+      "value": "Correction automatique"
+    },
+    {
+      "name": "autocorrect_desc",
+      "value": "Corriger les mots mal orthographiés à l’appui sur Espace"
+    },
+    {
+      "name": "autocorrect_strength",
+      "value": "Intensité"
+    },
+    {
+      "name": "strength_modest",
+      "value": "Modérée"
+    },
+    {
+      "name": "strength_aggressive",
+      "value": "Agressive"
+    },
+    {
+      "name": "strength_very",
+      "value": "Très agressive"
+    },
+    {
+      "name": "backspace_undo",
+      "value": "Annuler la correction avec Retour arrière"
+    },
+    {
+      "name": "auto_cap",
+      "value": "Majuscules automatiques"
+    },
+    {
+      "name": "auto_cap_desc",
+      "value": "Mettre une majuscule au premier mot de chaque phrase"
+    },
+    {
+      "name": "double_space",
+      "value": "Point avec double espace"
+    },
+    {
+      "name": "space_cursor",
+      "value": "Déplacer le curseur avec la barre d’espace"
+    },
+    {
+      "name": "space_cursor_desc",
+      "value": "Glissez sur la barre d’espace pour déplacer le curseur ; glissez vers la gauche sur Retour arrière pour supprimer des mots"
+    },
+    {
+      "name": "glide_enable",
+      "value": "Activer la saisie gestuelle"
+    },
+    {
+      "name": "glide_enable_desc",
+      "value": "Saisir un mot en glissant sur ses lettres"
+    },
+    {
+      "name": "glide_trail",
+      "value": "Afficher le tracé du geste"
+    },
+    {
+      "name": "privacy_text",
+      "value": "Le clavier apprend les mots et suites de mots que vous tapez afin de les proposer plus tard. Tout reste sur cet appareil : le clavier n’a pas d’accès à Internet et n’envoie rien. Les champs de mot de passe ne sont jamais appris."
+    },
+    {
+      "name": "reset_learning",
+      "value": "Supprimer les mots appris"
+    },
+    {
+      "name": "reset_confirm",
+      "value": "Supprimer tout ce que le clavier a appris de votre saisie ?"
+    },
+    {
+      "name": "reset_done",
+      "value": "Les mots appris seront supprimés à la prochaine ouverture du clavier."
+    },
+    {
+      "name": "cancel",
+      "value": "Annuler"
+    },
+    {
+      "name": "delete",
+      "value": "Supprimer"
+    },
+    {
+      "name": "try_placeholder",
+      "value": "Tapez ici …"
+    },
+    {
+      "name": "about_engine",
+      "value": "Les suggestions de mots, la correction automatique et les dictionnaires reposent sur HeliBoard et AOSP LatinIME. Cette application est un logiciel libre sous licence GNU General Public License v3."
+    },
+    {
+      "name": "about_licenses",
+      "value": "Licences open source"
+    },
+    {
+      "name": "emoji_recent_empty",
+      "value": "Aucun emoji utilisé pour l’instant"
+    },
+    {
+      "name": "emoji_cat_recent",
+      "value": "Utilisés récemment"
+    },
+    {
+      "name": "emoji_cat_smileys",
+      "value": "Smileys et émotions"
+    },
+    {
+      "name": "emoji_cat_people",
+      "value": "Personnes"
+    },
+    {
+      "name": "emoji_cat_animals",
+      "value": "Animaux et nature"
+    },
+    {
+      "name": "emoji_cat_food",
+      "value": "Nourriture et boissons"
+    },
+    {
+      "name": "emoji_cat_travel",
+      "value": "Voyages et lieux"
+    },
+    {
+      "name": "emoji_cat_activities",
+      "value": "Activités"
+    },
+    {
+      "name": "emoji_cat_objects",
+      "value": "Objets"
+    },
+    {
+      "name": "emoji_cat_symbols",
+      "value": "Symboles"
+    },
+    {
+      "name": "emoji_cat_flags",
+      "value": "Drapeaux"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "gBart"
+    },
+    {
+      "name": "ime_label",
+      "value": "gBart"
+    },
+    {
+      "name": "ime_desc",
+      "value": "Clavier avec suggestions de mots, correction automatique et saisie gestuelle"
+    }
+  ]
+}

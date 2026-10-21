@@ -1,0 +1,57 @@
+{
+  "module": {
+    "name": "entry",
+    "type": "entry",
+    "description": "$string:module_desc",
+    "mainElement": "EntryAbility",
+    "deviceTypes": ["phone", "tablet", "2in1"],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "requestPermissions": [
+      {
+        "name": "ohos.permission.VIBRATE",
+        "reason": "$string:vibrate_reason",
+        "usedScene": {
+          "abilities": ["EntryAbility"],
+          "when": "always"
+        }
+      }
+    ],
+    "abilities": [
+      {
+        "name": "EntryAbility",
+        "srcEntry": "./ets/entryability/EntryAbility.ets",
+        "description": "$string:EntryAbility_desc",
+        "icon": "$media:layered_image",
+        "label": "$string:EntryAbility_label",
+        "startWindowIcon": "$media:icon",
+        "startWindowBackground": "$color:start_window_background",
+        "exported": true,
+        "skills": [
+          {
+            "entities": ["entity.system.home"],
+            "actions": ["action.system.home"]
+          }
+        ]
+      }
+    ],
+    "extensionAbilities": [
+      {
+        "name": "KeyboardExtAbility",
+        "srcEntry": "./ets/inputmethod/KeyboardExtAbility.ets",
+        "description": "$string:ime_desc",
+        "icon": "$media:icon",
+        "label": "$string:ime_label",
+        "type": "inputMethod",
+        "exported": true,
+        "metadata": [
+          {
+            "name": "ohos.extension.input_method",
+            "resource": "$profile:input_method_config"
+          }
+        ]
+      }
+    ]
+  }
+}

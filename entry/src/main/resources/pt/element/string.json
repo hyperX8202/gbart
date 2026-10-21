@@ -1,0 +1,320 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "gBart"
+    },
+    {
+      "name": "module_desc",
+      "value": "Teclado com sugestões de palavras, correção automática e escrita por deslize"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "Definições do teclado"
+    },
+    {
+      "name": "subtype_default",
+      "value": "Todos os idiomas ativos"
+    },
+    {
+      "name": "vibrate_reason",
+      "value": "Resposta tátil ao escrever"
+    },
+    {
+      "name": "setup_select",
+      "value": "Ativar o teclado"
+    },
+    {
+      "name": "setup_select_desc",
+      "value": "Abre Sistema › Métodos de introdução: escolha “gBart” em “Teclado atual”"
+    },
+    {
+      "name": "setup_full",
+      "value": "Permitir a versão completa"
+    },
+    {
+      "name": "setup_full_desc",
+      "value": "Necessário para a vibração: Sistema › Métodos de introdução › gBart › Versão completa"
+    },
+    {
+      "name": "sec_languages",
+      "value": "Idiomas"
+    },
+    {
+      "name": "sec_preferences",
+      "value": "Preferências"
+    },
+    {
+      "name": "sec_preferences_desc",
+      "value": "Linha de números, tecla de emoji, vibração, altura"
+    },
+    {
+      "name": "sec_theme",
+      "value": "Tema"
+    },
+    {
+      "name": "sec_correction",
+      "value": "Correção de texto"
+    },
+    {
+      "name": "sec_correction_desc",
+      "value": "Sugestões, correção automática, maiúsculas"
+    },
+    {
+      "name": "sec_glide",
+      "value": "Escrita por deslize"
+    },
+    {
+      "name": "sec_privacy",
+      "value": "Privacidade"
+    },
+    {
+      "name": "sec_privacy_desc",
+      "value": "As palavras aprendidas ficam neste dispositivo"
+    },
+    {
+      "name": "sec_try",
+      "value": "Experimentar"
+    },
+    {
+      "name": "sec_about",
+      "value": "Acerca de"
+    },
+    {
+      "name": "sec_more",
+      "value": "Mais"
+    },
+    {
+      "name": "languages_active",
+      "value": "Idiomas ativos"
+    },
+    {
+      "name": "languages_all",
+      "value": "Todos os idiomas"
+    },
+    {
+      "name": "languages_hint",
+      "value": "As sugestões e a correção automática funcionam para todos os idiomas ativos ao mesmo tempo. Mude o esquema com a tecla do globo ou premindo longamente a barra de espaço."
+    },
+    {
+      "name": "languages_search",
+      "value": "Procurar idiomas"
+    },
+    {
+      "name": "languages_first",
+      "value": "Esquema predefinido"
+    },
+    {
+      "name": "number_row",
+      "value": "Linha de números"
+    },
+    {
+      "name": "number_row_desc",
+      "value": "Mostrar uma linha de números acima das letras"
+    },
+    {
+      "name": "emoji_key",
+      "value": "Tecla de emoji"
+    },
+    {
+      "name": "language_key",
+      "value": "Tecla de mudança de idioma"
+    },
+    {
+      "name": "key_popup",
+      "value": "Pop-up ao premir uma tecla"
+    },
+    {
+      "name": "vibrate",
+      "value": "Resposta tátil ao premir uma tecla"
+    },
+    {
+      "name": "vibration_strength",
+      "value": "Intensidade da vibração"
+    },
+    {
+      "name": "keyboard_height",
+      "value": "Altura do teclado"
+    },
+    {
+      "name": "long_press",
+      "value": "Atraso do toque longo"
+    },
+    {
+      "name": "theme_system",
+      "value": "Predefinição do sistema"
+    },
+    {
+      "name": "theme_light",
+      "value": "Claro"
+    },
+    {
+      "name": "theme_dark",
+      "value": "Escuro"
+    },
+    {
+      "name": "show_suggestions",
+      "value": "Mostrar barra de sugestões"
+    },
+    {
+      "name": "emoji_suggestions",
+      "value": "Sugestões de emoji"
+    },
+    {
+      "name": "emoji_suggestions_desc",
+      "value": "Sugerir emoji adequados enquanto escreve"
+    },
+    {
+      "name": "autocorrect",
+      "value": "Correção automática"
+    },
+    {
+      "name": "autocorrect_desc",
+      "value": "Corrigir palavras mal escritas ao premir Espaço"
+    },
+    {
+      "name": "autocorrect_strength",
+      "value": "Intensidade"
+    },
+    {
+      "name": "strength_modest",
+      "value": "Moderada"
+    },
+    {
+      "name": "strength_aggressive",
+      "value": "Agressiva"
+    },
+    {
+      "name": "strength_very",
+      "value": "Muito agressiva"
+    },
+    {
+      "name": "backspace_undo",
+      "value": "Anular a correção automática com Retrocesso"
+    },
+    {
+      "name": "auto_cap",
+      "value": "Maiúsculas automáticas"
+    },
+    {
+      "name": "auto_cap_desc",
+      "value": "Escrever a primeira palavra de cada frase com maiúscula"
+    },
+    {
+      "name": "double_space",
+      "value": "Ponto com espaço duplo"
+    },
+    {
+      "name": "space_cursor",
+      "value": "Mover o cursor com a barra de espaço"
+    },
+    {
+      "name": "space_cursor_desc",
+      "value": "Deslize na barra de espaço para mover o cursor; deslize para a esquerda no Retrocesso para apagar palavras"
+    },
+    {
+      "name": "glide_enable",
+      "value": "Ativar a escrita por deslize"
+    },
+    {
+      "name": "glide_enable_desc",
+      "value": "Escreva uma palavra deslizando pelas suas letras"
+    },
+    {
+      "name": "glide_trail",
+      "value": "Mostrar o rasto do gesto"
+    },
+    {
+      "name": "privacy_text",
+      "value": "O teclado aprende palavras e sequências de palavras que escreve para as sugerir mais tarde. Tudo fica neste dispositivo: o teclado não tem acesso à Internet e não envia nada. Os campos de palavra-passe nunca são aprendidos."
+    },
+    {
+      "name": "reset_learning",
+      "value": "Apagar palavras aprendidas"
+    },
+    {
+      "name": "reset_confirm",
+      "value": "Apagar tudo o que o teclado aprendeu com a sua escrita?"
+    },
+    {
+      "name": "reset_done",
+      "value": "As palavras aprendidas serão apagadas na próxima vez que o teclado abrir."
+    },
+    {
+      "name": "cancel",
+      "value": "Cancelar"
+    },
+    {
+      "name": "delete",
+      "value": "Apagar"
+    },
+    {
+      "name": "try_placeholder",
+      "value": "Escreva aqui …"
+    },
+    {
+      "name": "about_engine",
+      "value": "As sugestões de palavras, a correção automática e os dicionários baseiam-se no HeliBoard e no AOSP LatinIME. Esta aplicação é software livre sob a GNU General Public License v3."
+    },
+    {
+      "name": "about_licenses",
+      "value": "Licenças de código aberto"
+    },
+    {
+      "name": "emoji_recent_empty",
+      "value": "Ainda não usou nenhum emoji"
+    },
+    {
+      "name": "emoji_cat_recent",
+      "value": "Usados recentemente"
+    },
+    {
+      "name": "emoji_cat_smileys",
+      "value": "Smileys e emoções"
+    },
+    {
+      "name": "emoji_cat_people",
+      "value": "Pessoas"
+    },
+    {
+      "name": "emoji_cat_animals",
+      "value": "Animais e natureza"
+    },
+    {
+      "name": "emoji_cat_food",
+      "value": "Comida e bebida"
+    },
+    {
+      "name": "emoji_cat_travel",
+      "value": "Viagens e locais"
+    },
+    {
+      "name": "emoji_cat_activities",
+      "value": "Atividades"
+    },
+    {
+      "name": "emoji_cat_objects",
+      "value": "Objetos"
+    },
+    {
+      "name": "emoji_cat_symbols",
+      "value": "Símbolos"
+    },
+    {
+      "name": "emoji_cat_flags",
+      "value": "Bandeiras"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "gBart"
+    },
+    {
+      "name": "ime_label",
+      "value": "gBart"
+    },
+    {
+      "name": "ime_desc",
+      "value": "Teclado com sugestões de palavras, correção automática e escrita por deslize"
+    }
+  ]
+}

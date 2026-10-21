@@ -1,0 +1,320 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "gBart"
+    },
+    {
+      "name": "module_desc",
+      "value": "Billentyűzet szójavaslatokkal, automatikus javítással és csúsztatásos gépeléssel"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "Billentyűzet-beállítások"
+    },
+    {
+      "name": "subtype_default",
+      "value": "Minden aktív nyelv"
+    },
+    {
+      "name": "vibrate_reason",
+      "value": "Haptikus visszajelzés gépeléskor"
+    },
+    {
+      "name": "setup_select",
+      "value": "Billentyűzet aktiválása"
+    },
+    {
+      "name": "setup_select_desc",
+      "value": "Megnyitja a Rendszer › Beviteli módok oldalt: a „Jelenlegi billentyűzet” alatt válassza a „gBart” lehetőséget"
+    },
+    {
+      "name": "setup_full",
+      "value": "Teljes verzió engedélyezése"
+    },
+    {
+      "name": "setup_full_desc",
+      "value": "A rezgéshez szükséges: Rendszer › Beviteli módok › gBart › Teljes verzió"
+    },
+    {
+      "name": "sec_languages",
+      "value": "Nyelvek"
+    },
+    {
+      "name": "sec_preferences",
+      "value": "Beállítások"
+    },
+    {
+      "name": "sec_preferences_desc",
+      "value": "Számsor, emoji gomb, rezgés, magasság"
+    },
+    {
+      "name": "sec_theme",
+      "value": "Téma"
+    },
+    {
+      "name": "sec_correction",
+      "value": "Szövegjavítás"
+    },
+    {
+      "name": "sec_correction_desc",
+      "value": "Javaslatok, automatikus javítás, nagybetűk"
+    },
+    {
+      "name": "sec_glide",
+      "value": "Csúsztatásos gépelés"
+    },
+    {
+      "name": "sec_privacy",
+      "value": "Adatvédelem"
+    },
+    {
+      "name": "sec_privacy_desc",
+      "value": "A megtanult szavak ezen az eszközön maradnak"
+    },
+    {
+      "name": "sec_try",
+      "value": "Kipróbálás"
+    },
+    {
+      "name": "sec_about",
+      "value": "Névjegy"
+    },
+    {
+      "name": "sec_more",
+      "value": "Egyebek"
+    },
+    {
+      "name": "languages_active",
+      "value": "Aktív nyelvek"
+    },
+    {
+      "name": "languages_all",
+      "value": "Összes nyelv"
+    },
+    {
+      "name": "languages_hint",
+      "value": "A javaslatok és az automatikus javítás minden aktív nyelvre egyszerre működik. A kiosztást a földgömb gombbal vagy a szóköz hosszú megnyomásával válthatja."
+    },
+    {
+      "name": "languages_search",
+      "value": "Nyelvek keresése"
+    },
+    {
+      "name": "languages_first",
+      "value": "Alapértelmezett kiosztás"
+    },
+    {
+      "name": "number_row",
+      "value": "Számsor"
+    },
+    {
+      "name": "number_row_desc",
+      "value": "Számsor megjelenítése a betűk felett"
+    },
+    {
+      "name": "emoji_key",
+      "value": "Emoji gomb"
+    },
+    {
+      "name": "language_key",
+      "value": "Nyelvváltó gomb"
+    },
+    {
+      "name": "key_popup",
+      "value": "Felugró nézet gombnyomáskor"
+    },
+    {
+      "name": "vibrate",
+      "value": "Haptikus visszajelzés gombnyomáskor"
+    },
+    {
+      "name": "vibration_strength",
+      "value": "Rezgés erőssége"
+    },
+    {
+      "name": "keyboard_height",
+      "value": "Billentyűzet magassága"
+    },
+    {
+      "name": "long_press",
+      "value": "Hosszú nyomás késleltetése"
+    },
+    {
+      "name": "theme_system",
+      "value": "Rendszer alapértelmezése"
+    },
+    {
+      "name": "theme_light",
+      "value": "Világos"
+    },
+    {
+      "name": "theme_dark",
+      "value": "Sötét"
+    },
+    {
+      "name": "show_suggestions",
+      "value": "Javaslatsáv megjelenítése"
+    },
+    {
+      "name": "emoji_suggestions",
+      "value": "Emojijavaslatok"
+    },
+    {
+      "name": "emoji_suggestions_desc",
+      "value": "Illő emojik javaslata gépelés közben"
+    },
+    {
+      "name": "autocorrect",
+      "value": "Automatikus javítás"
+    },
+    {
+      "name": "autocorrect_desc",
+      "value": "Elgépelt szavak javítása a szóköz megnyomásakor"
+    },
+    {
+      "name": "autocorrect_strength",
+      "value": "Erősség"
+    },
+    {
+      "name": "strength_modest",
+      "value": "Mérsékelt"
+    },
+    {
+      "name": "strength_aggressive",
+      "value": "Agresszív"
+    },
+    {
+      "name": "strength_very",
+      "value": "Nagyon agresszív"
+    },
+    {
+      "name": "backspace_undo",
+      "value": "Automatikus javítás visszavonása a törlés gombbal"
+    },
+    {
+      "name": "auto_cap",
+      "value": "Automatikus nagybetű"
+    },
+    {
+      "name": "auto_cap_desc",
+      "value": "Minden mondat első szava nagybetűvel"
+    },
+    {
+      "name": "double_space",
+      "value": "Pont dupla szóközzel"
+    },
+    {
+      "name": "space_cursor",
+      "value": "Kurzor mozgatása a szóközzel"
+    },
+    {
+      "name": "space_cursor_desc",
+      "value": "Csúsztasson a szóközön a kurzor mozgatásához; csúsztasson balra a törlés gombon szavak törléséhez"
+    },
+    {
+      "name": "glide_enable",
+      "value": "Csúsztatásos gépelés bekapcsolása"
+    },
+    {
+      "name": "glide_enable_desc",
+      "value": "Írjon be egy szót a betűin átcsúsztatva"
+    },
+    {
+      "name": "glide_trail",
+      "value": "Mozdulat nyomvonalának megjelenítése"
+    },
+    {
+      "name": "privacy_text",
+      "value": "A billentyűzet megtanulja a beírt szavakat és szósorokat, hogy később javasolhassa őket. Minden ezen az eszközön marad: a billentyűzetnek nincs internet-hozzáférése, és semmit nem küld el. A jelszómezők tartalmát soha nem tanulja meg."
+    },
+    {
+      "name": "reset_learning",
+      "value": "Megtanult szavak törlése"
+    },
+    {
+      "name": "reset_confirm",
+      "value": "Törli mindazt, amit a billentyűzet a gépeléséből megtanult?"
+    },
+    {
+      "name": "reset_done",
+      "value": "A megtanult szavak a billentyűzet következő megnyitásakor törlődnek."
+    },
+    {
+      "name": "cancel",
+      "value": "Mégse"
+    },
+    {
+      "name": "delete",
+      "value": "Törlés"
+    },
+    {
+      "name": "try_placeholder",
+      "value": "Írjon ide …"
+    },
+    {
+      "name": "about_engine",
+      "value": "A szójavaslatok, az automatikus javítás és a szótárak a HeliBoardon és az AOSP LatinIME-en alapulnak. Az alkalmazás szabad szoftver a GNU General Public License v3 alatt."
+    },
+    {
+      "name": "about_licenses",
+      "value": "Nyílt forráskódú licencek"
+    },
+    {
+      "name": "emoji_recent_empty",
+      "value": "Még nem használt emojit"
+    },
+    {
+      "name": "emoji_cat_recent",
+      "value": "Legutóbb használt"
+    },
+    {
+      "name": "emoji_cat_smileys",
+      "value": "Hangulatjelek és érzelmek"
+    },
+    {
+      "name": "emoji_cat_people",
+      "value": "Emberek"
+    },
+    {
+      "name": "emoji_cat_animals",
+      "value": "Állatok és természet"
+    },
+    {
+      "name": "emoji_cat_food",
+      "value": "Étel és ital"
+    },
+    {
+      "name": "emoji_cat_travel",
+      "value": "Utazás és helyek"
+    },
+    {
+      "name": "emoji_cat_activities",
+      "value": "Tevékenységek"
+    },
+    {
+      "name": "emoji_cat_objects",
+      "value": "Tárgyak"
+    },
+    {
+      "name": "emoji_cat_symbols",
+      "value": "Szimbólumok"
+    },
+    {
+      "name": "emoji_cat_flags",
+      "value": "Zászlók"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "gBart"
+    },
+    {
+      "name": "ime_label",
+      "value": "gBart"
+    },
+    {
+      "name": "ime_desc",
+      "value": "Billentyűzet szójavaslatokkal, automatikus javítással és csúsztatásos gépeléssel"
+    }
+  ]
+}

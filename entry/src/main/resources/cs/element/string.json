@@ -1,0 +1,320 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "gBart"
+    },
+    {
+      "name": "module_desc",
+      "value": "Klávesnice s návrhy slov, automatickými opravami a psaním tahem"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "Nastavení klávesnice"
+    },
+    {
+      "name": "subtype_default",
+      "value": "Všechny aktivní jazyky"
+    },
+    {
+      "name": "vibrate_reason",
+      "value": "Haptická odezva při psaní"
+    },
+    {
+      "name": "setup_select",
+      "value": "Aktivovat klávesnici"
+    },
+    {
+      "name": "setup_select_desc",
+      "value": "Otevře Systém › Metody zadávání: v „Aktuální klávesnice“ zvolte „gBart“"
+    },
+    {
+      "name": "setup_full",
+      "value": "Povolit plnou verzi"
+    },
+    {
+      "name": "setup_full_desc",
+      "value": "Potřebné pro vibrace: Systém › Metody zadávání › gBart › Plná verze"
+    },
+    {
+      "name": "sec_languages",
+      "value": "Jazyky"
+    },
+    {
+      "name": "sec_preferences",
+      "value": "Předvolby"
+    },
+    {
+      "name": "sec_preferences_desc",
+      "value": "Řada číslic, klávesa emoji, vibrace, výška"
+    },
+    {
+      "name": "sec_theme",
+      "value": "Motiv"
+    },
+    {
+      "name": "sec_correction",
+      "value": "Oprava textu"
+    },
+    {
+      "name": "sec_correction_desc",
+      "value": "Návrhy, automatické opravy, velká písmena"
+    },
+    {
+      "name": "sec_glide",
+      "value": "Psaní tahem"
+    },
+    {
+      "name": "sec_privacy",
+      "value": "Soukromí"
+    },
+    {
+      "name": "sec_privacy_desc",
+      "value": "Naučená slova zůstávají v tomto zařízení"
+    },
+    {
+      "name": "sec_try",
+      "value": "Vyzkoušet"
+    },
+    {
+      "name": "sec_about",
+      "value": "O aplikaci"
+    },
+    {
+      "name": "sec_more",
+      "value": "Další"
+    },
+    {
+      "name": "languages_active",
+      "value": "Aktivní jazyky"
+    },
+    {
+      "name": "languages_all",
+      "value": "Všechny jazyky"
+    },
+    {
+      "name": "languages_hint",
+      "value": "Návrhy a automatické opravy fungují pro všechny aktivní jazyky současně. Rozložení přepnete klávesou se zeměkoulí nebo dlouhým stisknutím mezerníku."
+    },
+    {
+      "name": "languages_search",
+      "value": "Hledat jazyky"
+    },
+    {
+      "name": "languages_first",
+      "value": "Výchozí rozložení"
+    },
+    {
+      "name": "number_row",
+      "value": "Řada číslic"
+    },
+    {
+      "name": "number_row_desc",
+      "value": "Zobrazit řadu číslic nad písmeny"
+    },
+    {
+      "name": "emoji_key",
+      "value": "Klávesa emoji"
+    },
+    {
+      "name": "language_key",
+      "value": "Klávesa přepnutí jazyka"
+    },
+    {
+      "name": "key_popup",
+      "value": "Náhled při stisku klávesy"
+    },
+    {
+      "name": "vibrate",
+      "value": "Haptická odezva při stisku klávesy"
+    },
+    {
+      "name": "vibration_strength",
+      "value": "Síla vibrací"
+    },
+    {
+      "name": "keyboard_height",
+      "value": "Výška klávesnice"
+    },
+    {
+      "name": "long_press",
+      "value": "Prodleva dlouhého stisknutí"
+    },
+    {
+      "name": "theme_system",
+      "value": "Podle systému"
+    },
+    {
+      "name": "theme_light",
+      "value": "Světlý"
+    },
+    {
+      "name": "theme_dark",
+      "value": "Tmavý"
+    },
+    {
+      "name": "show_suggestions",
+      "value": "Zobrazit lištu návrhů"
+    },
+    {
+      "name": "emoji_suggestions",
+      "value": "Návrhy emoji"
+    },
+    {
+      "name": "emoji_suggestions_desc",
+      "value": "Navrhovat vhodné emoji při psaní"
+    },
+    {
+      "name": "autocorrect",
+      "value": "Automatické opravy"
+    },
+    {
+      "name": "autocorrect_desc",
+      "value": "Opravovat chybně napsaná slova po stisku mezerníku"
+    },
+    {
+      "name": "autocorrect_strength",
+      "value": "Síla"
+    },
+    {
+      "name": "strength_modest",
+      "value": "Mírná"
+    },
+    {
+      "name": "strength_aggressive",
+      "value": "Agresivní"
+    },
+    {
+      "name": "strength_very",
+      "value": "Velmi agresivní"
+    },
+    {
+      "name": "backspace_undo",
+      "value": "Vrátit automatickou opravu klávesou Backspace"
+    },
+    {
+      "name": "auto_cap",
+      "value": "Automatická velká písmena"
+    },
+    {
+      "name": "auto_cap_desc",
+      "value": "Začínat každou větu velkým písmenem"
+    },
+    {
+      "name": "double_space",
+      "value": "Tečka dvojitou mezerou"
+    },
+    {
+      "name": "space_cursor",
+      "value": "Posouvat kurzor mezerníkem"
+    },
+    {
+      "name": "space_cursor_desc",
+      "value": "Přejetím po mezerníku posunete kurzor; přejetím doleva po Backspace mažete slova"
+    },
+    {
+      "name": "glide_enable",
+      "value": "Zapnout psaní tahem"
+    },
+    {
+      "name": "glide_enable_desc",
+      "value": "Napište slovo přejetím přes jeho písmena"
+    },
+    {
+      "name": "glide_trail",
+      "value": "Zobrazit stopu gesta"
+    },
+    {
+      "name": "privacy_text",
+      "value": "Klávesnice se učí slova a sledy slov, které píšete, aby je později navrhovala. Vše zůstává v tomto zařízení: klávesnice nemá přístup k internetu a nic neodesílá. Pole s hesly se nikdy neučí."
+    },
+    {
+      "name": "reset_learning",
+      "value": "Smazat naučená slova"
+    },
+    {
+      "name": "reset_confirm",
+      "value": "Smazat vše, co se klávesnice naučila z vašeho psaní?"
+    },
+    {
+      "name": "reset_done",
+      "value": "Naučená slova se smažou při příštím otevření klávesnice."
+    },
+    {
+      "name": "cancel",
+      "value": "Zrušit"
+    },
+    {
+      "name": "delete",
+      "value": "Smazat"
+    },
+    {
+      "name": "try_placeholder",
+      "value": "Pište sem …"
+    },
+    {
+      "name": "about_engine",
+      "value": "Návrhy slov, automatické opravy a slovníky vycházejí z HeliBoard a AOSP LatinIME. Tato aplikace je svobodný software pod licencí GNU General Public License v3."
+    },
+    {
+      "name": "about_licenses",
+      "value": "Licence open source"
+    },
+    {
+      "name": "emoji_recent_empty",
+      "value": "Zatím jste nepoužili žádné emoji"
+    },
+    {
+      "name": "emoji_cat_recent",
+      "value": "Nedávno použité"
+    },
+    {
+      "name": "emoji_cat_smileys",
+      "value": "Smajlíci a emoce"
+    },
+    {
+      "name": "emoji_cat_people",
+      "value": "Lidé"
+    },
+    {
+      "name": "emoji_cat_animals",
+      "value": "Zvířata a příroda"
+    },
+    {
+      "name": "emoji_cat_food",
+      "value": "Jídlo a pití"
+    },
+    {
+      "name": "emoji_cat_travel",
+      "value": "Cestování a místa"
+    },
+    {
+      "name": "emoji_cat_activities",
+      "value": "Aktivity"
+    },
+    {
+      "name": "emoji_cat_objects",
+      "value": "Předměty"
+    },
+    {
+      "name": "emoji_cat_symbols",
+      "value": "Symboly"
+    },
+    {
+      "name": "emoji_cat_flags",
+      "value": "Vlajky"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "gBart"
+    },
+    {
+      "name": "ime_label",
+      "value": "gBart"
+    },
+    {
+      "name": "ime_desc",
+      "value": "Klávesnice s návrhy slov, automatickými opravami a psaním tahem"
+    }
+  ]
+}

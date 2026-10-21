@@ -1,0 +1,320 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "gBart"
+    },
+    {
+      "name": "module_desc",
+      "value": "Toetsenbord met woordsuggesties, autocorrectie en veegtypen"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "Toetsenbordinstellingen"
+    },
+    {
+      "name": "subtype_default",
+      "value": "Alle actieve talen"
+    },
+    {
+      "name": "vibrate_reason",
+      "value": "Haptische feedback tijdens het typen"
+    },
+    {
+      "name": "setup_select",
+      "value": "Toetsenbord activeren"
+    },
+    {
+      "name": "setup_select_desc",
+      "value": "Opent Systeem › Invoermethoden: kies ‘gBart’ bij ‘Huidig toetsenbord’"
+    },
+    {
+      "name": "setup_full",
+      "value": "Volledige versie toestaan"
+    },
+    {
+      "name": "setup_full_desc",
+      "value": "Nodig voor trillen: Systeem › Invoermethoden › gBart › Volledige versie"
+    },
+    {
+      "name": "sec_languages",
+      "value": "Talen"
+    },
+    {
+      "name": "sec_preferences",
+      "value": "Voorkeuren"
+    },
+    {
+      "name": "sec_preferences_desc",
+      "value": "Cijferrij, emojitoets, trillen, hoogte"
+    },
+    {
+      "name": "sec_theme",
+      "value": "Thema"
+    },
+    {
+      "name": "sec_correction",
+      "value": "Tekstcorrectie"
+    },
+    {
+      "name": "sec_correction_desc",
+      "value": "Suggesties, autocorrectie, hoofdletters"
+    },
+    {
+      "name": "sec_glide",
+      "value": "Veegtypen"
+    },
+    {
+      "name": "sec_privacy",
+      "value": "Privacy"
+    },
+    {
+      "name": "sec_privacy_desc",
+      "value": "Geleerde woorden blijven op dit apparaat"
+    },
+    {
+      "name": "sec_try",
+      "value": "Uitproberen"
+    },
+    {
+      "name": "sec_about",
+      "value": "Over"
+    },
+    {
+      "name": "sec_more",
+      "value": "Meer"
+    },
+    {
+      "name": "languages_active",
+      "value": "Actieve talen"
+    },
+    {
+      "name": "languages_all",
+      "value": "Alle talen"
+    },
+    {
+      "name": "languages_hint",
+      "value": "Suggesties en autocorrectie werken voor alle actieve talen tegelijk. Wissel van indeling met de wereldbol-toets of door de spatiebalk lang in te drukken."
+    },
+    {
+      "name": "languages_search",
+      "value": "Talen zoeken"
+    },
+    {
+      "name": "languages_first",
+      "value": "Standaardindeling"
+    },
+    {
+      "name": "number_row",
+      "value": "Cijferrij"
+    },
+    {
+      "name": "number_row_desc",
+      "value": "Een rij cijfers boven de letters tonen"
+    },
+    {
+      "name": "emoji_key",
+      "value": "Emojitoets"
+    },
+    {
+      "name": "language_key",
+      "value": "Taalwisseltoets"
+    },
+    {
+      "name": "key_popup",
+      "value": "Pop-up bij toetsaanslag"
+    },
+    {
+      "name": "vibrate",
+      "value": "Haptische feedback bij toetsaanslag"
+    },
+    {
+      "name": "vibration_strength",
+      "value": "Trilsterkte"
+    },
+    {
+      "name": "keyboard_height",
+      "value": "Hoogte van het toetsenbord"
+    },
+    {
+      "name": "long_press",
+      "value": "Vertraging bij lang indrukken"
+    },
+    {
+      "name": "theme_system",
+      "value": "Systeemstandaard"
+    },
+    {
+      "name": "theme_light",
+      "value": "Licht"
+    },
+    {
+      "name": "theme_dark",
+      "value": "Donker"
+    },
+    {
+      "name": "show_suggestions",
+      "value": "Suggestiebalk tonen"
+    },
+    {
+      "name": "emoji_suggestions",
+      "value": "Emojisuggesties"
+    },
+    {
+      "name": "emoji_suggestions_desc",
+      "value": "Passende emoji voorstellen tijdens het typen"
+    },
+    {
+      "name": "autocorrect",
+      "value": "Autocorrectie"
+    },
+    {
+      "name": "autocorrect_desc",
+      "value": "Verkeerd gespelde woorden corrigeren bij spatie"
+    },
+    {
+      "name": "autocorrect_strength",
+      "value": "Sterkte"
+    },
+    {
+      "name": "strength_modest",
+      "value": "Gematigd"
+    },
+    {
+      "name": "strength_aggressive",
+      "value": "Agressief"
+    },
+    {
+      "name": "strength_very",
+      "value": "Zeer agressief"
+    },
+    {
+      "name": "backspace_undo",
+      "value": "Autocorrectie ongedaan maken met backspace"
+    },
+    {
+      "name": "auto_cap",
+      "value": "Automatische hoofdletters"
+    },
+    {
+      "name": "auto_cap_desc",
+      "value": "Het eerste woord van elke zin met een hoofdletter schrijven"
+    },
+    {
+      "name": "double_space",
+      "value": "Punt bij dubbele spatie"
+    },
+    {
+      "name": "space_cursor",
+      "value": "Cursor verplaatsen met de spatiebalk"
+    },
+    {
+      "name": "space_cursor_desc",
+      "value": "Veeg over de spatiebalk om de cursor te verplaatsen; veeg naar links over backspace om woorden te wissen"
+    },
+    {
+      "name": "glide_enable",
+      "value": "Veegtypen inschakelen"
+    },
+    {
+      "name": "glide_enable_desc",
+      "value": "Typ een woord door over de letters te vegen"
+    },
+    {
+      "name": "glide_trail",
+      "value": "Bewegingsspoor tonen"
+    },
+    {
+      "name": "privacy_text",
+      "value": "Het toetsenbord leert woorden en woordreeksen die je typt om ze later voor te stellen. Alles blijft op dit apparaat: het toetsenbord heeft geen internettoegang en verstuurt niets. Wachtwoordvelden worden nooit geleerd."
+    },
+    {
+      "name": "reset_learning",
+      "value": "Geleerde woorden wissen"
+    },
+    {
+      "name": "reset_confirm",
+      "value": "Alles wissen wat het toetsenbord van je typen heeft geleerd?"
+    },
+    {
+      "name": "reset_done",
+      "value": "Geleerde woorden worden gewist zodra het toetsenbord weer opent."
+    },
+    {
+      "name": "cancel",
+      "value": "Annuleren"
+    },
+    {
+      "name": "delete",
+      "value": "Wissen"
+    },
+    {
+      "name": "try_placeholder",
+      "value": "Typ hier …"
+    },
+    {
+      "name": "about_engine",
+      "value": "Woordsuggesties, autocorrectie en woordenboeken zijn gebaseerd op HeliBoard en AOSP LatinIME. Deze app is vrije software onder de GNU General Public License v3."
+    },
+    {
+      "name": "about_licenses",
+      "value": "Opensourcelicenties"
+    },
+    {
+      "name": "emoji_recent_empty",
+      "value": "Nog geen emoji gebruikt"
+    },
+    {
+      "name": "emoji_cat_recent",
+      "value": "Recent gebruikt"
+    },
+    {
+      "name": "emoji_cat_smileys",
+      "value": "Smileys en emoties"
+    },
+    {
+      "name": "emoji_cat_people",
+      "value": "Mensen"
+    },
+    {
+      "name": "emoji_cat_animals",
+      "value": "Dieren en natuur"
+    },
+    {
+      "name": "emoji_cat_food",
+      "value": "Eten en drinken"
+    },
+    {
+      "name": "emoji_cat_travel",
+      "value": "Reizen en plaatsen"
+    },
+    {
+      "name": "emoji_cat_activities",
+      "value": "Activiteiten"
+    },
+    {
+      "name": "emoji_cat_objects",
+      "value": "Objecten"
+    },
+    {
+      "name": "emoji_cat_symbols",
+      "value": "Symbolen"
+    },
+    {
+      "name": "emoji_cat_flags",
+      "value": "Vlaggen"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "gBart"
+    },
+    {
+      "name": "ime_label",
+      "value": "gBart"
+    },
+    {
+      "name": "ime_desc",
+      "value": "Toetsenbord met woordsuggesties, autocorrectie en veegtypen"
+    }
+  ]
+}

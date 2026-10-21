@@ -1,0 +1,320 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "gBart"
+    },
+    {
+      "name": "module_desc",
+      "value": "Клавиатура с подсказками слов, автоисправлением и непрерывным вводом"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "Настройки клавиатуры"
+    },
+    {
+      "name": "subtype_default",
+      "value": "Все активные языки"
+    },
+    {
+      "name": "vibrate_reason",
+      "value": "Тактильный отклик при наборе"
+    },
+    {
+      "name": "setup_select",
+      "value": "Включить клавиатуру"
+    },
+    {
+      "name": "setup_select_desc",
+      "value": "Откроет Система › Способы ввода: выберите «gBart» в «Текущая клавиатура»"
+    },
+    {
+      "name": "setup_full",
+      "value": "Разрешить полную версию"
+    },
+    {
+      "name": "setup_full_desc",
+      "value": "Нужно для вибрации: Система › Способы ввода › gBart › Полная версия"
+    },
+    {
+      "name": "sec_languages",
+      "value": "Языки"
+    },
+    {
+      "name": "sec_preferences",
+      "value": "Настройки"
+    },
+    {
+      "name": "sec_preferences_desc",
+      "value": "Ряд цифр, клавиша эмодзи, вибрация, высота"
+    },
+    {
+      "name": "sec_theme",
+      "value": "Тема"
+    },
+    {
+      "name": "sec_correction",
+      "value": "Исправление текста"
+    },
+    {
+      "name": "sec_correction_desc",
+      "value": "Подсказки, автоисправление, заглавные буквы"
+    },
+    {
+      "name": "sec_glide",
+      "value": "Непрерывный ввод"
+    },
+    {
+      "name": "sec_privacy",
+      "value": "Конфиденциальность"
+    },
+    {
+      "name": "sec_privacy_desc",
+      "value": "Выученные слова остаются на этом устройстве"
+    },
+    {
+      "name": "sec_try",
+      "value": "Попробовать"
+    },
+    {
+      "name": "sec_about",
+      "value": "О приложении"
+    },
+    {
+      "name": "sec_more",
+      "value": "Ещё"
+    },
+    {
+      "name": "languages_active",
+      "value": "Активные языки"
+    },
+    {
+      "name": "languages_all",
+      "value": "Все языки"
+    },
+    {
+      "name": "languages_hint",
+      "value": "Подсказки и автоисправление работают для всех активных языков одновременно. Раскладку можно сменить клавишей с глобусом или долгим нажатием на пробел."
+    },
+    {
+      "name": "languages_search",
+      "value": "Поиск языков"
+    },
+    {
+      "name": "languages_first",
+      "value": "Раскладка по умолчанию"
+    },
+    {
+      "name": "number_row",
+      "value": "Ряд цифр"
+    },
+    {
+      "name": "number_row_desc",
+      "value": "Показывать ряд цифр над буквами"
+    },
+    {
+      "name": "emoji_key",
+      "value": "Клавиша эмодзи"
+    },
+    {
+      "name": "language_key",
+      "value": "Клавиша смены языка"
+    },
+    {
+      "name": "key_popup",
+      "value": "Увеличение при нажатии"
+    },
+    {
+      "name": "vibrate",
+      "value": "Тактильный отклик при нажатии"
+    },
+    {
+      "name": "vibration_strength",
+      "value": "Сила вибрации"
+    },
+    {
+      "name": "keyboard_height",
+      "value": "Высота клавиатуры"
+    },
+    {
+      "name": "long_press",
+      "value": "Задержка долгого нажатия"
+    },
+    {
+      "name": "theme_system",
+      "value": "Как в системе"
+    },
+    {
+      "name": "theme_light",
+      "value": "Светлая"
+    },
+    {
+      "name": "theme_dark",
+      "value": "Тёмная"
+    },
+    {
+      "name": "show_suggestions",
+      "value": "Показывать панель подсказок"
+    },
+    {
+      "name": "emoji_suggestions",
+      "value": "Подсказки эмодзи"
+    },
+    {
+      "name": "emoji_suggestions_desc",
+      "value": "Предлагать подходящие эмодзи при наборе"
+    },
+    {
+      "name": "autocorrect",
+      "value": "Автоисправление"
+    },
+    {
+      "name": "autocorrect_desc",
+      "value": "Исправлять слова с ошибками при нажатии пробела"
+    },
+    {
+      "name": "autocorrect_strength",
+      "value": "Сила"
+    },
+    {
+      "name": "strength_modest",
+      "value": "Умеренная"
+    },
+    {
+      "name": "strength_aggressive",
+      "value": "Сильная"
+    },
+    {
+      "name": "strength_very",
+      "value": "Очень сильная"
+    },
+    {
+      "name": "backspace_undo",
+      "value": "Отменять автоисправление клавишей Backspace"
+    },
+    {
+      "name": "auto_cap",
+      "value": "Автоматические заглавные"
+    },
+    {
+      "name": "auto_cap_desc",
+      "value": "Начинать каждое предложение с заглавной буквы"
+    },
+    {
+      "name": "double_space",
+      "value": "Точка двойным пробелом"
+    },
+    {
+      "name": "space_cursor",
+      "value": "Перемещать курсор пробелом"
+    },
+    {
+      "name": "space_cursor_desc",
+      "value": "Проведите по пробелу, чтобы переместить курсор; проведите влево по Backspace, чтобы удалять слова"
+    },
+    {
+      "name": "glide_enable",
+      "value": "Включить непрерывный ввод"
+    },
+    {
+      "name": "glide_enable_desc",
+      "value": "Вводите слово, проводя пальцем по буквам"
+    },
+    {
+      "name": "glide_trail",
+      "value": "Показывать след жеста"
+    },
+    {
+      "name": "privacy_text",
+      "value": "Клавиатура запоминает слова и сочетания слов, которые вы вводите, чтобы предлагать их позже. Всё остаётся на этом устройстве: у клавиатуры нет доступа к интернету, и она ничего не отправляет. Поля паролей никогда не запоминаются."
+    },
+    {
+      "name": "reset_learning",
+      "value": "Удалить выученные слова"
+    },
+    {
+      "name": "reset_confirm",
+      "value": "Удалить всё, что клавиатура узнала из вашего набора?"
+    },
+    {
+      "name": "reset_done",
+      "value": "Выученные слова будут удалены при следующем открытии клавиатуры."
+    },
+    {
+      "name": "cancel",
+      "value": "Отмена"
+    },
+    {
+      "name": "delete",
+      "value": "Удалить"
+    },
+    {
+      "name": "try_placeholder",
+      "value": "Введите текст …"
+    },
+    {
+      "name": "about_engine",
+      "value": "Подсказки слов, автоисправление и словари основаны на HeliBoard и AOSP LatinIME. Это приложение — свободное ПО под лицензией GNU General Public License v3."
+    },
+    {
+      "name": "about_licenses",
+      "value": "Лицензии открытого ПО"
+    },
+    {
+      "name": "emoji_recent_empty",
+      "value": "Вы ещё не использовали эмодзи"
+    },
+    {
+      "name": "emoji_cat_recent",
+      "value": "Недавние"
+    },
+    {
+      "name": "emoji_cat_smileys",
+      "value": "Смайлы и эмоции"
+    },
+    {
+      "name": "emoji_cat_people",
+      "value": "Люди"
+    },
+    {
+      "name": "emoji_cat_animals",
+      "value": "Животные и природа"
+    },
+    {
+      "name": "emoji_cat_food",
+      "value": "Еда и напитки"
+    },
+    {
+      "name": "emoji_cat_travel",
+      "value": "Путешествия и места"
+    },
+    {
+      "name": "emoji_cat_activities",
+      "value": "Занятия"
+    },
+    {
+      "name": "emoji_cat_objects",
+      "value": "Предметы"
+    },
+    {
+      "name": "emoji_cat_symbols",
+      "value": "Символы"
+    },
+    {
+      "name": "emoji_cat_flags",
+      "value": "Флаги"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "gBart"
+    },
+    {
+      "name": "ime_label",
+      "value": "gBart"
+    },
+    {
+      "name": "ime_desc",
+      "value": "Клавиатура с подсказками слов, автоисправлением и непрерывным вводом"
+    }
+  ]
+}

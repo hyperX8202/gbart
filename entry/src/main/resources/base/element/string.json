@@ -1,0 +1,320 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "gBart"
+    },
+    {
+      "name": "module_desc",
+      "value": "Keyboard with word suggestions, autocorrect and glide typing"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "Keyboard settings"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "gBart"
+    },
+    {
+      "name": "ime_desc",
+      "value": "Keyboard with word suggestions, autocorrect and glide typing"
+    },
+    {
+      "name": "ime_label",
+      "value": "gBart"
+    },
+    {
+      "name": "subtype_default",
+      "value": "All active languages"
+    },
+    {
+      "name": "vibrate_reason",
+      "value": "Haptic feedback while typing"
+    },
+    {
+      "name": "setup_select",
+      "value": "Activate the keyboard"
+    },
+    {
+      "name": "setup_select_desc",
+      "value": "Opens System › Input methods: choose “gBart” under “Current keyboard”"
+    },
+    {
+      "name": "setup_full",
+      "value": "Allow full version"
+    },
+    {
+      "name": "setup_full_desc",
+      "value": "Needed for vibration: System › Input methods › gBart › Full version"
+    },
+    {
+      "name": "sec_languages",
+      "value": "Languages"
+    },
+    {
+      "name": "sec_preferences",
+      "value": "Preferences"
+    },
+    {
+      "name": "sec_preferences_desc",
+      "value": "Number row, emoji key, vibration, height"
+    },
+    {
+      "name": "sec_theme",
+      "value": "Theme"
+    },
+    {
+      "name": "sec_correction",
+      "value": "Text correction"
+    },
+    {
+      "name": "sec_correction_desc",
+      "value": "Suggestions, autocorrect, capitalization"
+    },
+    {
+      "name": "sec_glide",
+      "value": "Glide typing"
+    },
+    {
+      "name": "sec_privacy",
+      "value": "Privacy"
+    },
+    {
+      "name": "sec_privacy_desc",
+      "value": "Learned words stay on this device"
+    },
+    {
+      "name": "sec_try",
+      "value": "Try it out"
+    },
+    {
+      "name": "sec_about",
+      "value": "About"
+    },
+    {
+      "name": "languages_active",
+      "value": "Active languages"
+    },
+    {
+      "name": "languages_all",
+      "value": "All languages"
+    },
+    {
+      "name": "languages_hint",
+      "value": "Suggestions and autocorrect work for all active languages at the same time. Switch the layout with the globe key or by long-pressing the space bar."
+    },
+    {
+      "name": "languages_search",
+      "value": "Search languages"
+    },
+    {
+      "name": "languages_first",
+      "value": "Default layout"
+    },
+    {
+      "name": "number_row",
+      "value": "Number row"
+    },
+    {
+      "name": "number_row_desc",
+      "value": "Show a row of digits above the letters"
+    },
+    {
+      "name": "emoji_key",
+      "value": "Emoji key"
+    },
+    {
+      "name": "language_key",
+      "value": "Language switch key"
+    },
+    {
+      "name": "key_popup",
+      "value": "Pop-up on key press"
+    },
+    {
+      "name": "vibrate",
+      "value": "Haptic feedback on key press"
+    },
+    {
+      "name": "vibration_strength",
+      "value": "Vibration strength"
+    },
+    {
+      "name": "keyboard_height",
+      "value": "Keyboard height"
+    },
+    {
+      "name": "long_press",
+      "value": "Long-press delay"
+    },
+    {
+      "name": "theme_system",
+      "value": "System default"
+    },
+    {
+      "name": "theme_light",
+      "value": "Light"
+    },
+    {
+      "name": "theme_dark",
+      "value": "Dark"
+    },
+    {
+      "name": "show_suggestions",
+      "value": "Show suggestion strip"
+    },
+    {
+      "name": "emoji_suggestions",
+      "value": "Emoji suggestions"
+    },
+    {
+      "name": "emoji_suggestions_desc",
+      "value": "Suggest matching emoji while you type"
+    },
+    {
+      "name": "autocorrect",
+      "value": "Auto-correction"
+    },
+    {
+      "name": "autocorrect_desc",
+      "value": "Correct misspelled words when you press space"
+    },
+    {
+      "name": "autocorrect_strength",
+      "value": "Strength"
+    },
+    {
+      "name": "strength_modest",
+      "value": "Modest"
+    },
+    {
+      "name": "strength_aggressive",
+      "value": "Aggressive"
+    },
+    {
+      "name": "strength_very",
+      "value": "Very aggressive"
+    },
+    {
+      "name": "backspace_undo",
+      "value": "Undo auto-correction on backspace"
+    },
+    {
+      "name": "auto_cap",
+      "value": "Auto-capitalization"
+    },
+    {
+      "name": "auto_cap_desc",
+      "value": "Capitalize the first word of each sentence"
+    },
+    {
+      "name": "double_space",
+      "value": "Double-space period"
+    },
+    {
+      "name": "space_cursor",
+      "value": "Move cursor with the space bar"
+    },
+    {
+      "name": "space_cursor_desc",
+      "value": "Slide on the space bar to move the cursor; slide left on backspace to delete words"
+    },
+    {
+      "name": "glide_enable",
+      "value": "Enable glide typing"
+    },
+    {
+      "name": "glide_enable_desc",
+      "value": "Type a word by sliding through its letters"
+    },
+    {
+      "name": "glide_trail",
+      "value": "Show gesture trail"
+    },
+    {
+      "name": "privacy_text",
+      "value": "The keyboard learns words and word sequences you type so it can suggest them later. Everything stays on this device: the keyboard has no internet access and sends nothing anywhere. Password fields are never learned."
+    },
+    {
+      "name": "reset_learning",
+      "value": "Delete learned words"
+    },
+    {
+      "name": "reset_confirm",
+      "value": "Delete everything the keyboard has learned from your typing?"
+    },
+    {
+      "name": "reset_done",
+      "value": "Learned words are deleted the next time the keyboard opens."
+    },
+    {
+      "name": "cancel",
+      "value": "Cancel"
+    },
+    {
+      "name": "delete",
+      "value": "Delete"
+    },
+    {
+      "name": "try_placeholder",
+      "value": "Type here …"
+    },
+    {
+      "name": "about_engine",
+      "value": "Word suggestions, autocorrect and dictionaries are based on HeliBoard and AOSP LatinIME. This app is free software under the GNU General Public License v3."
+    },
+    {
+      "name": "about_licenses",
+      "value": "Open-source licenses"
+    },
+    {
+      "name": "emoji_recent_empty",
+      "value": "No emoji used yet"
+    },
+    {
+      "name": "emoji_cat_recent",
+      "value": "Recently used"
+    },
+    {
+      "name": "emoji_cat_smileys",
+      "value": "Smileys & Emotion"
+    },
+    {
+      "name": "emoji_cat_people",
+      "value": "People & Body"
+    },
+    {
+      "name": "emoji_cat_animals",
+      "value": "Animals & Nature"
+    },
+    {
+      "name": "emoji_cat_food",
+      "value": "Food & Drink"
+    },
+    {
+      "name": "emoji_cat_travel",
+      "value": "Travel & Places"
+    },
+    {
+      "name": "emoji_cat_activities",
+      "value": "Activities"
+    },
+    {
+      "name": "emoji_cat_objects",
+      "value": "Objects"
+    },
+    {
+      "name": "emoji_cat_symbols",
+      "value": "Symbols"
+    },
+    {
+      "name": "emoji_cat_flags",
+      "value": "Flags"
+    },
+    {
+      "name": "sec_more",
+      "value": "More"
+    }
+  ]
+}

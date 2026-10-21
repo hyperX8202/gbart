@@ -1,0 +1,320 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "gBart"
+    },
+    {
+      "name": "module_desc",
+      "value": "Klawiatura z podpowiedziami słów, autokorektą i pisaniem gestami"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "Ustawienia klawiatury"
+    },
+    {
+      "name": "subtype_default",
+      "value": "Wszystkie aktywne języki"
+    },
+    {
+      "name": "vibrate_reason",
+      "value": "Wibracje podczas pisania"
+    },
+    {
+      "name": "setup_select",
+      "value": "Włącz klawiaturę"
+    },
+    {
+      "name": "setup_select_desc",
+      "value": "Otwiera System › Metody wprowadzania: wybierz „gBart” w „Bieżąca klawiatura”"
+    },
+    {
+      "name": "setup_full",
+      "value": "Zezwól na pełną wersję"
+    },
+    {
+      "name": "setup_full_desc",
+      "value": "Potrzebne do wibracji: System › Metody wprowadzania › gBart › Pełna wersja"
+    },
+    {
+      "name": "sec_languages",
+      "value": "Języki"
+    },
+    {
+      "name": "sec_preferences",
+      "value": "Preferencje"
+    },
+    {
+      "name": "sec_preferences_desc",
+      "value": "Rząd cyfr, klawisz emoji, wibracje, wysokość"
+    },
+    {
+      "name": "sec_theme",
+      "value": "Motyw"
+    },
+    {
+      "name": "sec_correction",
+      "value": "Korekta tekstu"
+    },
+    {
+      "name": "sec_correction_desc",
+      "value": "Podpowiedzi, autokorekta, wielkie litery"
+    },
+    {
+      "name": "sec_glide",
+      "value": "Pisanie gestami"
+    },
+    {
+      "name": "sec_privacy",
+      "value": "Prywatność"
+    },
+    {
+      "name": "sec_privacy_desc",
+      "value": "Nauczone słowa pozostają na tym urządzeniu"
+    },
+    {
+      "name": "sec_try",
+      "value": "Wypróbuj"
+    },
+    {
+      "name": "sec_about",
+      "value": "Informacje"
+    },
+    {
+      "name": "sec_more",
+      "value": "Więcej"
+    },
+    {
+      "name": "languages_active",
+      "value": "Aktywne języki"
+    },
+    {
+      "name": "languages_all",
+      "value": "Wszystkie języki"
+    },
+    {
+      "name": "languages_hint",
+      "value": "Podpowiedzi i autokorekta działają jednocześnie dla wszystkich aktywnych języków. Układ zmienisz klawiszem globusa lub przytrzymując spację."
+    },
+    {
+      "name": "languages_search",
+      "value": "Szukaj języków"
+    },
+    {
+      "name": "languages_first",
+      "value": "Domyślny układ"
+    },
+    {
+      "name": "number_row",
+      "value": "Rząd cyfr"
+    },
+    {
+      "name": "number_row_desc",
+      "value": "Pokazuj rząd cyfr nad literami"
+    },
+    {
+      "name": "emoji_key",
+      "value": "Klawisz emoji"
+    },
+    {
+      "name": "language_key",
+      "value": "Klawisz zmiany języka"
+    },
+    {
+      "name": "key_popup",
+      "value": "Podgląd po naciśnięciu klawisza"
+    },
+    {
+      "name": "vibrate",
+      "value": "Wibracje po naciśnięciu klawisza"
+    },
+    {
+      "name": "vibration_strength",
+      "value": "Siła wibracji"
+    },
+    {
+      "name": "keyboard_height",
+      "value": "Wysokość klawiatury"
+    },
+    {
+      "name": "long_press",
+      "value": "Opóźnienie długiego naciśnięcia"
+    },
+    {
+      "name": "theme_system",
+      "value": "Domyślny systemowy"
+    },
+    {
+      "name": "theme_light",
+      "value": "Jasny"
+    },
+    {
+      "name": "theme_dark",
+      "value": "Ciemny"
+    },
+    {
+      "name": "show_suggestions",
+      "value": "Pokazuj pasek podpowiedzi"
+    },
+    {
+      "name": "emoji_suggestions",
+      "value": "Podpowiedzi emoji"
+    },
+    {
+      "name": "emoji_suggestions_desc",
+      "value": "Proponuj pasujące emoji podczas pisania"
+    },
+    {
+      "name": "autocorrect",
+      "value": "Autokorekta"
+    },
+    {
+      "name": "autocorrect_desc",
+      "value": "Poprawiaj błędnie napisane słowa po naciśnięciu spacji"
+    },
+    {
+      "name": "autocorrect_strength",
+      "value": "Siła"
+    },
+    {
+      "name": "strength_modest",
+      "value": "Umiarkowana"
+    },
+    {
+      "name": "strength_aggressive",
+      "value": "Agresywna"
+    },
+    {
+      "name": "strength_very",
+      "value": "Bardzo agresywna"
+    },
+    {
+      "name": "backspace_undo",
+      "value": "Cofaj autokorektę klawiszem Backspace"
+    },
+    {
+      "name": "auto_cap",
+      "value": "Automatyczne wielkie litery"
+    },
+    {
+      "name": "auto_cap_desc",
+      "value": "Zaczynaj każde zdanie wielką literą"
+    },
+    {
+      "name": "double_space",
+      "value": "Kropka po podwójnej spacji"
+    },
+    {
+      "name": "space_cursor",
+      "value": "Przesuwaj kursor spacją"
+    },
+    {
+      "name": "space_cursor_desc",
+      "value": "Przesuń palcem po spacji, aby przesunąć kursor; przesuń w lewo po Backspace, aby usuwać słowa"
+    },
+    {
+      "name": "glide_enable",
+      "value": "Włącz pisanie gestami"
+    },
+    {
+      "name": "glide_enable_desc",
+      "value": "Wpisz słowo, przesuwając palcem po jego literach"
+    },
+    {
+      "name": "glide_trail",
+      "value": "Pokazuj ślad gestu"
+    },
+    {
+      "name": "privacy_text",
+      "value": "Klawiatura uczy się słów i sekwencji słów, które wpisujesz, aby później je podpowiadać. Wszystko pozostaje na tym urządzeniu: klawiatura nie ma dostępu do internetu i niczego nie wysyła. Pola haseł nigdy nie są zapamiętywane."
+    },
+    {
+      "name": "reset_learning",
+      "value": "Usuń nauczone słowa"
+    },
+    {
+      "name": "reset_confirm",
+      "value": "Usunąć wszystko, czego klawiatura nauczyła się z Twojego pisania?"
+    },
+    {
+      "name": "reset_done",
+      "value": "Nauczone słowa zostaną usunięte przy następnym otwarciu klawiatury."
+    },
+    {
+      "name": "cancel",
+      "value": "Anuluj"
+    },
+    {
+      "name": "delete",
+      "value": "Usuń"
+    },
+    {
+      "name": "try_placeholder",
+      "value": "Pisz tutaj …"
+    },
+    {
+      "name": "about_engine",
+      "value": "Podpowiedzi słów, autokorekta i słowniki bazują na HeliBoard i AOSP LatinIME. Ta aplikacja jest wolnym oprogramowaniem na licencji GNU General Public License v3."
+    },
+    {
+      "name": "about_licenses",
+      "value": "Licencje open source"
+    },
+    {
+      "name": "emoji_recent_empty",
+      "value": "Nie użyto jeszcze żadnych emoji"
+    },
+    {
+      "name": "emoji_cat_recent",
+      "value": "Ostatnio używane"
+    },
+    {
+      "name": "emoji_cat_smileys",
+      "value": "Buźki i emocje"
+    },
+    {
+      "name": "emoji_cat_people",
+      "value": "Ludzie"
+    },
+    {
+      "name": "emoji_cat_animals",
+      "value": "Zwierzęta i przyroda"
+    },
+    {
+      "name": "emoji_cat_food",
+      "value": "Jedzenie i picie"
+    },
+    {
+      "name": "emoji_cat_travel",
+      "value": "Podróże i miejsca"
+    },
+    {
+      "name": "emoji_cat_activities",
+      "value": "Aktywności"
+    },
+    {
+      "name": "emoji_cat_objects",
+      "value": "Przedmioty"
+    },
+    {
+      "name": "emoji_cat_symbols",
+      "value": "Symbole"
+    },
+    {
+      "name": "emoji_cat_flags",
+      "value": "Flagi"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "gBart"
+    },
+    {
+      "name": "ime_label",
+      "value": "gBart"
+    },
+    {
+      "name": "ime_desc",
+      "value": "Klawiatura z podpowiedziami słów, autokorektą i pisaniem gestami"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+/node_modules
+/oh_modules
+/entry/oh_modules
+/local.properties
+/.hvigor
+/.idea
+/build
+/entry/build
+/entry/.cxx
+/entry/.preview
+*.cer
+*.p12
+*.p7b
+*.csr
+*.hap
+*.app

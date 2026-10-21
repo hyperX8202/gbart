@@ -1,0 +1,320 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "gBart"
+    },
+    {
+      "name": "module_desc",
+      "value": "Tastiera con suggerimenti di parole, correzione automatica e digitazione continua"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "Impostazioni della tastiera"
+    },
+    {
+      "name": "subtype_default",
+      "value": "Tutte le lingue attive"
+    },
+    {
+      "name": "vibrate_reason",
+      "value": "Feedback aptico durante la digitazione"
+    },
+    {
+      "name": "setup_select",
+      "value": "Attiva la tastiera"
+    },
+    {
+      "name": "setup_select_desc",
+      "value": "Apre Sistema › Metodi di immissione: scegli «gBart» in «Tastiera attuale»"
+    },
+    {
+      "name": "setup_full",
+      "value": "Consenti la versione completa"
+    },
+    {
+      "name": "setup_full_desc",
+      "value": "Necessaria per la vibrazione: Sistema › Metodi di immissione › gBart › Versione completa"
+    },
+    {
+      "name": "sec_languages",
+      "value": "Lingue"
+    },
+    {
+      "name": "sec_preferences",
+      "value": "Preferenze"
+    },
+    {
+      "name": "sec_preferences_desc",
+      "value": "Riga dei numeri, tasto emoji, vibrazione, altezza"
+    },
+    {
+      "name": "sec_theme",
+      "value": "Tema"
+    },
+    {
+      "name": "sec_correction",
+      "value": "Correzione del testo"
+    },
+    {
+      "name": "sec_correction_desc",
+      "value": "Suggerimenti, correzione automatica, maiuscole"
+    },
+    {
+      "name": "sec_glide",
+      "value": "Digitazione continua"
+    },
+    {
+      "name": "sec_privacy",
+      "value": "Privacy"
+    },
+    {
+      "name": "sec_privacy_desc",
+      "value": "Le parole apprese restano su questo dispositivo"
+    },
+    {
+      "name": "sec_try",
+      "value": "Prova"
+    },
+    {
+      "name": "sec_about",
+      "value": "Informazioni"
+    },
+    {
+      "name": "sec_more",
+      "value": "Altro"
+    },
+    {
+      "name": "languages_active",
+      "value": "Lingue attive"
+    },
+    {
+      "name": "languages_all",
+      "value": "Tutte le lingue"
+    },
+    {
+      "name": "languages_hint",
+      "value": "Suggerimenti e correzione automatica funzionano per tutte le lingue attive contemporaneamente. Cambia layout con il tasto globo o tenendo premuta la barra spaziatrice."
+    },
+    {
+      "name": "languages_search",
+      "value": "Cerca lingue"
+    },
+    {
+      "name": "languages_first",
+      "value": "Layout predefinito"
+    },
+    {
+      "name": "number_row",
+      "value": "Riga dei numeri"
+    },
+    {
+      "name": "number_row_desc",
+      "value": "Mostra una riga di numeri sopra le lettere"
+    },
+    {
+      "name": "emoji_key",
+      "value": "Tasto emoji"
+    },
+    {
+      "name": "language_key",
+      "value": "Tasto cambio lingua"
+    },
+    {
+      "name": "key_popup",
+      "value": "Popup alla pressione dei tasti"
+    },
+    {
+      "name": "vibrate",
+      "value": "Feedback aptico alla pressione dei tasti"
+    },
+    {
+      "name": "vibration_strength",
+      "value": "Intensità della vibrazione"
+    },
+    {
+      "name": "keyboard_height",
+      "value": "Altezza della tastiera"
+    },
+    {
+      "name": "long_press",
+      "value": "Ritardo della pressione prolungata"
+    },
+    {
+      "name": "theme_system",
+      "value": "Predefinito di sistema"
+    },
+    {
+      "name": "theme_light",
+      "value": "Chiaro"
+    },
+    {
+      "name": "theme_dark",
+      "value": "Scuro"
+    },
+    {
+      "name": "show_suggestions",
+      "value": "Mostra la barra dei suggerimenti"
+    },
+    {
+      "name": "emoji_suggestions",
+      "value": "Suggerimenti emoji"
+    },
+    {
+      "name": "emoji_suggestions_desc",
+      "value": "Suggerisci emoji adatte mentre scrivi"
+    },
+    {
+      "name": "autocorrect",
+      "value": "Correzione automatica"
+    },
+    {
+      "name": "autocorrect_desc",
+      "value": "Correggi le parole errate quando premi Spazio"
+    },
+    {
+      "name": "autocorrect_strength",
+      "value": "Intensità"
+    },
+    {
+      "name": "strength_modest",
+      "value": "Moderata"
+    },
+    {
+      "name": "strength_aggressive",
+      "value": "Aggressiva"
+    },
+    {
+      "name": "strength_very",
+      "value": "Molto aggressiva"
+    },
+    {
+      "name": "backspace_undo",
+      "value": "Annulla la correzione con il tasto Indietro"
+    },
+    {
+      "name": "auto_cap",
+      "value": "Maiuscole automatiche"
+    },
+    {
+      "name": "auto_cap_desc",
+      "value": "Scrivi in maiuscolo la prima parola di ogni frase"
+    },
+    {
+      "name": "double_space",
+      "value": "Punto con doppio spazio"
+    },
+    {
+      "name": "space_cursor",
+      "value": "Sposta il cursore con la barra spaziatrice"
+    },
+    {
+      "name": "space_cursor_desc",
+      "value": "Scorri sulla barra spaziatrice per spostare il cursore; scorri a sinistra sul tasto Indietro per eliminare parole"
+    },
+    {
+      "name": "glide_enable",
+      "value": "Attiva la digitazione continua"
+    },
+    {
+      "name": "glide_enable_desc",
+      "value": "Scrivi una parola scorrendo sulle sue lettere"
+    },
+    {
+      "name": "glide_trail",
+      "value": "Mostra la traccia del gesto"
+    },
+    {
+      "name": "privacy_text",
+      "value": "La tastiera impara le parole e le sequenze di parole che digiti per suggerirle in seguito. Tutto resta su questo dispositivo: la tastiera non ha accesso a Internet e non invia nulla. I campi password non vengono mai appresi."
+    },
+    {
+      "name": "reset_learning",
+      "value": "Elimina le parole apprese"
+    },
+    {
+      "name": "reset_confirm",
+      "value": "Eliminare tutto ciò che la tastiera ha imparato dalla tua digitazione?"
+    },
+    {
+      "name": "reset_done",
+      "value": "Le parole apprese verranno eliminate alla prossima apertura della tastiera."
+    },
+    {
+      "name": "cancel",
+      "value": "Annulla"
+    },
+    {
+      "name": "delete",
+      "value": "Elimina"
+    },
+    {
+      "name": "try_placeholder",
+      "value": "Scrivi qui …"
+    },
+    {
+      "name": "about_engine",
+      "value": "Suggerimenti di parole, correzione automatica e dizionari si basano su HeliBoard e AOSP LatinIME. Questa app è software libero sotto la GNU General Public License v3."
+    },
+    {
+      "name": "about_licenses",
+      "value": "Licenze open source"
+    },
+    {
+      "name": "emoji_recent_empty",
+      "value": "Nessuna emoji ancora usata"
+    },
+    {
+      "name": "emoji_cat_recent",
+      "value": "Usate di recente"
+    },
+    {
+      "name": "emoji_cat_smileys",
+      "value": "Faccine ed emozioni"
+    },
+    {
+      "name": "emoji_cat_people",
+      "value": "Persone"
+    },
+    {
+      "name": "emoji_cat_animals",
+      "value": "Animali e natura"
+    },
+    {
+      "name": "emoji_cat_food",
+      "value": "Cibo e bevande"
+    },
+    {
+      "name": "emoji_cat_travel",
+      "value": "Viaggi e luoghi"
+    },
+    {
+      "name": "emoji_cat_activities",
+      "value": "Attività"
+    },
+    {
+      "name": "emoji_cat_objects",
+      "value": "Oggetti"
+    },
+    {
+      "name": "emoji_cat_symbols",
+      "value": "Simboli"
+    },
+    {
+      "name": "emoji_cat_flags",
+      "value": "Bandiere"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "gBart"
+    },
+    {
+      "name": "ime_label",
+      "value": "gBart"
+    },
+    {
+      "name": "ime_desc",
+      "value": "Tastiera con suggerimenti di parole, correzione automatica e digitazione continua"
+    }
+  ]
+}

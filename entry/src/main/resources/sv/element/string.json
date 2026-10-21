@@ -1,0 +1,320 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "gBart"
+    },
+    {
+      "name": "module_desc",
+      "value": "Tangentbord med ordförslag, autokorrigering och svepskrivning"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "Tangentbordsinställningar"
+    },
+    {
+      "name": "subtype_default",
+      "value": "Alla aktiva språk"
+    },
+    {
+      "name": "vibrate_reason",
+      "value": "Haptisk feedback när du skriver"
+    },
+    {
+      "name": "setup_select",
+      "value": "Aktivera tangentbordet"
+    },
+    {
+      "name": "setup_select_desc",
+      "value": "Öppnar System › Inmatningsmetoder: välj ”gBart” under ”Aktuellt tangentbord”"
+    },
+    {
+      "name": "setup_full",
+      "value": "Tillåt fullständig version"
+    },
+    {
+      "name": "setup_full_desc",
+      "value": "Behövs för vibration: System › Inmatningsmetoder › gBart › Fullständig version"
+    },
+    {
+      "name": "sec_languages",
+      "value": "Språk"
+    },
+    {
+      "name": "sec_preferences",
+      "value": "Inställningar"
+    },
+    {
+      "name": "sec_preferences_desc",
+      "value": "Sifferrad, emojitangent, vibration, höjd"
+    },
+    {
+      "name": "sec_theme",
+      "value": "Tema"
+    },
+    {
+      "name": "sec_correction",
+      "value": "Textkorrigering"
+    },
+    {
+      "name": "sec_correction_desc",
+      "value": "Förslag, autokorrigering, versaler"
+    },
+    {
+      "name": "sec_glide",
+      "value": "Svepskrivning"
+    },
+    {
+      "name": "sec_privacy",
+      "value": "Integritet"
+    },
+    {
+      "name": "sec_privacy_desc",
+      "value": "Inlärda ord stannar på den här enheten"
+    },
+    {
+      "name": "sec_try",
+      "value": "Prova"
+    },
+    {
+      "name": "sec_about",
+      "value": "Om"
+    },
+    {
+      "name": "sec_more",
+      "value": "Mer"
+    },
+    {
+      "name": "languages_active",
+      "value": "Aktiva språk"
+    },
+    {
+      "name": "languages_all",
+      "value": "Alla språk"
+    },
+    {
+      "name": "languages_hint",
+      "value": "Förslag och autokorrigering fungerar för alla aktiva språk samtidigt. Byt layout med jordglobstangenten eller genom att hålla ned mellanslag."
+    },
+    {
+      "name": "languages_search",
+      "value": "Sök språk"
+    },
+    {
+      "name": "languages_first",
+      "value": "Standardlayout"
+    },
+    {
+      "name": "number_row",
+      "value": "Sifferrad"
+    },
+    {
+      "name": "number_row_desc",
+      "value": "Visa en rad med siffror ovanför bokstäverna"
+    },
+    {
+      "name": "emoji_key",
+      "value": "Emojitangent"
+    },
+    {
+      "name": "language_key",
+      "value": "Språkväxlingstangent"
+    },
+    {
+      "name": "key_popup",
+      "value": "Popup vid tangenttryck"
+    },
+    {
+      "name": "vibrate",
+      "value": "Haptisk feedback vid tangenttryck"
+    },
+    {
+      "name": "vibration_strength",
+      "value": "Vibrationsstyrka"
+    },
+    {
+      "name": "keyboard_height",
+      "value": "Tangentbordets höjd"
+    },
+    {
+      "name": "long_press",
+      "value": "Fördröjning för långt tryck"
+    },
+    {
+      "name": "theme_system",
+      "value": "Systemstandard"
+    },
+    {
+      "name": "theme_light",
+      "value": "Ljust"
+    },
+    {
+      "name": "theme_dark",
+      "value": "Mörkt"
+    },
+    {
+      "name": "show_suggestions",
+      "value": "Visa förslagsfältet"
+    },
+    {
+      "name": "emoji_suggestions",
+      "value": "Emojiförslag"
+    },
+    {
+      "name": "emoji_suggestions_desc",
+      "value": "Föreslå passande emoji medan du skriver"
+    },
+    {
+      "name": "autocorrect",
+      "value": "Autokorrigering"
+    },
+    {
+      "name": "autocorrect_desc",
+      "value": "Rätta felstavade ord när du trycker på mellanslag"
+    },
+    {
+      "name": "autocorrect_strength",
+      "value": "Styrka"
+    },
+    {
+      "name": "strength_modest",
+      "value": "Måttlig"
+    },
+    {
+      "name": "strength_aggressive",
+      "value": "Aggressiv"
+    },
+    {
+      "name": "strength_very",
+      "value": "Mycket aggressiv"
+    },
+    {
+      "name": "backspace_undo",
+      "value": "Ångra autokorrigering med backsteg"
+    },
+    {
+      "name": "auto_cap",
+      "value": "Automatisk versal"
+    },
+    {
+      "name": "auto_cap_desc",
+      "value": "Inled varje mening med versal"
+    },
+    {
+      "name": "double_space",
+      "value": "Punkt med dubbelt mellanslag"
+    },
+    {
+      "name": "space_cursor",
+      "value": "Flytta markören med mellanslag"
+    },
+    {
+      "name": "space_cursor_desc",
+      "value": "Svep på mellanslag för att flytta markören; svep åt vänster på backsteg för att radera ord"
+    },
+    {
+      "name": "glide_enable",
+      "value": "Aktivera svepskrivning"
+    },
+    {
+      "name": "glide_enable_desc",
+      "value": "Skriv ett ord genom att svepa över bokstäverna"
+    },
+    {
+      "name": "glide_trail",
+      "value": "Visa svepspår"
+    },
+    {
+      "name": "privacy_text",
+      "value": "Tangentbordet lär sig ord och ordföljder som du skriver för att föreslå dem senare. Allt stannar på den här enheten: tangentbordet har ingen internetåtkomst och skickar ingenting. Lösenordsfält lärs aldrig in."
+    },
+    {
+      "name": "reset_learning",
+      "value": "Radera inlärda ord"
+    },
+    {
+      "name": "reset_confirm",
+      "value": "Radera allt som tangentbordet har lärt sig av ditt skrivande?"
+    },
+    {
+      "name": "reset_done",
+      "value": "Inlärda ord raderas nästa gång tangentbordet öppnas."
+    },
+    {
+      "name": "cancel",
+      "value": "Avbryt"
+    },
+    {
+      "name": "delete",
+      "value": "Radera"
+    },
+    {
+      "name": "try_placeholder",
+      "value": "Skriv här …"
+    },
+    {
+      "name": "about_engine",
+      "value": "Ordförslag, autokorrigering och ordlistor bygger på HeliBoard och AOSP LatinIME. Appen är fri programvara under GNU General Public License v3."
+    },
+    {
+      "name": "about_licenses",
+      "value": "Licenser för öppen källkod"
+    },
+    {
+      "name": "emoji_recent_empty",
+      "value": "Inga emoji använda än"
+    },
+    {
+      "name": "emoji_cat_recent",
+      "value": "Senast använda"
+    },
+    {
+      "name": "emoji_cat_smileys",
+      "value": "Smileys och känslor"
+    },
+    {
+      "name": "emoji_cat_people",
+      "value": "Människor"
+    },
+    {
+      "name": "emoji_cat_animals",
+      "value": "Djur och natur"
+    },
+    {
+      "name": "emoji_cat_food",
+      "value": "Mat och dryck"
+    },
+    {
+      "name": "emoji_cat_travel",
+      "value": "Resor och platser"
+    },
+    {
+      "name": "emoji_cat_activities",
+      "value": "Aktiviteter"
+    },
+    {
+      "name": "emoji_cat_objects",
+      "value": "Föremål"
+    },
+    {
+      "name": "emoji_cat_symbols",
+      "value": "Symboler"
+    },
+    {
+      "name": "emoji_cat_flags",
+      "value": "Flaggor"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "gBart"
+    },
+    {
+      "name": "ime_label",
+      "value": "gBart"
+    },
+    {
+      "name": "ime_desc",
+      "value": "Tangentbord med ordförslag, autokorrigering och svepskrivning"
+    }
+  ]
+}

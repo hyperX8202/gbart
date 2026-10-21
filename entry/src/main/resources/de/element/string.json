@@ -1,0 +1,320 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "gBart"
+    },
+    {
+      "name": "module_desc",
+      "value": "Tastatur mit Wortvorschlägen, Autokorrektur und gleitender Eingabe"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "Tastatur-Einstellungen"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "gBart"
+    },
+    {
+      "name": "ime_desc",
+      "value": "Tastatur mit Wortvorschlägen, Autokorrektur und gleitender Eingabe"
+    },
+    {
+      "name": "ime_label",
+      "value": "gBart"
+    },
+    {
+      "name": "subtype_default",
+      "value": "Alle aktiven Sprachen"
+    },
+    {
+      "name": "vibrate_reason",
+      "value": "Haptisches Feedback beim Tippen"
+    },
+    {
+      "name": "setup_select",
+      "value": "Tastatur aktivieren"
+    },
+    {
+      "name": "setup_select_desc",
+      "value": "Öffnet System › Eingabemethoden: unter „Aktuelle Tastatur“ „gBart“ wählen"
+    },
+    {
+      "name": "setup_full",
+      "value": "Vollversion erlauben"
+    },
+    {
+      "name": "setup_full_desc",
+      "value": "Für die Vibration nötig: System › Eingabemethoden › gBart › Vollversion"
+    },
+    {
+      "name": "sec_languages",
+      "value": "Sprachen"
+    },
+    {
+      "name": "sec_preferences",
+      "value": "Einstellungen"
+    },
+    {
+      "name": "sec_preferences_desc",
+      "value": "Zahlenreihe, Emoji-Taste, Vibration, Höhe"
+    },
+    {
+      "name": "sec_theme",
+      "value": "Design"
+    },
+    {
+      "name": "sec_correction",
+      "value": "Textkorrektur"
+    },
+    {
+      "name": "sec_correction_desc",
+      "value": "Vorschläge, Autokorrektur, Großschreibung"
+    },
+    {
+      "name": "sec_glide",
+      "value": "Gleitende Eingabe"
+    },
+    {
+      "name": "sec_privacy",
+      "value": "Datenschutz"
+    },
+    {
+      "name": "sec_privacy_desc",
+      "value": "Gelernte Wörter bleiben auf diesem Gerät"
+    },
+    {
+      "name": "sec_try",
+      "value": "Ausprobieren"
+    },
+    {
+      "name": "sec_about",
+      "value": "Info"
+    },
+    {
+      "name": "languages_active",
+      "value": "Aktive Sprachen"
+    },
+    {
+      "name": "languages_all",
+      "value": "Alle Sprachen"
+    },
+    {
+      "name": "languages_hint",
+      "value": "Vorschläge und Autokorrektur funktionieren für alle aktiven Sprachen gleichzeitig. Das Tastenlayout wechselst du mit der Globus-Taste oder langem Druck auf die Leertaste."
+    },
+    {
+      "name": "languages_search",
+      "value": "Sprachen suchen"
+    },
+    {
+      "name": "languages_first",
+      "value": "Standardlayout"
+    },
+    {
+      "name": "number_row",
+      "value": "Zahlenreihe"
+    },
+    {
+      "name": "number_row_desc",
+      "value": "Ziffern über den Buchstaben anzeigen"
+    },
+    {
+      "name": "emoji_key",
+      "value": "Emoji-Taste"
+    },
+    {
+      "name": "language_key",
+      "value": "Sprachwechseltaste"
+    },
+    {
+      "name": "key_popup",
+      "value": "Pop-up bei Tastendruck"
+    },
+    {
+      "name": "vibrate",
+      "value": "Haptisches Feedback bei Tastendruck"
+    },
+    {
+      "name": "vibration_strength",
+      "value": "Stärke der Vibration"
+    },
+    {
+      "name": "keyboard_height",
+      "value": "Tastaturhöhe"
+    },
+    {
+      "name": "long_press",
+      "value": "Verzögerung bei langem Tastendruck"
+    },
+    {
+      "name": "theme_system",
+      "value": "Systemstandard"
+    },
+    {
+      "name": "theme_light",
+      "value": "Hell"
+    },
+    {
+      "name": "theme_dark",
+      "value": "Dunkel"
+    },
+    {
+      "name": "show_suggestions",
+      "value": "Vorschlagsleiste anzeigen"
+    },
+    {
+      "name": "emoji_suggestions",
+      "value": "Emoji-Vorschläge"
+    },
+    {
+      "name": "emoji_suggestions_desc",
+      "value": "Passende Emojis beim Schreiben vorschlagen"
+    },
+    {
+      "name": "autocorrect",
+      "value": "Autokorrektur"
+    },
+    {
+      "name": "autocorrect_desc",
+      "value": "Falsch geschriebene Wörter bei Leertaste korrigieren"
+    },
+    {
+      "name": "autocorrect_strength",
+      "value": "Stärke"
+    },
+    {
+      "name": "strength_modest",
+      "value": "Moderat"
+    },
+    {
+      "name": "strength_aggressive",
+      "value": "Aggressiv"
+    },
+    {
+      "name": "strength_very",
+      "value": "Sehr aggressiv"
+    },
+    {
+      "name": "backspace_undo",
+      "value": "Autokorrektur mit Rücktaste rückgängig machen"
+    },
+    {
+      "name": "auto_cap",
+      "value": "Automatische Großschreibung"
+    },
+    {
+      "name": "auto_cap_desc",
+      "value": "Erstes Wort eines Satzes großschreiben"
+    },
+    {
+      "name": "double_space",
+      "value": "Punkt durch doppeltes Leerzeichen"
+    },
+    {
+      "name": "space_cursor",
+      "value": "Cursor mit der Leertaste bewegen"
+    },
+    {
+      "name": "space_cursor_desc",
+      "value": "Auf der Leertaste wischen, um den Cursor zu bewegen; auf der Rücktaste nach links wischen löscht Wörter"
+    },
+    {
+      "name": "glide_enable",
+      "value": "Gleitende Eingabe aktivieren"
+    },
+    {
+      "name": "glide_enable_desc",
+      "value": "Wörter durch Wischen über die Buchstaben eingeben"
+    },
+    {
+      "name": "glide_trail",
+      "value": "Bewegungspfad anzeigen"
+    },
+    {
+      "name": "privacy_text",
+      "value": "Die Tastatur lernt Wörter und Wortfolgen, die du tippst, um sie später vorzuschlagen. Alles bleibt auf diesem Gerät: Die Tastatur hat keinen Internetzugriff und überträgt nichts. Passwortfelder werden nie gelernt."
+    },
+    {
+      "name": "reset_learning",
+      "value": "Gelernte Wörter löschen"
+    },
+    {
+      "name": "reset_confirm",
+      "value": "Alles löschen, was die Tastatur aus deinem Tippen gelernt hat?"
+    },
+    {
+      "name": "reset_done",
+      "value": "Gelernte Wörter werden beim nächsten Öffnen der Tastatur gelöscht."
+    },
+    {
+      "name": "cancel",
+      "value": "Abbrechen"
+    },
+    {
+      "name": "delete",
+      "value": "Löschen"
+    },
+    {
+      "name": "try_placeholder",
+      "value": "Hier tippen …"
+    },
+    {
+      "name": "about_engine",
+      "value": "Wortvorschläge, Autokorrektur und Wörterbücher basieren auf HeliBoard und AOSP LatinIME. Diese App ist freie Software unter der GNU General Public License v3."
+    },
+    {
+      "name": "about_licenses",
+      "value": "Open-Source-Lizenzen"
+    },
+    {
+      "name": "emoji_recent_empty",
+      "value": "Noch keine Emojis verwendet"
+    },
+    {
+      "name": "emoji_cat_recent",
+      "value": "Zuletzt verwendet"
+    },
+    {
+      "name": "emoji_cat_smileys",
+      "value": "Smileys & Emotionen"
+    },
+    {
+      "name": "emoji_cat_people",
+      "value": "Personen"
+    },
+    {
+      "name": "emoji_cat_animals",
+      "value": "Tiere & Natur"
+    },
+    {
+      "name": "emoji_cat_food",
+      "value": "Essen & Trinken"
+    },
+    {
+      "name": "emoji_cat_travel",
+      "value": "Reisen & Orte"
+    },
+    {
+      "name": "emoji_cat_activities",
+      "value": "Aktivitäten"
+    },
+    {
+      "name": "emoji_cat_objects",
+      "value": "Objekte"
+    },
+    {
+      "name": "emoji_cat_symbols",
+      "value": "Symbole"
+    },
+    {
+      "name": "emoji_cat_flags",
+      "value": "Flaggen"
+    },
+    {
+      "name": "sec_more",
+      "value": "Weitere"
+    }
+  ]
+}

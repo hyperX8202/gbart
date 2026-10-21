@@ -1,0 +1,37 @@
+{
+  "app": {
+    // Signing is configured locally in DevEco Studio (File > Project Structure > Signing Configs,
+    // "Automatically generate signature" with a Huawei developer account); it is not committed.
+    "signingConfigs": [],
+    "products": [
+      {
+        "name": "default",
+        "targetSdkVersion": "6.0.1(21)",
+        "compatibleSdkVersion": "5.0.0(12)",
+        "runtimeOS": "HarmonyOS"
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug"
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}

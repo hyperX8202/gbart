@@ -1,0 +1,320 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "gBart"
+    },
+    {
+      "name": "module_desc",
+      "value": "Näppäimistö, jossa on sanaehdotukset, automaattinen korjaus ja liukukirjoitus"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "Näppäimistön asetukset"
+    },
+    {
+      "name": "subtype_default",
+      "value": "Kaikki aktiiviset kielet"
+    },
+    {
+      "name": "vibrate_reason",
+      "value": "Haptinen palaute kirjoitettaessa"
+    },
+    {
+      "name": "setup_select",
+      "value": "Ota näppäimistö käyttöön"
+    },
+    {
+      "name": "setup_select_desc",
+      "value": "Avaa Järjestelmä › Syöttötavat: valitse ”gBart” kohdasta ”Nykyinen näppäimistö”"
+    },
+    {
+      "name": "setup_full",
+      "value": "Salli täysi versio"
+    },
+    {
+      "name": "setup_full_desc",
+      "value": "Tarvitaan värinään: Järjestelmä › Syöttötavat › gBart › Täysi versio"
+    },
+    {
+      "name": "sec_languages",
+      "value": "Kielet"
+    },
+    {
+      "name": "sec_preferences",
+      "value": "Asetukset"
+    },
+    {
+      "name": "sec_preferences_desc",
+      "value": "Numerorivi, emojinäppäin, värinä, korkeus"
+    },
+    {
+      "name": "sec_theme",
+      "value": "Teema"
+    },
+    {
+      "name": "sec_correction",
+      "value": "Tekstin korjaus"
+    },
+    {
+      "name": "sec_correction_desc",
+      "value": "Ehdotukset, automaattinen korjaus, isot alkukirjaimet"
+    },
+    {
+      "name": "sec_glide",
+      "value": "Liukukirjoitus"
+    },
+    {
+      "name": "sec_privacy",
+      "value": "Tietosuoja"
+    },
+    {
+      "name": "sec_privacy_desc",
+      "value": "Opitut sanat pysyvät tällä laitteella"
+    },
+    {
+      "name": "sec_try",
+      "value": "Kokeile"
+    },
+    {
+      "name": "sec_about",
+      "value": "Tietoja"
+    },
+    {
+      "name": "sec_more",
+      "value": "Lisää"
+    },
+    {
+      "name": "languages_active",
+      "value": "Aktiiviset kielet"
+    },
+    {
+      "name": "languages_all",
+      "value": "Kaikki kielet"
+    },
+    {
+      "name": "languages_hint",
+      "value": "Ehdotukset ja automaattinen korjaus toimivat kaikilla aktiivisilla kielillä yhtä aikaa. Vaihda asettelua maapallonäppäimellä tai painamalla välilyöntiä pitkään."
+    },
+    {
+      "name": "languages_search",
+      "value": "Hae kieliä"
+    },
+    {
+      "name": "languages_first",
+      "value": "Oletusasettelu"
+    },
+    {
+      "name": "number_row",
+      "value": "Numerorivi"
+    },
+    {
+      "name": "number_row_desc",
+      "value": "Näytä numerorivi kirjainten yläpuolella"
+    },
+    {
+      "name": "emoji_key",
+      "value": "Emojinäppäin"
+    },
+    {
+      "name": "language_key",
+      "value": "Kielenvaihtonäppäin"
+    },
+    {
+      "name": "key_popup",
+      "value": "Ponnahdus näppäintä painettaessa"
+    },
+    {
+      "name": "vibrate",
+      "value": "Haptinen palaute näppäintä painettaessa"
+    },
+    {
+      "name": "vibration_strength",
+      "value": "Värinän voimakkuus"
+    },
+    {
+      "name": "keyboard_height",
+      "value": "Näppäimistön korkeus"
+    },
+    {
+      "name": "long_press",
+      "value": "Pitkän painalluksen viive"
+    },
+    {
+      "name": "theme_system",
+      "value": "Järjestelmän oletus"
+    },
+    {
+      "name": "theme_light",
+      "value": "Vaalea"
+    },
+    {
+      "name": "theme_dark",
+      "value": "Tumma"
+    },
+    {
+      "name": "show_suggestions",
+      "value": "Näytä ehdotuspalkki"
+    },
+    {
+      "name": "emoji_suggestions",
+      "value": "Emojiehdotukset"
+    },
+    {
+      "name": "emoji_suggestions_desc",
+      "value": "Ehdota sopivia emojeja kirjoittaessasi"
+    },
+    {
+      "name": "autocorrect",
+      "value": "Automaattinen korjaus"
+    },
+    {
+      "name": "autocorrect_desc",
+      "value": "Korjaa väärin kirjoitetut sanat välilyönnillä"
+    },
+    {
+      "name": "autocorrect_strength",
+      "value": "Voimakkuus"
+    },
+    {
+      "name": "strength_modest",
+      "value": "Maltillinen"
+    },
+    {
+      "name": "strength_aggressive",
+      "value": "Aggressiivinen"
+    },
+    {
+      "name": "strength_very",
+      "value": "Erittäin aggressiivinen"
+    },
+    {
+      "name": "backspace_undo",
+      "value": "Kumoa automaattinen korjaus askelpalautimella"
+    },
+    {
+      "name": "auto_cap",
+      "value": "Automaattiset isot alkukirjaimet"
+    },
+    {
+      "name": "auto_cap_desc",
+      "value": "Aloita jokainen lause isolla kirjaimella"
+    },
+    {
+      "name": "double_space",
+      "value": "Piste kahdella välilyönnillä"
+    },
+    {
+      "name": "space_cursor",
+      "value": "Siirrä kohdistinta välilyönnillä"
+    },
+    {
+      "name": "space_cursor_desc",
+      "value": "Liu’uta välilyönnillä siirtääksesi kohdistinta; liu’uta vasemmalle askelpalauttimella poistaaksesi sanoja"
+    },
+    {
+      "name": "glide_enable",
+      "value": "Ota liukukirjoitus käyttöön"
+    },
+    {
+      "name": "glide_enable_desc",
+      "value": "Kirjoita sana liu’uttamalla sen kirjainten yli"
+    },
+    {
+      "name": "glide_trail",
+      "value": "Näytä eleen jälki"
+    },
+    {
+      "name": "privacy_text",
+      "value": "Näppäimistö oppii kirjoittamasi sanat ja sanasarjat ehdottaakseen niitä myöhemmin. Kaikki pysyy tällä laitteella: näppäimistöllä ei ole internetyhteyttä eikä se lähetä mitään. Salasanakenttiä ei koskaan opita."
+    },
+    {
+      "name": "reset_learning",
+      "value": "Poista opitut sanat"
+    },
+    {
+      "name": "reset_confirm",
+      "value": "Poistetaanko kaikki, mitä näppäimistö on oppinut kirjoittamisestasi?"
+    },
+    {
+      "name": "reset_done",
+      "value": "Opitut sanat poistetaan, kun näppäimistö avataan seuraavan kerran."
+    },
+    {
+      "name": "cancel",
+      "value": "Peruuta"
+    },
+    {
+      "name": "delete",
+      "value": "Poista"
+    },
+    {
+      "name": "try_placeholder",
+      "value": "Kirjoita tähän …"
+    },
+    {
+      "name": "about_engine",
+      "value": "Sanaehdotukset, automaattinen korjaus ja sanakirjat perustuvat HeliBoardiin ja AOSP LatinIME:hen. Sovellus on vapaa ohjelmisto GNU General Public License v3 -lisenssillä."
+    },
+    {
+      "name": "about_licenses",
+      "value": "Avoimen lähdekoodin lisenssit"
+    },
+    {
+      "name": "emoji_recent_empty",
+      "value": "Emojeja ei ole vielä käytetty"
+    },
+    {
+      "name": "emoji_cat_recent",
+      "value": "Viimeksi käytetyt"
+    },
+    {
+      "name": "emoji_cat_smileys",
+      "value": "Hymiöt ja tunteet"
+    },
+    {
+      "name": "emoji_cat_people",
+      "value": "Ihmiset"
+    },
+    {
+      "name": "emoji_cat_animals",
+      "value": "Eläimet ja luonto"
+    },
+    {
+      "name": "emoji_cat_food",
+      "value": "Ruoka ja juoma"
+    },
+    {
+      "name": "emoji_cat_travel",
+      "value": "Matkat ja paikat"
+    },
+    {
+      "name": "emoji_cat_activities",
+      "value": "Aktiviteetit"
+    },
+    {
+      "name": "emoji_cat_objects",
+      "value": "Esineet"
+    },
+    {
+      "name": "emoji_cat_symbols",
+      "value": "Symbolit"
+    },
+    {
+      "name": "emoji_cat_flags",
+      "value": "Liput"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "gBart"
+    },
+    {
+      "name": "ime_label",
+      "value": "gBart"
+    },
+    {
+      "name": "ime_desc",
+      "value": "Näppäimistö, jossa on sanaehdotukset, automaattinen korjaus ja liukukirjoitus"
+    }
+  ]
+}

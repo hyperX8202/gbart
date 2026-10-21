@@ -1,0 +1,6 @@
+{
+  "modelVersion": "6.0.0",
+  "description": "HarmonyOS keyboard based on the HeliBoard/AOSP LatinIME engine",
+  "dependencies": {},
+  "devDependencies": {}
+}
