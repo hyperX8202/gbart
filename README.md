@@ -1,5 +1,7 @@
 # gBart – Tastatur für HarmonyOS
 
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-TeamHX-FFDD00?logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/TeamHX)
+
 Systemweite Tastatur (Input Method) für HarmonyOS NEXT (getestet: Mate XT 2, HarmonyOS 7 / API 26),
 gebaut nach dem Vorbild von Gboard. Die Vorschlags- und Korrektur-Engine ist der C++-Kern von
 [HeliBoard](https://github.com/Helium314/HeliBoard) (AOSP LatinIME), unverändert übernommen;
@@ -99,3 +101,8 @@ automatische Signatur von DevEco gilt nur für Debug-Builds auf registrierten Ge
 2. `tools/sign_release.sh <Signatur-Ordner>` signiert `build/outputs/release/*-unsigned.app` mit
    Schlüssel (`keyboard-release.p12`, Passwort in `PASSWORT.txt`), AGC-Zertifikat (`*.cer`) und
    AGC-Release-Profil (`*.p7b`) und prüft die Signatur. Das Ergebnis wird in AGC hochgeladen.
+
+## Unterstützen
+
+gBart ist kostenlos und ohne Werbung. Wenn dir die Tastatur gefällt, kannst du die Entwicklung mit
+einem Kaffee unterstützen: [buymeacoffee.com/TeamHX](https://buymeacoffee.com/TeamHX)
