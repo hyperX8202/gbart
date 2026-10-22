@@ -305,6 +305,58 @@
       "value": "Знамена"
     },
     {
+      "name": "theme_group_default",
+      "value": "По подразбиране"
+    },
+    {
+      "name": "theme_group_colors",
+      "value": "Цветове"
+    },
+    {
+      "name": "theme_group_gradients",
+      "value": "Преливащи цветове"
+    },
+    {
+      "name": "theme_group_landscapes",
+      "value": "Пейзажи"
+    },
+    {
+      "name": "theme_group_custom",
+      "value": "Моето изображение"
+    },
+    {
+      "name": "theme_pick_image",
+      "value": "Избор на изображение"
+    },
+    {
+      "name": "theme_dim",
+      "value": "Яркост на изображението"
+    },
+    {
+      "name": "key_borders",
+      "value": "Контури на клавишите"
+    },
+    {
+      "name": "key_borders_desc",
+      "value": "Показване на всеки клавиш като плочка"
+    },
+    {
+      "name": "split_keyboard",
+      "value": "Разделена клавиатура"
+    },
+    {
+      "name": "split_auto",
+      "value": "Автоматично (хоризонтално и разгънат)"
+    },
+    {
+      "name": "split_always",
+      "value": "Винаги"
+    },
+    {
+      "name": "split_never",
+      "value": "Никога"
+    },
+    {
       "name": "EntryAbility_label",
       "value": "gBart"
     },

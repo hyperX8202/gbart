@@ -1174,9 +1174,9 @@ export class KeyboardController {
     // ("Yoo" -> "You" scores ~0.1, a slip in a long word ~0.4), so short words get a lower bar.
     const typedChars = codePointLength(word);
     const threshold = this.settings.autoCorrectThreshold() * (typedChars <= 3 ? 0.6 : typedChars === 4 ? 0.8 : 1);
-    const dominant = this.dominantLanguage();
-    const knownIn = this.settings.languages.filter((l: string) => this.isValidIn(l, word));
-    if (knownIn.includes(dominant)) {
+    // A word of any active language is meant as typed ("Hello" while writing German must not
+    // become "Cello"), like in HeliBoard and Gboard.
+    if (this.settings.languages.some((l: string) => this.isValidIn(l, word))) {
       return null;
     }
     // Autocorrect fixes typos; it does not complete words ("Insta" must not become "Instanz").
@@ -1185,11 +1185,6 @@ export class KeyboardController {
       codePointLength(c.word.replace(' ', '')) <= typedChars + 1);
     if (!first || first.word === word) {
       return null;
-    }
-    if (knownIn.length > 0) {
-      // Valid only in a language the user is not typing right now ("butte" while writing German):
-      // correct only towards a clearly better word of the dominant language.
-      return first.locale === dominant && first.normalizedScore >= threshold * 2 ? first.word : null;
     }
     if (first.word.includes(' ')) {
       // Missing space: accept when every part is a real word of the same language.

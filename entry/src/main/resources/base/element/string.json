@@ -315,6 +315,58 @@
     {
       "name": "sec_more",
       "value": "More"
+    },
+    {
+      "name": "theme_group_default",
+      "value": "Default"
+    },
+    {
+      "name": "theme_group_colors",
+      "value": "Colors"
+    },
+    {
+      "name": "theme_group_gradients",
+      "value": "Gradients"
+    },
+    {
+      "name": "theme_group_landscapes",
+      "value": "Landscapes"
+    },
+    {
+      "name": "theme_group_custom",
+      "value": "My image"
+    },
+    {
+      "name": "theme_pick_image",
+      "value": "Choose image"
+    },
+    {
+      "name": "theme_dim",
+      "value": "Image brightness"
+    },
+    {
+      "name": "key_borders",
+      "value": "Key borders"
+    },
+    {
+      "name": "key_borders_desc",
+      "value": "Show each key as a tile"
+    },
+    {
+      "name": "split_keyboard",
+      "value": "Split keyboard"
+    },
+    {
+      "name": "split_auto",
+      "value": "Automatic (landscape and unfolded)"
+    },
+    {
+      "name": "split_always",
+      "value": "Always"
+    },
+    {
+      "name": "split_never",
+      "value": "Never"
     }
   ]
 }

@@ -305,6 +305,58 @@
       "value": "Flaggor"
     },
     {
+      "name": "theme_group_default",
+      "value": "Standard"
+    },
+    {
+      "name": "theme_group_colors",
+      "value": "Färger"
+    },
+    {
+      "name": "theme_group_gradients",
+      "value": "Toningar"
+    },
+    {
+      "name": "theme_group_landscapes",
+      "value": "Landskap"
+    },
+    {
+      "name": "theme_group_custom",
+      "value": "Egen bild"
+    },
+    {
+      "name": "theme_pick_image",
+      "value": "Välj bild"
+    },
+    {
+      "name": "theme_dim",
+      "value": "Bildens ljusstyrka"
+    },
+    {
+      "name": "key_borders",
+      "value": "Tangentkanter"
+    },
+    {
+      "name": "key_borders_desc",
+      "value": "Visa varje tangent som en ruta"
+    },
+    {
+      "name": "split_keyboard",
+      "value": "Delat tangentbord"
+    },
+    {
+      "name": "split_auto",
+      "value": "Automatiskt (liggande och utvikt)"
+    },
+    {
+      "name": "split_always",
+      "value": "Alltid"
+    },
+    {
+      "name": "split_never",
+      "value": "Aldrig"
+    },
+    {
       "name": "EntryAbility_label",
       "value": "gBart"
     },

@@ -305,6 +305,58 @@
       "value": "Прапори"
     },
     {
+      "name": "theme_group_default",
+      "value": "За замовчуванням"
+    },
+    {
+      "name": "theme_group_colors",
+      "value": "Кольори"
+    },
+    {
+      "name": "theme_group_gradients",
+      "value": "Градієнти"
+    },
+    {
+      "name": "theme_group_landscapes",
+      "value": "Пейзажі"
+    },
+    {
+      "name": "theme_group_custom",
+      "value": "Моє зображення"
+    },
+    {
+      "name": "theme_pick_image",
+      "value": "Вибрати зображення"
+    },
+    {
+      "name": "theme_dim",
+      "value": "Яскравість зображення"
+    },
+    {
+      "name": "key_borders",
+      "value": "Контури клавіш"
+    },
+    {
+      "name": "key_borders_desc",
+      "value": "Показувати кожну клавішу як плитку"
+    },
+    {
+      "name": "split_keyboard",
+      "value": "Розділена клавіатура"
+    },
+    {
+      "name": "split_auto",
+      "value": "Автоматично (альбомна орієнтація і розкладений екран)"
+    },
+    {
+      "name": "split_always",
+      "value": "Завжди"
+    },
+    {
+      "name": "split_never",
+      "value": "Ніколи"
+    },
+    {
       "name": "EntryAbility_label",
       "value": "gBart"
     },

@@ -305,6 +305,58 @@
       "value": "Drapeaux"
     },
     {
+      "name": "theme_group_default",
+      "value": "Par défaut"
+    },
+    {
+      "name": "theme_group_colors",
+      "value": "Couleurs"
+    },
+    {
+      "name": "theme_group_gradients",
+      "value": "Dégradés"
+    },
+    {
+      "name": "theme_group_landscapes",
+      "value": "Paysages"
+    },
+    {
+      "name": "theme_group_custom",
+      "value": "Mon image"
+    },
+    {
+      "name": "theme_pick_image",
+      "value": "Choisir une image"
+    },
+    {
+      "name": "theme_dim",
+      "value": "Luminosité de l’image"
+    },
+    {
+      "name": "key_borders",
+      "value": "Contours des touches"
+    },
+    {
+      "name": "key_borders_desc",
+      "value": "Afficher chaque touche comme une case"
+    },
+    {
+      "name": "split_keyboard",
+      "value": "Clavier scindé"
+    },
+    {
+      "name": "split_auto",
+      "value": "Automatique (paysage et déplié)"
+    },
+    {
+      "name": "split_always",
+      "value": "Toujours"
+    },
+    {
+      "name": "split_never",
+      "value": "Jamais"
+    },
+    {
       "name": "EntryAbility_label",
       "value": "gBart"
     },

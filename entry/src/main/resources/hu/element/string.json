@@ -305,6 +305,58 @@
       "value": "Zászlók"
     },
     {
+      "name": "theme_group_default",
+      "value": "Alapértelmezett"
+    },
+    {
+      "name": "theme_group_colors",
+      "value": "Színek"
+    },
+    {
+      "name": "theme_group_gradients",
+      "value": "Színátmenetek"
+    },
+    {
+      "name": "theme_group_landscapes",
+      "value": "Tájképek"
+    },
+    {
+      "name": "theme_group_custom",
+      "value": "Saját kép"
+    },
+    {
+      "name": "theme_pick_image",
+      "value": "Kép kiválasztása"
+    },
+    {
+      "name": "theme_dim",
+      "value": "Kép fényereje"
+    },
+    {
+      "name": "key_borders",
+      "value": "Billentyűk kerete"
+    },
+    {
+      "name": "key_borders_desc",
+      "value": "Minden billentyű csempeként"
+    },
+    {
+      "name": "split_keyboard",
+      "value": "Osztott billentyűzet"
+    },
+    {
+      "name": "split_auto",
+      "value": "Automatikus (fekvő és kihajtott)"
+    },
+    {
+      "name": "split_always",
+      "value": "Mindig"
+    },
+    {
+      "name": "split_never",
+      "value": "Soha"
+    },
+    {
       "name": "EntryAbility_label",
       "value": "gBart"
     },

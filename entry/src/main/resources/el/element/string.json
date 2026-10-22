@@ -305,6 +305,58 @@
       "value": "Σημαίες"
     },
     {
+      "name": "theme_group_default",
+      "value": "Προεπιλογή"
+    },
+    {
+      "name": "theme_group_colors",
+      "value": "Χρώματα"
+    },
+    {
+      "name": "theme_group_gradients",
+      "value": "Διαβαθμίσεις"
+    },
+    {
+      "name": "theme_group_landscapes",
+      "value": "Τοπία"
+    },
+    {
+      "name": "theme_group_custom",
+      "value": "Η εικόνα μου"
+    },
+    {
+      "name": "theme_pick_image",
+      "value": "Επιλογή εικόνας"
+    },
+    {
+      "name": "theme_dim",
+      "value": "Φωτεινότητα εικόνας"
+    },
+    {
+      "name": "key_borders",
+      "value": "Περιγράμματα πλήκτρων"
+    },
+    {
+      "name": "key_borders_desc",
+      "value": "Εμφάνιση κάθε πλήκτρου ως πλακιδίου"
+    },
+    {
+      "name": "split_keyboard",
+      "value": "Διαιρεμένο πληκτρολόγιο"
+    },
+    {
+      "name": "split_auto",
+      "value": "Αυτόματα (οριζόντια και ανοιγμένη οθόνη)"
+    },
+    {
+      "name": "split_always",
+      "value": "Πάντα"
+    },
+    {
+      "name": "split_never",
+      "value": "Ποτέ"
+    },
+    {
       "name": "EntryAbility_label",
       "value": "gBart"
     },

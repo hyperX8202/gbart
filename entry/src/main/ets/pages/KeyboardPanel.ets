@@ -1,11 +1,12 @@
 import { KeyboardController, PanelMode, StorageKeys, StripSlot, StripState } from '../inputmethod/KeyboardController';
 import { buildLetters, KeyboardLayout, KeyDef, KeyKind, LayoutKind, NUMBER_ROW_HEIGHT } from '../inputmethod/Layouts';
-import { KeyboardSettings } from '../inputmethod/Settings';
+import { KeyboardSettings, SplitMode } from '../inputmethod/Settings';
 import { DARK_THEME, KeyboardTheme } from '../inputmethod/Theme';
 import { EmojiCategory, EmojiItem, RECENT_CATEGORY_ID, recentCategory } from '../inputmethod/Emoji';
 import { CONTROLLER_KEY, EMOJI_CATEGORIES_KEY, KEY_HEIGHT_KEY, THEME_KEY } from '../inputmethod/KeyboardExtAbility';
 
 const STRIP_HEIGHT_VP = 44;
+const BOTTOM_PADDING_VP = 6;
 const SIDE_PADDING_VP = 3;
 const KEY_GAP_VP = 3;
 const SPACE_CURSOR_START_VP = 14;
@@ -18,6 +19,12 @@ const EMOJI_COLUMNS = 8;
 const GESTURE_START_KEY_WIDTHS = 0.6;
 /** Trail points kept on screen: about the whole swipe, like Gboard. */
 const TRAIL_POINTS = 360;
+/** Split keyboard (setting "Automatisch"): from this panel width on (landscape, Mate XT unfolded). */
+const SPLIT_MIN_WIDTH_VP = 600;
+/** Gap between the two halves, as a share of the panel width. */
+const SPLIT_GAP_SHARE = 0.3;
+/** Label of the right half's space bar: only the left one names the language. */
+const SPLIT_RIGHT_SPACE = 'split-right';
 
 /** Time of the last tap on shift, for double-tap caps lock (shared by all shift keys). */
 let lastShiftTap: number = 0;
@@ -43,10 +50,55 @@ class KeyHost {
   selectPopup: (index: number) => void = () => {};
   hideOverlay: () => void = () => {};
   popupCellWidth: () => number = () => 0;
+  /**
+   * Split keyboard: window x of the gap's left edge and its width (0 = not split). Gesture traces
+   * are mapped as if the halves touched, so the engine sees one continuous keyboard.
+   */
+  gapStart: number = 0;
+  gapWidth: number = 0;
+  splitActive: () => boolean = () => false;
   /** Gesture trail in window coordinates (vp). */
   trailStart: (x: number, y: number) => void = () => {};
   trailMove: (x: number, y: number) => void = () => {};
   trailEnd: () => void = () => {};
+}
+
+/** One row of the split keyboard. */
+class SplitRow {
+  left: KeyDef[] = [];
+  right: KeyDef[] = [];
+  leftPad: number = 0;
+  rightPad: number = 0;
+}
+
+/**
+ * Splits a row in the middle of the keyboard. Keys go left while they end at or before the
+ * middle; a space bar is cut so both halves get a space key (like Gboard's split layout).
+ */
+function splitRow(row: KeyDef[], totalUnits: number): SplitRow {
+  const half = totalUnits / 2;
+  const out = new SplitRow();
+  const spaceIndex = row.findIndex((k: KeyDef) => k.kind === KeyKind.SPACE);
+  if (spaceIndex >= 0) {
+    const before = row.slice(0, spaceIndex);
+    const space = row[spaceIndex];
+    const beforeUnits = KeyboardLayout.rowUnits(before);
+    const leftSpace = Math.max(1, Math.min(space.width - 1, half - beforeUnits));
+    out.left = before.concat([new KeyDef(space.label, KeyKind.SPACE, leftSpace)]);
+    out.right = [new KeyDef(SPLIT_RIGHT_SPACE, KeyKind.SPACE, space.width - leftSpace)].concat(row.slice(spaceIndex + 1));
+  } else {
+    let used = (totalUnits - KeyboardLayout.rowUnits(row)) / 2;
+    let i = 0;
+    while (i < row.length && used + row[i].width <= half + 0.01) {
+      used += row[i].width;
+      i++;
+    }
+    out.left = row.slice(0, i);
+    out.right = row.slice(i);
+  }
+  out.leftPad = Math.max(0, half - KeyboardLayout.rowUnits(out.left));
+  out.rightPad = Math.max(0, half - KeyboardLayout.rowUnits(out.right));
+  return out;
 }
 
 @Component
@@ -92,6 +144,8 @@ struct KeyView {
             .fontSize(this.fontSize())
             .fontColor(this.textColor())
             .textAlign(TextAlign.Center)
+            .textShadow(this.theme.textShadow ? { radius: 4, color: '#99000000', offsetX: 0, offsetY: 1 } :
+              { radius: 0, color: Color.Transparent })
         }
       }
       .justifyContent(FlexAlign.Center)
@@ -99,7 +153,8 @@ struct KeyView {
       .height('100%')
       .borderRadius(7)
       .backgroundColor(this.keyBackground())
-      .shadow({ radius: this.theme.dark ? 0 : 0.5, color: '#33000000', offsetX: 0, offsetY: this.theme.dark ? 0 : 1 })
+      .shadow({ radius: this.theme.dark || !this.theme.keyBorders ? 0 : 0.5, color: '#33000000', offsetX: 0,
+        offsetY: this.theme.dark || !this.theme.keyBorders ? 0 : 1 })
       if (this.keyDef.hint.length > 0) {
         Text(this.keyDef.hint)
           .fontSize(10)
@@ -156,7 +211,7 @@ struct KeyView {
       case KeyKind.ENTER:
         return this.enterLabel;
       case KeyKind.SPACE:
-        return this.spaceLabel;
+        return this.keyDef.label === SPLIT_RIGHT_SPACE ? '' : this.spaceLabel;
       case KeyKind.SHIFT:
         return this.capsLock ? '⇪' : '⇧';
       case KeyKind.CHAR:
@@ -302,8 +357,19 @@ struct KeyView {
   }
 
   /** Window point (vp) in engine units, through this key's frame (all letter keys share one scale). */
+  /** Window x with the split gap removed (inside the gap: its left edge). */
+  private unsplit(x: number): number {
+    const gapStart = this.host.gapStart;
+    const gapWidth = this.host.gapWidth;
+    if (!this.host.splitActive() || gapWidth <= 0 || x <= gapStart) {
+      return x;
+    }
+    return x >= gapStart + gapWidth ? x - gapWidth : gapStart;
+  }
+
   private engineX(x: number): number {
-    return Math.round(this.keyDef.engineX + (x - this.rect.x) * this.keyDef.engineWidth / this.rect.width);
+    return Math.round(this.keyDef.engineX +
+      (this.unsplit(x) - this.unsplit(this.rect.x)) * this.keyDef.engineWidth / this.rect.width);
   }
 
   private engineY(y: number): number {
@@ -526,7 +592,7 @@ struct KeyboardPanel {
   @State emojiCategoryId: string = RECENT_CATEGORY_ID;
   @State emojiVariants: string[] = [];
   @State trail: Array<[number, number]> = [];
-  private panelWidth: number = 0;
+  @State panelWidth: number = 0;
   private controller: KeyboardController | undefined = undefined;
   private host: KeyHost = new KeyHost();
 
@@ -543,6 +609,7 @@ struct KeyboardPanel {
       this.overlayKind = OverlayKind.PREVIEW;
     };
     this.host.popupCellWidth = () => this.popupCell();
+    this.host.splitActive = () => this.isSplit();
     this.host.showPopup = (rect: KeyRect, chars: string[]) => {
       const cell = this.popupCell();
       const w = cell * chars.length + 8;
@@ -582,6 +649,21 @@ struct KeyboardPanel {
 
   build() {
     Stack({ alignContent: Alignment.TopStart }) {
+      // Picture themes: the picture, then a darkening layer so the labels stay readable.
+      if (this.theme.image !== '') {
+        Image(this.theme.image)
+          .width('100%')
+          .height('100%')
+          .objectFit(ImageFit.Cover)
+          .hitTestBehavior(HitTestMode.None)
+        if (this.theme.dim > 0) {
+          Column()
+            .width('100%')
+            .height('100%')
+            .backgroundColor(`rgba(0,0,0,${this.theme.dim})`)
+            .hitTestBehavior(HitTestMode.None)
+        }
+      }
       Column() {
         if (this.mode === PanelMode.EMOJI) {
           this.emojiPanel()
@@ -594,7 +676,7 @@ struct KeyboardPanel {
       }
       .width('100%')
       .height('100%')
-      .padding({ left: SIDE_PADDING_VP, right: SIDE_PADDING_VP })
+      .padding({ left: SIDE_PADDING_VP, right: SIDE_PADDING_VP, bottom: BOTTOM_PADDING_VP })
 
       if (this.trail.length > 1) {
         Polyline()
@@ -647,6 +729,7 @@ struct KeyboardPanel {
     .width('100%')
     .height('100%')
     .backgroundColor(this.theme.background)
+    .linearGradient(this.backgroundGradient())
     .onAreaChange((oldValue: Area, newValue: Area) => {
       this.panelWidth = Number(newValue.width);
     })
@@ -715,31 +798,85 @@ struct KeyboardPanel {
 
   // --- keys ----------------------------------------------------------------------------------
 
+  /** Gradient themes; plain themes get a gradient of one colour (no visible change). */
+  private backgroundGradient(): LinearGradientOptions {
+    const stops = this.theme.gradient.length > 1 ? this.theme.gradient : [this.theme.background, this.theme.background];
+    const colors: Array<[ResourceColor, number]> = stops.map(
+      (c: string, i: number) => [c, i / (stops.length - 1)] as [ResourceColor, number]);
+    return { angle: 135, colors: colors };
+  }
+
+  /** Split keyboard in effect (setting, and for "auto" a wide panel: landscape or unfolded). */
+  private isSplit(): boolean {
+    const mode = this.settings.splitMode;
+    return mode === SplitMode.ALWAYS || (mode === SplitMode.AUTO && this.panelWidth >= SPLIT_MIN_WIDTH_VP);
+  }
+
+  private splitGap(): number {
+    return Math.round(this.panelWidth * SPLIT_GAP_SHARE);
+  }
+
+  @Builder
+  keyView(key: KeyDef) {
+    KeyView({
+      keyDef: key,
+      controller: this.controller,
+      host: this.host,
+      shift: this.shift,
+      capsLock: this.capsLock,
+      enterLabel: this.enterLabel,
+      spaceLabel: this.spaceLabel,
+      theme: this.theme,
+      settings: this.settings
+    })
+  }
+
   @Builder
   keyRow(row: KeyDef[], numberRow: boolean) {
-    Row() {
-      if (KeyboardLayout.rowUnits(row) < this.layout.unitsWide()) {
-        Blank().layoutWeight((this.layout.unitsWide() - KeyboardLayout.rowUnits(row)) / 2)
+    if (this.isSplit()) {
+      this.splitKeyRow(splitRow(row, this.layout.unitsWide()), numberRow)
+    } else {
+      Row() {
+        if (KeyboardLayout.rowUnits(row) < this.layout.unitsWide()) {
+          Blank().layoutWeight((this.layout.unitsWide() - KeyboardLayout.rowUnits(row)) / 2)
+        }
+        ForEach(row, (key: KeyDef) => {
+          this.keyView(key)
+        }, (key: KeyDef, index: number) => `${this.layout.id}-${index}-${key.label}`)
+        if (KeyboardLayout.rowUnits(row) < this.layout.unitsWide()) {
+          Blank().layoutWeight((this.layout.unitsWide() - KeyboardLayout.rowUnits(row)) / 2)
+        }
       }
-      ForEach(row, (key: KeyDef) => {
-        KeyView({
-          keyDef: key,
-          controller: this.controller,
-          host: this.host,
-          shift: this.shift,
-          capsLock: this.capsLock,
-          enterLabel: this.enterLabel,
-          spaceLabel: this.spaceLabel,
-          theme: this.theme,
-          settings: this.settings
+      .width('100%')
+      .layoutWeight(numberRow ? NUMBER_ROW_HEIGHT : 1)
+    }
+  }
+
+  /** Two halves around a gap in the middle; each half is padded so the gap lines up in all rows. */
+  @Builder
+  splitKeyRow(halves: SplitRow, numberRow: boolean) {
+    Row() {
+      if (halves.leftPad > 0) {
+        Blank().layoutWeight(halves.leftPad)
+      }
+      ForEach(halves.left, (key: KeyDef) => {
+        this.keyView(key)
+      }, (key: KeyDef, index: number) => `${this.layout.id}-l${index}-${key.label}-${key.width}`)
+      Blank()
+        .width(this.splitGap())
+        .onAreaChange((oldValue: Area, newValue: Area) => {
+          this.host.gapStart = Number(newValue.globalPosition.x ?? 0);
+          this.host.gapWidth = Number(newValue.width);
         })
-      }, (key: KeyDef, index: number) => `${this.layout.id}-${index}-${key.label}`)
-      if (KeyboardLayout.rowUnits(row) < this.layout.unitsWide()) {
-        Blank().layoutWeight((this.layout.unitsWide() - KeyboardLayout.rowUnits(row)) / 2)
+      ForEach(halves.right, (key: KeyDef) => {
+        this.keyView(key)
+      }, (key: KeyDef, index: number) => `${this.layout.id}-r${index}-${key.label}-${key.width}`)
+      if (halves.rightPad > 0) {
+        Blank().layoutWeight(halves.rightPad)
       }
     }
     .width('100%')
-    .height(numberRow ? this.keyHeight * NUMBER_ROW_HEIGHT : this.keyHeight)
+    .layoutWeight(numberRow ? NUMBER_ROW_HEIGHT : 1)
   }
 
   // --- emoji ---------------------------------------------------------------------------------

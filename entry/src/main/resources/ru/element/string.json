@@ -305,6 +305,58 @@
       "value": "Флаги"
     },
     {
+      "name": "theme_group_default",
+      "value": "По умолчанию"
+    },
+    {
+      "name": "theme_group_colors",
+      "value": "Цвета"
+    },
+    {
+      "name": "theme_group_gradients",
+      "value": "Градиенты"
+    },
+    {
+      "name": "theme_group_landscapes",
+      "value": "Пейзажи"
+    },
+    {
+      "name": "theme_group_custom",
+      "value": "Моё изображение"
+    },
+    {
+      "name": "theme_pick_image",
+      "value": "Выбрать изображение"
+    },
+    {
+      "name": "theme_dim",
+      "value": "Яркость изображения"
+    },
+    {
+      "name": "key_borders",
+      "value": "Контуры клавиш"
+    },
+    {
+      "name": "key_borders_desc",
+      "value": "Показывать каждую клавишу как плитку"
+    },
+    {
+      "name": "split_keyboard",
+      "value": "Разделённая клавиатура"
+    },
+    {
+      "name": "split_auto",
+      "value": "Автоматически (альбомная ориентация и разложенный экран)"
+    },
+    {
+      "name": "split_always",
+      "value": "Всегда"
+    },
+    {
+      "name": "split_never",
+      "value": "Никогда"
+    },
+    {
       "name": "EntryAbility_label",
       "value": "gBart"
     },

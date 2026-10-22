@@ -315,6 +315,58 @@
     {
       "name": "sec_more",
       "value": "Weitere"
+    },
+    {
+      "name": "theme_group_default",
+      "value": "Standard"
+    },
+    {
+      "name": "theme_group_colors",
+      "value": "Farben"
+    },
+    {
+      "name": "theme_group_gradients",
+      "value": "Farbverläufe"
+    },
+    {
+      "name": "theme_group_landscapes",
+      "value": "Landschaften"
+    },
+    {
+      "name": "theme_group_custom",
+      "value": "Eigenes Bild"
+    },
+    {
+      "name": "theme_pick_image",
+      "value": "Bild auswählen"
+    },
+    {
+      "name": "theme_dim",
+      "value": "Helligkeit des Bildes"
+    },
+    {
+      "name": "key_borders",
+      "value": "Tastenumrandung"
+    },
+    {
+      "name": "key_borders_desc",
+      "value": "Tasten als Felder anzeigen"
+    },
+    {
+      "name": "split_keyboard",
+      "value": "Geteilte Tastatur"
+    },
+    {
+      "name": "split_auto",
+      "value": "Automatisch (Querformat und aufgeklappt)"
+    },
+    {
+      "name": "split_always",
+      "value": "Immer"
+    },
+    {
+      "name": "split_never",
+      "value": "Nie"
     }
   ]
 }

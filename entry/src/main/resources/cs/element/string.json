@@ -305,6 +305,58 @@
       "value": "Vlajky"
     },
     {
+      "name": "theme_group_default",
+      "value": "Výchozí"
+    },
+    {
+      "name": "theme_group_colors",
+      "value": "Barvy"
+    },
+    {
+      "name": "theme_group_gradients",
+      "value": "Přechody"
+    },
+    {
+      "name": "theme_group_landscapes",
+      "value": "Krajiny"
+    },
+    {
+      "name": "theme_group_custom",
+      "value": "Vlastní obrázek"
+    },
+    {
+      "name": "theme_pick_image",
+      "value": "Vybrat obrázek"
+    },
+    {
+      "name": "theme_dim",
+      "value": "Jas obrázku"
+    },
+    {
+      "name": "key_borders",
+      "value": "Ohraničení kláves"
+    },
+    {
+      "name": "key_borders_desc",
+      "value": "Zobrazit každou klávesu jako dlaždici"
+    },
+    {
+      "name": "split_keyboard",
+      "value": "Rozdělená klávesnice"
+    },
+    {
+      "name": "split_auto",
+      "value": "Automaticky (na šířku a rozložené)"
+    },
+    {
+      "name": "split_always",
+      "value": "Vždy"
+    },
+    {
+      "name": "split_never",
+      "value": "Nikdy"
+    },
+    {
       "name": "EntryAbility_label",
       "value": "gBart"
     },

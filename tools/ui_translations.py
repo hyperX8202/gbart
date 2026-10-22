@@ -488,11 +488,75 @@ T = {
            'Животни и природа', 'Храна и напитки', 'Пътуване и места', 'Дейности', 'Предмети', 'Символи', 'Знамена'],
 }
 
+# Strings added later (themes, split keyboard), in the same order for every language.
+EXTRA_KEYS = ['theme_group_default', 'theme_group_colors', 'theme_group_gradients', 'theme_group_landscapes',
+              'theme_group_custom', 'theme_pick_image', 'theme_dim', 'key_borders', 'key_borders_desc',
+              'split_keyboard', 'split_auto', 'split_always', 'split_never']
+
+EXTRA = {
+    'fr': ['Par défaut', 'Couleurs', 'Dégradés', 'Paysages', 'Mon image', 'Choisir une image', "Luminosité de l’image",
+           'Contours des touches', 'Afficher chaque touche comme une case', 'Clavier scindé',
+           'Automatique (paysage et déplié)', 'Toujours', 'Jamais'],
+    'es': ['Predeterminado', 'Colores', 'Degradados', 'Paisajes', 'Mi imagen', 'Elegir imagen', 'Brillo de la imagen',
+           'Bordes de teclas', 'Mostrar cada tecla como un recuadro', 'Teclado dividido',
+           'Automático (horizontal y desplegado)', 'Siempre', 'Nunca'],
+    'it': ['Predefinito', 'Colori', 'Sfumature', 'Paesaggi', 'La mia immagine', 'Scegli immagine',
+           "Luminosità dell’immagine", 'Bordi dei tasti', 'Mostra ogni tasto come un riquadro', 'Tastiera divisa',
+           'Automatica (orizzontale e aperto)', 'Sempre', 'Mai'],
+    'nl': ['Standaard', 'Kleuren', 'Kleurverlopen', 'Landschappen', 'Eigen afbeelding', 'Afbeelding kiezen',
+           'Helderheid van de afbeelding', 'Toetsranden', 'Elke toets als vlak tonen', 'Gesplitst toetsenbord',
+           'Automatisch (liggend en opengevouwen)', 'Altijd', 'Nooit'],
+    'pt': ['Predefinição', 'Cores', 'Gradientes', 'Paisagens', 'A minha imagem', 'Escolher imagem', 'Brilho da imagem',
+           'Contornos das teclas', 'Mostrar cada tecla como um bloco', 'Teclado dividido',
+           'Automático (horizontal e desdobrado)', 'Sempre', 'Nunca'],
+    'pl': ['Domyślne', 'Kolory', 'Gradienty', 'Krajobrazy', 'Mój obraz', 'Wybierz obraz', 'Jasność obrazu',
+           'Obramowanie klawiszy', 'Pokazuj każdy klawisz jako pole', 'Podzielona klawiatura',
+           'Automatycznie (poziomo i po rozłożeniu)', 'Zawsze', 'Nigdy'],
+    'ru': ['По умолчанию', 'Цвета', 'Градиенты', 'Пейзажи', 'Моё изображение', 'Выбрать изображение',
+           'Яркость изображения', 'Контуры клавиш', 'Показывать каждую клавишу как плитку', 'Разделённая клавиатура',
+           'Автоматически (альбомная ориентация и разложенный экран)', 'Всегда', 'Никогда'],
+    'tr': ['Varsayılan', 'Renkler', 'Renk geçişleri', 'Manzaralar', 'Kendi resmim', 'Resim seç', 'Resim parlaklığı',
+           'Tuş kenarlıkları', 'Her tuşu bir kutucuk olarak göster', 'Bölünmüş klavye',
+           'Otomatik (yatay ve açık ekran)', 'Her zaman', 'Asla'],
+    'cs': ['Výchozí', 'Barvy', 'Přechody', 'Krajiny', 'Vlastní obrázek', 'Vybrat obrázek', 'Jas obrázku',
+           'Ohraničení kláves', 'Zobrazit každou klávesu jako dlaždici', 'Rozdělená klávesnice',
+           'Automaticky (na šířku a rozložené)', 'Vždy', 'Nikdy'],
+    'sv': ['Standard', 'Färger', 'Toningar', 'Landskap', 'Egen bild', 'Välj bild', 'Bildens ljusstyrka',
+           'Tangentkanter', 'Visa varje tangent som en ruta', 'Delat tangentbord', 'Automatiskt (liggande och utvikt)',
+           'Alltid', 'Aldrig'],
+    'da': ['Standard', 'Farver', 'Overgange', 'Landskaber', 'Eget billede', 'Vælg billede', 'Billedets lysstyrke',
+           'Tastkanter', 'Vis hver tast som et felt', 'Delt tastatur', 'Automatisk (liggende og foldet ud)', 'Altid',
+           'Aldrig'],
+    'nb': ['Standard', 'Farger', 'Fargeoverganger', 'Landskap', 'Eget bilde', 'Velg bilde', 'Bildets lysstyrke',
+           'Tastekanter', 'Vis hver tast som et felt', 'Delt tastatur', 'Automatisk (liggende og brettet ut)', 'Alltid',
+           'Aldri'],
+    'fi': ['Oletus', 'Värit', 'Liukuvärit', 'Maisemat', 'Oma kuva', 'Valitse kuva', 'Kuvan kirkkaus',
+           'Näppäinten reunat', 'Näytä jokainen näppäin ruutuna', 'Jaettu näppäimistö',
+           'Automaattinen (vaaka ja avattu)', 'Aina', 'Ei koskaan'],
+    'hu': ['Alapértelmezett', 'Színek', 'Színátmenetek', 'Tájképek', 'Saját kép', 'Kép kiválasztása',
+           'Kép fényereje', 'Billentyűk kerete', 'Minden billentyű csempeként', 'Osztott billentyűzet',
+           'Automatikus (fekvő és kihajtott)', 'Mindig', 'Soha'],
+    'ro': ['Implicit', 'Culori', 'Degradeuri', 'Peisaje', 'Imaginea mea', 'Alegeți imaginea', 'Luminozitatea imaginii',
+           'Contururi taste', 'Afișați fiecare tastă ca o casetă', 'Tastatură divizată',
+           'Automat (peisaj și desfăcut)', 'Întotdeauna', 'Niciodată'],
+    'uk': ['За замовчуванням', 'Кольори', 'Градієнти', 'Пейзажі', 'Моє зображення', 'Вибрати зображення',
+           'Яскравість зображення', 'Контури клавіш', 'Показувати кожну клавішу як плитку', 'Розділена клавіатура',
+           'Автоматично (альбомна орієнтація і розкладений екран)', 'Завжди', 'Ніколи'],
+    'el': ['Προεπιλογή', 'Χρώματα', 'Διαβαθμίσεις', 'Τοπία', 'Η εικόνα μου', 'Επιλογή εικόνας',
+           'Φωτεινότητα εικόνας', 'Περιγράμματα πλήκτρων', 'Εμφάνιση κάθε πλήκτρου ως πλακιδίου',
+           'Διαιρεμένο πληκτρολόγιο', 'Αυτόματα (οριζόντια και ανοιγμένη οθόνη)', 'Πάντα', 'Ποτέ'],
+    'bg': ['По подразбиране', 'Цветове', 'Преливащи цветове', 'Пейзажи', 'Моето изображение', 'Избор на изображение',
+           'Яркост на изображението', 'Контури на клавишите', 'Показване на всеки клавиш като плочка',
+           'Разделена клавиатура', 'Автоматично (хоризонтално и разгънат)', 'Винаги', 'Никога'],
+}
+
 
 def main():
     for lang, values in T.items():
         assert len(values) == len(KEYS), f'{lang}: {len(values)} strings, expected {len(KEYS)}'
         strings = dict(zip(KEYS, values))
+        assert len(EXTRA[lang]) == len(EXTRA_KEYS), f'{lang}: extra strings'
+        strings.update(dict(zip(EXTRA_KEYS, EXTRA[lang])))
         # Product name, not translated; the setup texts name the keyboard as the system lists it.
         name = re.escape(strings['app_name'])
         for key in ('setup_select_desc', 'setup_full_desc'):

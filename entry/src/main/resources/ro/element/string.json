@@ -305,6 +305,58 @@
       "value": "Steaguri"
     },
     {
+      "name": "theme_group_default",
+      "value": "Implicit"
+    },
+    {
+      "name": "theme_group_colors",
+      "value": "Culori"
+    },
+    {
+      "name": "theme_group_gradients",
+      "value": "Degradeuri"
+    },
+    {
+      "name": "theme_group_landscapes",
+      "value": "Peisaje"
+    },
+    {
+      "name": "theme_group_custom",
+      "value": "Imaginea mea"
+    },
+    {
+      "name": "theme_pick_image",
+      "value": "Alegeți imaginea"
+    },
+    {
+      "name": "theme_dim",
+      "value": "Luminozitatea imaginii"
+    },
+    {
+      "name": "key_borders",
+      "value": "Contururi taste"
+    },
+    {
+      "name": "key_borders_desc",
+      "value": "Afișați fiecare tastă ca o casetă"
+    },
+    {
+      "name": "split_keyboard",
+      "value": "Tastatură divizată"
+    },
+    {
+      "name": "split_auto",
+      "value": "Automat (peisaj și desfăcut)"
+    },
+    {
+      "name": "split_always",
+      "value": "Întotdeauna"
+    },
+    {
+      "name": "split_never",
+      "value": "Niciodată"
+    },
+    {
       "name": "EntryAbility_label",
       "value": "gBart"
     },

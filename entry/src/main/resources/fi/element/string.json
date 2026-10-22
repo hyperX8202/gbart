@@ -305,6 +305,58 @@
       "value": "Liput"
     },
     {
+      "name": "theme_group_default",
+      "value": "Oletus"
+    },
+    {
+      "name": "theme_group_colors",
+      "value": "Värit"
+    },
+    {
+      "name": "theme_group_gradients",
+      "value": "Liukuvärit"
+    },
+    {
+      "name": "theme_group_landscapes",
+      "value": "Maisemat"
+    },
+    {
+      "name": "theme_group_custom",
+      "value": "Oma kuva"
+    },
+    {
+      "name": "theme_pick_image",
+      "value": "Valitse kuva"
+    },
+    {
+      "name": "theme_dim",
+      "value": "Kuvan kirkkaus"
+    },
+    {
+      "name": "key_borders",
+      "value": "Näppäinten reunat"
+    },
+    {
+      "name": "key_borders_desc",
+      "value": "Näytä jokainen näppäin ruutuna"
+    },
+    {
+      "name": "split_keyboard",
+      "value": "Jaettu näppäimistö"
+    },
+    {
+      "name": "split_auto",
+      "value": "Automaattinen (vaaka ja avattu)"
+    },
+    {
+      "name": "split_always",
+      "value": "Aina"
+    },
+    {
+      "name": "split_never",
+      "value": "Ei koskaan"
+    },
+    {
       "name": "EntryAbility_label",
       "value": "gBart"
     },

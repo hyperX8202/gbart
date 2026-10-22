@@ -305,6 +305,58 @@
       "value": "Flagg"
     },
     {
+      "name": "theme_group_default",
+      "value": "Standard"
+    },
+    {
+      "name": "theme_group_colors",
+      "value": "Farger"
+    },
+    {
+      "name": "theme_group_gradients",
+      "value": "Fargeoverganger"
+    },
+    {
+      "name": "theme_group_landscapes",
+      "value": "Landskap"
+    },
+    {
+      "name": "theme_group_custom",
+      "value": "Eget bilde"
+    },
+    {
+      "name": "theme_pick_image",
+      "value": "Velg bilde"
+    },
+    {
+      "name": "theme_dim",
+      "value": "Bildets lysstyrke"
+    },
+    {
+      "name": "key_borders",
+      "value": "Tastekanter"
+    },
+    {
+      "name": "key_borders_desc",
+      "value": "Vis hver tast som et felt"
+    },
+    {
+      "name": "split_keyboard",
+      "value": "Delt tastatur"
+    },
+    {
+      "name": "split_auto",
+      "value": "Automatisk (liggende og brettet ut)"
+    },
+    {
+      "name": "split_always",
+      "value": "Alltid"
+    },
+    {
+      "name": "split_never",
+      "value": "Aldri"
+    },
+    {
       "name": "EntryAbility_label",
       "value": "gBart"
     },

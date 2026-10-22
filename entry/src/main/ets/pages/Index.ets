@@ -3,7 +3,15 @@ import { inputMethod } from '@kit.IMEKit';
 import { promptAction } from '@kit.ArkUI';
 import { util } from '@kit.ArkTS';
 import { hilog } from '@kit.PerformanceAnalysisKit';
-import { AutoCorrectStrength, KeyboardSettings, KeyboardStatus, SettingsStore, ThemeMode } from '../inputmethod/Settings';
+import { photoAccessHelper } from '@kit.MediaLibraryKit';
+import { image } from '@kit.ImageKit';
+import { fileIo as fs } from '@kit.CoreFileKit';
+import { resourceManager } from '@kit.LocalizationKit';
+import { AutoCorrectStrength, KeyboardSettings, KeyboardStatus, SettingsStore, SplitMode } from '../inputmethod/Settings';
+import { buildTheme, KeyboardTheme, THEME_CUSTOM, THEME_DARK, THEME_DEFS, THEME_LIGHT, THEME_SYSTEM, ThemeDef, themeDef,
+  ThemeGroup } from '../inputmethod/Theme';
+import { customImagePath, themeImageUri } from '../inputmethod/ThemeAssets';
+import { KeyboardPreview, ThemeTile } from './ThemeTile';
 import { LANGUAGES, LanguageDef, languageById } from '../inputmethod/LanguageData';
 import { ChoiceItem, CARD_BG, groupHeader, hint, NavRow, PAGE_BG, RadioRow, SliderRow, SwitchRow, TEXT_PRIMARY,
   TEXT_SECONDARY } from './SettingsRows';
@@ -14,11 +22,31 @@ const STRENGTHS: ChoiceItem[] = [
   new ChoiceItem($r('app.string.strength_very'), AutoCorrectStrength.VERY_AGGRESSIVE)
 ];
 
-const THEMES: ChoiceItem[] = [
-  new ChoiceItem($r('app.string.theme_system'), ThemeMode.SYSTEM),
-  new ChoiceItem($r('app.string.theme_light'), ThemeMode.LIGHT),
-  new ChoiceItem($r('app.string.theme_dark'), ThemeMode.DARK)
+const SPLIT_MODES: ChoiceItem[] = [
+  new ChoiceItem($r('app.string.split_auto'), SplitMode.AUTO),
+  new ChoiceItem($r('app.string.split_always'), SplitMode.ALWAYS),
+  new ChoiceItem($r('app.string.split_never'), SplitMode.NEVER)
 ];
+
+class ThemeSection {
+  group: ThemeGroup;
+  title: Resource;
+
+  constructor(group: ThemeGroup, title: Resource) {
+    this.group = group;
+    this.title = title;
+  }
+}
+
+const THEME_SECTIONS: ThemeSection[] = [
+  new ThemeSection(ThemeGroup.DEFAULT, $r('app.string.theme_group_default')),
+  new ThemeSection(ThemeGroup.COLOR, $r('app.string.theme_group_colors')),
+  new ThemeSection(ThemeGroup.GRADIENT, $r('app.string.theme_group_gradients')),
+  new ThemeSection(ThemeGroup.LANDSCAPE, $r('app.string.theme_group_landscapes'))
+];
+
+/** Longest side of the own picture after scaling (keyboard panels are at most ~2200 px wide). */
+const CUSTOM_IMAGE_MAX_PX = 2200;
 
 /** inputMethodEngine.SecurityMode.BASIC: vibration needs the full experience mode. */
 const SECURITY_MODE_BASIC = 0;
@@ -36,6 +64,8 @@ struct Index {
   @State tryText: string = '';
   @State languageQuery: string = '';
   @State licenseText: string = '';
+  /** Resolved theme per THEME_DEFS entry (picker tiles), refreshed when borders or picture change. */
+  @State tileThemes: KeyboardTheme[] = [];
   private stack: NavPathStack = new NavPathStack();
   private store: SettingsStore | null = null;
   private version: string = '';
@@ -60,6 +90,7 @@ struct Index {
       return;
     }
     this.settings = this.store.load();
+    this.refreshThemes();
     this.status = this.store.readStatus();
     try {
       const current = inputMethod.getCurrentInputMethod();
@@ -73,7 +104,75 @@ struct Index {
     const changed = this.settings.copy();
     mutate(changed);
     this.store?.save(changed);
+    const appearance = changed.keyBorders !== this.settings.keyBorders ||
+      changed.customImageAt !== this.settings.customImageAt || changed.customDim !== this.settings.customDim;
     this.settings = changed;
+    if (appearance) {
+      this.refreshThemes();
+    }
+  }
+
+  private systemDark(): boolean {
+    try {
+      return getContext(this).resourceManager.getConfigurationSync().colorMode === resourceManager.ColorMode.DARK;
+    } catch (e) {
+      return true;
+    }
+  }
+
+  private refreshThemes(): void {
+    const context = getContext(this);
+    const dark = this.systemDark();
+    this.tileThemes = THEME_DEFS.map((d: ThemeDef) => buildTheme(d.id, dark, this.settings.keyBorders,
+      themeImageUri(context, d.id, this.settings), d.id === THEME_CUSTOM ? this.settings.customDim : 0));
+  }
+
+  private tileTheme(id: string): KeyboardTheme {
+    const index = THEME_DEFS.findIndex((d: ThemeDef) => d.id === id);
+    return index >= 0 && index < this.tileThemes.length ? this.tileThemes[index] : new KeyboardTheme();
+  }
+
+  /**
+   * Own picture: picked from the gallery, scaled down and stored in the directory the keyboard can
+   * read; then selected as theme.
+   */
+  private async pickCustomImage(): Promise<void> {
+    try {
+      const options = new photoAccessHelper.PhotoSelectOptions();
+      options.MIMEType = photoAccessHelper.PhotoViewMIMETypes.IMAGE_TYPE;
+      options.maxSelectNumber = 1;
+      const result = await new photoAccessHelper.PhotoViewPicker().select(options);
+      if (result.photoUris.length === 0) {
+        return;
+      }
+      const file = fs.openSync(result.photoUris[0], fs.OpenMode.READ_ONLY);
+      try {
+        const source = image.createImageSource(file.fd);
+        const info = await source.getImageInfo();
+        const scale = Math.min(1, CUSTOM_IMAGE_MAX_PX / Math.max(info.size.width, info.size.height));
+        const pixels = await source.createPixelMap({
+          desiredSize: { width: Math.round(info.size.width * scale), height: Math.round(info.size.height * scale) }
+        });
+        const data = await image.createImagePacker().packToData(pixels, { format: 'image/jpeg', quality: 88 });
+        const out = fs.openSync(customImagePath(getContext(this)),
+          fs.OpenMode.CREATE | fs.OpenMode.WRITE_ONLY | fs.OpenMode.TRUNC);
+        try {
+          fs.writeSync(out.fd, data);
+        } finally {
+          fs.closeSync(out);
+        }
+        pixels.release();
+        source.release();
+      } finally {
+        fs.closeSync(file);
+      }
+      this.edit((s: KeyboardSettings) => {
+        s.customImageAt = Date.now();
+        s.theme = THEME_CUSTOM;
+      });
+    } catch (e) {
+      hilog.error(0x4b42, 'Index', 'own picture failed: %{public}s', JSON.stringify(e));
+    }
   }
 
   private setLanguage(languageId: string, on: boolean): void {
@@ -164,7 +263,26 @@ struct Index {
   }
 
   private themeName(): Resource {
-    return THEMES.find((c: ChoiceItem) => c.value === this.settings.theme)?.label ?? THEMES[0].label;
+    switch (this.settings.theme) {
+      case THEME_SYSTEM:
+        return $r('app.string.theme_system');
+      case THEME_LIGHT:
+        return $r('app.string.theme_light');
+      case THEME_DARK:
+        return $r('app.string.theme_dark');
+      default:
+        break;
+    }
+    const group = themeDef(this.settings.theme).group;
+    if (group === ThemeGroup.CUSTOM) {
+      return $r('app.string.theme_group_custom');
+    }
+    return THEME_SECTIONS.find((t: ThemeSection) => t.group === group)?.title ?? $r('app.string.theme_system');
+  }
+
+  private defaultThemeLabel(id: string): ResourceStr {
+    return id === THEME_SYSTEM ? $r('app.string.theme_system') : id === THEME_LIGHT ? $r('app.string.theme_light') :
+      id === THEME_DARK ? $r('app.string.theme_dark') : '';
   }
 
   // --- setup -----------------------------------------------------------------------------------
@@ -323,6 +441,15 @@ struct Index {
             onToggle: (on: boolean) => this.edit((s: KeyboardSettings) => { s.keyPopup = on; }) })
         }
         .card()
+
+        groupHeader($r('app.string.split_keyboard'))
+        Column() {
+          ForEach(SPLIT_MODES, (c: ChoiceItem) => {
+            RadioRow({ title: c.label, checked: this.settings.splitMode === c.value,
+              onPick: () => this.edit((s: KeyboardSettings) => { s.splitMode = c.value as SplitMode; }) })
+          }, (c: ChoiceItem) => c.value)
+        }
+        .card()
         .margin({ left: 12, right: 12, top: 8 })
 
         Column() {
@@ -359,16 +486,92 @@ struct Index {
 
   @Builder
   themePage() {
-    Column() {
+    Scroll() {
       Column() {
-        ForEach(THEMES, (c: ChoiceItem) => {
-          RadioRow({ title: c.label, checked: this.settings.theme === c.value,
-            onPick: () => this.edit((s: KeyboardSettings) => { s.theme = c.value as ThemeMode; }) })
-        }, (c: ChoiceItem) => c.value)
+        // Live preview of the chosen theme.
+        Column() {
+          Column() {
+            KeyboardPreview({ theme: this.tileTheme(this.settings.theme), sizeFactor: 1.6 })
+          }
+          .width('100%')
+          .aspectRatio(2.2)
+          .borderRadius(20)
+          .clip(true)
+        }
+        .padding({ left: 12, right: 12, top: 8 })
+
+        Column() {
+          SwitchRow({ title: $r('app.string.key_borders'), subtitle: $r('app.string.key_borders_desc'),
+            value: this.settings.keyBorders,
+            onToggle: (on: boolean) => this.edit((s: KeyboardSettings) => { s.keyBorders = on; }) })
+        }
+        .card()
+        .margin({ left: 12, right: 12, top: 12 })
+
+        ForEach(THEME_SECTIONS, (section: ThemeSection) => {
+          groupHeader(section.title)
+          Grid() {
+            ForEach(THEME_DEFS.filter((d: ThemeDef) => d.group === section.group), (d: ThemeDef) => {
+              GridItem() {
+                ThemeTile({ theme: this.tileTheme(d.id), selected: this.settings.theme === d.id,
+                  label: this.defaultThemeLabel(d.id),
+                  onPick: () => this.edit((s: KeyboardSettings) => { s.theme = d.id; }) })
+              }
+            }, (d: ThemeDef) => `${d.id}-${this.settings.keyBorders}-${this.settings.customImageAt}`)
+          }
+          .columnsTemplate('1fr 1fr 1fr')
+          .columnsGap(10)
+          .rowsGap(12)
+          .padding({ left: 16, right: 16 })
+          .maxCount(3)
+          .layoutDirection(GridDirection.Row)
+        }, (section: ThemeSection) => `${section.group}`)
+
+        groupHeader($r('app.string.theme_group_custom'))
+        Row({ space: 10 }) {
+          if (this.settings.customImageAt > 0) {
+            Column() {
+              ThemeTile({ theme: this.tileTheme(THEME_CUSTOM), selected: this.settings.theme === THEME_CUSTOM,
+                onPick: () => this.edit((s: KeyboardSettings) => { s.theme = THEME_CUSTOM; }) })
+            }
+            .layoutWeight(1)
+          }
+          Column({ space: 6 }) {
+            SymbolGlyph($r('sys.symbol.plus'))
+              .fontSize(26)
+              .fontColor([$r('sys.color.ohos_id_color_emphasize')])
+            Text($r('app.string.theme_pick_image'))
+              .fontSize(13)
+              .fontColor(TEXT_PRIMARY)
+          }
+          .justifyContent(FlexAlign.Center)
+          .layoutWeight(1)
+          .aspectRatio(1.45)
+          .borderRadius(14)
+          .backgroundColor(CARD_BG)
+          .onClick(() => {
+            this.pickCustomImage();
+          })
+          if (this.settings.customImageAt === 0) {
+            Blank().layoutWeight(1)
+          }
+        }
+        .padding({ left: 16, right: 16 })
+        if (this.settings.theme === THEME_CUSTOM) {
+          Column() {
+            SliderRow({ title: $r('app.string.theme_dim'),
+              valueText: `${Math.round((1 - this.settings.customDim) * 100)} %`,
+              value: Math.round((1 - this.settings.customDim) * 100), min: 20, max: 100, step: 5,
+              onDone: (v: number) => this.edit((s: KeyboardSettings) => { s.customDim = (100 - Math.round(v)) / 100; }) })
+          }
+          .card()
+          .margin({ left: 12, right: 12, top: 12 })
+        }
       }
-      .card()
-      .margin({ left: 12, right: 12, top: 8 })
+      .padding({ bottom: 32 })
     }
+    .scrollBar(BarState.Off)
+    .align(Alignment.Top)
     .height('100%')
   }
 

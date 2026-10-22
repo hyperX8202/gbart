@@ -19,6 +19,10 @@ siehe `third_party/latinime/` und `THIRD_PARTY_NOTICES.md`.
 - Gleitende Eingabe (Swipe) mit Bewegungspfad, Alternativen in der Leiste, automatischem
   Leerzeichen und „Rücktaste löscht ganzes Wort“
 - Emoji-Taste und Emoji-Panel, Emoji-Vorschläge („Pizza“ → 🍕)
+- Designs wie bei Gboard: System/Hell/Dunkel, Farben, Farbverläufe, Landschaften
+  (`tools/themes/make_landscapes.py`), eigenes Bild mit Helligkeitsregler, Tastenumrandung an/aus
+- Geteilte Tastatur (Automatisch: im Querformat und aufgeklappt beim Mate XT, oder Immer/Nie);
+  Querformat mit niedrigeren Tasten
 - Zahlenreihe, Haptik, Großschreibung am Satzanfang, Punkt durch doppeltes Leerzeichen,
   Cursor per Leertaste, Wort löschen durch Wischen auf der Rücktaste
 - Einstellungs-App wie bei Gboard (App-Symbol oder Zahnrad in der Tastatur), folgt dem hellen bzw.

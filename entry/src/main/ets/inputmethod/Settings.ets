@@ -24,16 +24,17 @@ export enum AutoCorrectStrength {
   VERY_AGGRESSIVE = 'very_aggressive'
 }
 
-export enum ThemeMode {
-  SYSTEM = 'system',
-  LIGHT = 'light',
-  DARK = 'dark'
+/** Split keyboard (Gboard on tablets and foldables): two halves with a gap in the middle. */
+export enum SplitMode {
+  /** Split when the keyboard is wide (landscape, Mate XT unfolded). */
+  AUTO = 'auto',
+  ALWAYS = 'always',
+  NEVER = 'never'
 }
 
 /**
- * User settings of the keyboard. They live in the input method's own sandbox: HarmonyOS isolates
- * InputMethodExtension processes from the app's other abilities, so the settings screen inside the
- * keyboard (toolbar gear) is the only place that can change them.
+ * User settings of the keyboard, shared by the settings app and the keyboard through a JSON file
+ * (SettingsStore).
  */
 export class KeyboardSettings {
   // Tastatur
@@ -47,7 +48,15 @@ export class KeyboardSettings {
   /** Relative keyboard height, 0.8 … 1.3. */
   heightScale: number = 1.0;
   longPressMs: number = 300;
-  theme: ThemeMode = ThemeMode.SYSTEM;
+  /** Theme id from Theme.ets (THEME_DEFS). */
+  theme: string = 'system';
+  /** Gboard "Tastenumrandung": keys drawn as tiles. */
+  keyBorders: boolean = true;
+  /** Own picture theme: when it was last chosen (0 = none; also busts the image cache). */
+  customImageAt: number = 0;
+  /** Darkening over the own picture, 0 … 0.8. */
+  customDim: number = 0.3;
+  splitMode: SplitMode = SplitMode.AUTO;
   // Textkorrektur
   showSuggestions: boolean = true;
   /** Gboard: matching emoji in the suggestion strip ("Pizza" -> 🍕). */
@@ -87,6 +96,10 @@ export class KeyboardSettings {
     c.heightScale = this.heightScale;
     c.longPressMs = this.longPressMs;
     c.theme = this.theme;
+    c.keyBorders = this.keyBorders;
+    c.customImageAt = this.customImageAt;
+    c.customDim = this.customDim;
+    c.splitMode = this.splitMode;
     c.showSuggestions = this.showSuggestions;
     c.emojiSuggestions = this.emojiSuggestions;
     c.autoCorrect = this.autoCorrect;
@@ -228,7 +241,8 @@ export class SettingsStore {
     const value: Record<string, Object> = {
       'numberRow': s.numberRow, 'showEmojiKey': s.showEmojiKey, 'showLanguageKey': s.showLanguageKey,
       'keyPopup': s.keyPopup, 'vibrate': s.vibrate, 'vibrationMs': s.vibrationMs, 'heightScale': s.heightScale,
-      'longPressMs': s.longPressMs, 'theme': s.theme, 'showSuggestions': s.showSuggestions,
+      'longPressMs': s.longPressMs, 'theme': s.theme,
+      'keyBorders': s.keyBorders, 'customImageAt': s.customImageAt, 'customDim': s.customDim, 'splitMode': s.splitMode, 'showSuggestions': s.showSuggestions,
       'emojiSuggestions': s.emojiSuggestions, 'autoCorrect': s.autoCorrect,
       'autoCorrectStrength': s.autoCorrectStrength, 'autoCapitalize': s.autoCapitalize,
       'doubleSpacePeriod': s.doubleSpacePeriod, 'backspaceRevertsAutocorrect': s.backspaceRevertsAutocorrect,
@@ -293,7 +307,11 @@ export class SettingsStore {
     s.vibrationMs = asNumber(j['vibrationMs'], s.vibrationMs);
     s.heightScale = asNumber(j['heightScale'], s.heightScale);
     s.longPressMs = asNumber(j['longPressMs'], s.longPressMs);
-    s.theme = asString(j['theme'], s.theme) as ThemeMode;
+    s.theme = asString(j['theme'], s.theme);
+    s.keyBorders = asBoolean(j['keyBorders'], s.keyBorders);
+    s.customImageAt = asNumber(j['customImageAt'], 0);
+    s.customDim = asNumber(j['customDim'], s.customDim);
+    s.splitMode = asString(j['splitMode'], s.splitMode) as SplitMode;
     s.showSuggestions = asBoolean(j['showSuggestions'], s.showSuggestions);
     s.emojiSuggestions = asBoolean(j['emojiSuggestions'], s.emojiSuggestions);
     s.autoCorrect = asBoolean(j['autoCorrect'], s.autoCorrect);

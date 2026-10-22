@@ -305,6 +305,58 @@
       "value": "Flag"
     },
     {
+      "name": "theme_group_default",
+      "value": "Standard"
+    },
+    {
+      "name": "theme_group_colors",
+      "value": "Farver"
+    },
+    {
+      "name": "theme_group_gradients",
+      "value": "Overgange"
+    },
+    {
+      "name": "theme_group_landscapes",
+      "value": "Landskaber"
+    },
+    {
+      "name": "theme_group_custom",
+      "value": "Eget billede"
+    },
+    {
+      "name": "theme_pick_image",
+      "value": "Vælg billede"
+    },
+    {
+      "name": "theme_dim",
+      "value": "Billedets lysstyrke"
+    },
+    {
+      "name": "key_borders",
+      "value": "Tastkanter"
+    },
+    {
+      "name": "key_borders_desc",
+      "value": "Vis hver tast som et felt"
+    },
+    {
+      "name": "split_keyboard",
+      "value": "Delt tastatur"
+    },
+    {
+      "name": "split_auto",
+      "value": "Automatisk (liggende og foldet ud)"
+    },
+    {
+      "name": "split_always",
+      "value": "Altid"
+    },
+    {
+      "name": "split_never",
+      "value": "Aldrig"
+    },
+    {
       "name": "EntryAbility_label",
       "value": "gBart"
     },

@@ -305,6 +305,58 @@
       "value": "Bayraklar"
     },
     {
+      "name": "theme_group_default",
+      "value": "Varsayılan"
+    },
+    {
+      "name": "theme_group_colors",
+      "value": "Renkler"
+    },
+    {
+      "name": "theme_group_gradients",
+      "value": "Renk geçişleri"
+    },
+    {
+      "name": "theme_group_landscapes",
+      "value": "Manzaralar"
+    },
+    {
+      "name": "theme_group_custom",
+      "value": "Kendi resmim"
+    },
+    {
+      "name": "theme_pick_image",
+      "value": "Resim seç"
+    },
+    {
+      "name": "theme_dim",
+      "value": "Resim parlaklığı"
+    },
+    {
+      "name": "key_borders",
+      "value": "Tuş kenarlıkları"
+    },
+    {
+      "name": "key_borders_desc",
+      "value": "Her tuşu bir kutucuk olarak göster"
+    },
+    {
+      "name": "split_keyboard",
+      "value": "Bölünmüş klavye"
+    },
+    {
+      "name": "split_auto",
+      "value": "Otomatik (yatay ve açık ekran)"
+    },
+    {
+      "name": "split_always",
+      "value": "Her zaman"
+    },
+    {
+      "name": "split_never",
+      "value": "Asla"
+    },
+    {
       "name": "EntryAbility_label",
       "value": "gBart"
     },

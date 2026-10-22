@@ -305,6 +305,58 @@
       "value": "Vlaggen"
     },
     {
+      "name": "theme_group_default",
+      "value": "Standaard"
+    },
+    {
+      "name": "theme_group_colors",
+      "value": "Kleuren"
+    },
+    {
+      "name": "theme_group_gradients",
+      "value": "Kleurverlopen"
+    },
+    {
+      "name": "theme_group_landscapes",
+      "value": "Landschappen"
+    },
+    {
+      "name": "theme_group_custom",
+      "value": "Eigen afbeelding"
+    },
+    {
+      "name": "theme_pick_image",
+      "value": "Afbeelding kiezen"
+    },
+    {
+      "name": "theme_dim",
+      "value": "Helderheid van de afbeelding"
+    },
+    {
+      "name": "key_borders",
+      "value": "Toetsranden"
+    },
+    {
+      "name": "key_borders_desc",
+      "value": "Elke toets als vlak tonen"
+    },
+    {
+      "name": "split_keyboard",
+      "value": "Gesplitst toetsenbord"
+    },
+    {
+      "name": "split_auto",
+      "value": "Automatisch (liggend en opengevouwen)"
+    },
+    {
+      "name": "split_always",
+      "value": "Altijd"
+    },
+    {
+      "name": "split_never",
+      "value": "Nooit"
+    },
+    {
       "name": "EntryAbility_label",
       "value": "gBart"
     },

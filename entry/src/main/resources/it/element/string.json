@@ -305,6 +305,58 @@
       "value": "Bandiere"
     },
     {
+      "name": "theme_group_default",
+      "value": "Predefinito"
+    },
+    {
+      "name": "theme_group_colors",
+      "value": "Colori"
+    },
+    {
+      "name": "theme_group_gradients",
+      "value": "Sfumature"
+    },
+    {
+      "name": "theme_group_landscapes",
+      "value": "Paesaggi"
+    },
+    {
+      "name": "theme_group_custom",
+      "value": "La mia immagine"
+    },
+    {
+      "name": "theme_pick_image",
+      "value": "Scegli immagine"
+    },
+    {
+      "name": "theme_dim",
+      "value": "Luminosità dell’immagine"
+    },
+    {
+      "name": "key_borders",
+      "value": "Bordi dei tasti"
+    },
+    {
+      "name": "key_borders_desc",
+      "value": "Mostra ogni tasto come un riquadro"
+    },
+    {
+      "name": "split_keyboard",
+      "value": "Tastiera divisa"
+    },
+    {
+      "name": "split_auto",
+      "value": "Automatica (orizzontale e aperto)"
+    },
+    {
+      "name": "split_always",
+      "value": "Sempre"
+    },
+    {
+      "name": "split_never",
+      "value": "Mai"
+    },
+    {
       "name": "EntryAbility_label",
       "value": "gBart"
     },

@@ -305,6 +305,58 @@
       "value": "Flagi"
     },
     {
+      "name": "theme_group_default",
+      "value": "Domyślne"
+    },
+    {
+      "name": "theme_group_colors",
+      "value": "Kolory"
+    },
+    {
+      "name": "theme_group_gradients",
+      "value": "Gradienty"
+    },
+    {
+      "name": "theme_group_landscapes",
+      "value": "Krajobrazy"
+    },
+    {
+      "name": "theme_group_custom",
+      "value": "Mój obraz"
+    },
+    {
+      "name": "theme_pick_image",
+      "value": "Wybierz obraz"
+    },
+    {
+      "name": "theme_dim",
+      "value": "Jasność obrazu"
+    },
+    {
+      "name": "key_borders",
+      "value": "Obramowanie klawiszy"
+    },
+    {
+      "name": "key_borders_desc",
+      "value": "Pokazuj każdy klawisz jako pole"
+    },
+    {
+      "name": "split_keyboard",
+      "value": "Podzielona klawiatura"
+    },
+    {
+      "name": "split_auto",
+      "value": "Automatycznie (poziomo i po rozłożeniu)"
+    },
+    {
+      "name": "split_always",
+      "value": "Zawsze"
+    },
+    {
+      "name": "split_never",
+      "value": "Nigdy"
+    },
+    {
       "name": "EntryAbility_label",
       "value": "gBart"
     },

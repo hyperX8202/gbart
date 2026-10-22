@@ -8,8 +8,9 @@ import { hilog } from '@kit.PerformanceAnalysisKit';
 import { KeyboardController } from './KeyboardController';
 import engine from 'libkeyboard_engine.so';
 import { dictionaryForLanguage, emojiDictionaryForLanguage } from './Layouts';
-import { applyUiLanguage, KeyboardSettings, KeyboardStatus, SettingsStore, ThemeMode } from './Settings';
-import { DARK_THEME, KeyboardTheme, LIGHT_THEME } from './Theme';
+import { applyUiLanguage, KeyboardSettings, KeyboardStatus, SettingsStore } from './Settings';
+import { DARK_THEME, KeyboardTheme } from './Theme';
+import { resolveTheme } from './ThemeAssets';
 import { EmojiCategory, loadEmojiCategories } from './Emoji';
 
 const TAG = 'KeyboardExtAbility';
@@ -17,6 +18,8 @@ const DOMAIN = 0x4b42;
 const STRIP_HEIGHT_VP = 44;
 const KEY_HEIGHT_VP = 54;
 const BOTTOM_PADDING_VP = 6;
+/** Landscape keys are lower (the screen is short), like Gboard's. */
+const LANDSCAPE_KEY_SCALE = 0.78;
 /** Bump when the bundled dictionaries change (v2: HeliBoard dictionaries with next-word data). */
 const DICTIONARY_VERSION = 3;
 
@@ -103,10 +106,20 @@ export default class KeyboardExtAbility extends InputMethodExtensionAbility {
     inputMethodEngine.getKeyboardDelegate().on('selectionChange', this.onSelectionChange);
     inputMethodEngine.getKeyboardDelegate().on('textChange', this.onTextChange);
     this.createPanel();
+    try {
+      display.on('change', this.onDisplayChange);
+    } catch (e) {
+      hilog.warn(DOMAIN, TAG, 'display events: %{public}s', JSON.stringify(e));
+    }
   }
 
   onDestroy(): void {
     engine.flush();
+    try {
+      display.off('change', this.onDisplayChange);
+    } catch (e) {
+      hilog.warn(DOMAIN, TAG, 'display events: %{public}s', JSON.stringify(e));
+    }
     const ability = inputMethodEngine.getInputMethodAbility();
     ability.off('inputStart', this.onInputStart);
     ability.off('inputStop', this.onInputStop);
@@ -162,21 +175,21 @@ export default class KeyboardExtAbility extends InputMethodExtensionAbility {
   }
 
   private pickTheme(settings: KeyboardSettings): KeyboardTheme {
-    if (settings.theme === ThemeMode.LIGHT) {
-      return LIGHT_THEME;
-    }
-    if (settings.theme === ThemeMode.DARK) {
-      return DARK_THEME;
-    }
-    // The extension's own config often reports "not set"; the resource configuration follows the
-    // system's light/dark mode.
-    let light = this.context.config?.colorMode === ConfigurationConstant.ColorMode.COLOR_MODE_LIGHT;
+    return resolveTheme(this.context, settings, this.systemDark());
+  }
+
+  /**
+   * The extension's own config often reports "not set"; the resource configuration follows the
+   * system's light/dark mode.
+   */
+  private systemDark(): boolean {
+    let dark = this.context.config?.colorMode !== ConfigurationConstant.ColorMode.COLOR_MODE_LIGHT;
     try {
-      light = this.context.resourceManager.getConfigurationSync().colorMode === resourceManager.ColorMode.LIGHT;
+      dark = this.context.resourceManager.getConfigurationSync().colorMode !== resourceManager.ColorMode.LIGHT;
     } catch (e) {
       hilog.warn(DOMAIN, TAG, 'color mode unknown: %{public}s', JSON.stringify(e));
     }
-    return light ? LIGHT_THEME : DARK_THEME;
+    return dark;
   }
 
   /**
@@ -285,6 +298,11 @@ export default class KeyboardExtAbility extends InputMethodExtensionAbility {
     }
   }
 
+  /**
+   * Panel size for both orientations at once (the system switches on rotation). Landscape keys are
+   * lower, like Gboard's; the panel page lets its rows share whatever height it gets. Called again
+   * when the Mate XT's fold state changes the display.
+   */
   private async resizePanel(): Promise<void> {
     if (!this.panel || !this.controller) {
       return;
@@ -292,10 +310,22 @@ export default class KeyboardExtAbility extends InputMethodExtensionAbility {
     try {
       const screen = display.getDefaultDisplaySync();
       const keyHeight = this.storage.get<number>(KEY_HEIGHT_KEY) ?? KEY_HEIGHT_VP;
-      const heightVp = STRIP_HEIGHT_VP + this.controller.rowCount() * keyHeight + BOTTOM_PADDING_VP;
-      await this.panel.resize(screen.width, Math.round(heightVp * screen.densityPixels));
+      const rows = this.controller.rowCount();
+      const density = screen.densityPixels;
+      const portraitVp = STRIP_HEIGHT_VP + rows * keyHeight + BOTTOM_PADDING_VP;
+      const landscapeVp = STRIP_HEIGHT_VP + rows * keyHeight * LANDSCAPE_KEY_SCALE + BOTTOM_PADDING_VP;
+      const shortSide = Math.min(screen.width, screen.height);
+      const longSide = Math.max(screen.width, screen.height);
+      this.panel.adjustPanelRect(inputMethodEngine.PanelFlag.FLG_FIXED, {
+        portraitRect: { left: 0, top: 0, width: shortSide, height: Math.round(portraitVp * density) },
+        landscapeRect: { left: 0, top: 0, width: longSide, height: Math.round(landscapeVp * density) }
+      });
     } catch (e) {
       hilog.error(DOMAIN, TAG, 'resize failed: %{public}s', JSON.stringify(e));
     }
   }
+
+  private onDisplayChange = (): void => {
+    this.resizePanel();
+  };
 }
