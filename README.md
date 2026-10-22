@@ -90,6 +90,12 @@ Wörterbücher aus codeberg.org/Helium314/aosp-dictionaries. Danach `THIRD_PARTY
 
 ## Veröffentlichen
 
-Für AppGallery wird ein Release-Zertifikat und -Profil aus AppGallery Connect benötigt
-(`buildMode=release`); die automatische Signatur von DevEco gilt nur für Debug-Builds auf
-registrierten Geräten.
+Für AppGallery wird ein Release-Zertifikat und -Profil aus AppGallery Connect benötigt; die
+automatische Signatur von DevEco gilt nur für Debug-Builds auf registrierten Geräten.
+
+1. Lokal ein Produkt `release` ohne `signingConfig` in `build-profile.json5` anlegen (die Datei ist
+   im Repo ohne Signaturdaten) und unsigniert bauen:
+   `hvigorw --mode project -p product=release -p buildMode=release assembleApp`
+2. `tools/sign_release.sh <Signatur-Ordner>` signiert `build/outputs/release/*-unsigned.app` mit
+   Schlüssel (`keyboard-release.p12`, Passwort in `PASSWORT.txt`), AGC-Zertifikat (`*.cer`) und
+   AGC-Release-Profil (`*.p7b`) und prüft die Signatur. Das Ergebnis wird in AGC hochgeladen.
